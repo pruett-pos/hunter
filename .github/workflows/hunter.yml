@@ -1,0 +1,59 @@
+name: Hunter run
+
+on:
+  schedule:
+    # Mon, Wed, Fri at 12:00 UTC = 7am Central (daylight time) / 6am (standard time)
+    - cron: "0 12 * * 1,3,5"
+  workflow_dispatch:
+    inputs:
+      send_email:
+        description: Send the email report
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hunter-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Hunt
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.send_email }}" != "true" ]; then
+            python -m hunter.main --no-email
+          else
+            python -m hunter.main
+          fi
+      - name: Save deal history
+        if: always()
+        run: |
+          git config user.name "hunter-bot"
+          git config user.email "hunter-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Hunter run $(date -u +%Y-%m-%d)"
+          git push
+      - name: Keep page dumps for debugging
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hunter-pages-${{ github.run_id }}
+          path: debug/
+          retention-days: 14
+          if-no-files-found: ignore
