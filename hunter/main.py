@@ -32,6 +32,10 @@ def run(cfg: Config, store: Store, claude: Claude, pages: list[RawPage],
             log.exception("extract failed for %s", rp.page.url)
             status[f"read {rp.page.url}"] = f"FAILED: {e}"
             continue
+        out_area = [f"{l.county}, {l.state}" for l in listings
+                    if not cfg.in_area(l.state, normalize_county(l.county or ""))]
+        log.info("%s: %d listings extracted, %d outside area %s", rp.source_id, len(listings),
+                 len(out_area), out_area[:6])
         for l in listings:
             if l.county:
                 l.county = normalize_county(l.county)

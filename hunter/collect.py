@@ -74,6 +74,8 @@ def _notices(ctx, cfg: Config, src: dict) -> list[RawPage]:
     for u in urls:
         page = notices.read_notice(ctx, u)
         text = re.sub(r"\n{3,}", "\n\n", page.text)
+        if not batch and not out:
+            log.info("first notice (%d chars): %s", len(text), text[:400].replace("\n", " / "))
         batch.append(f"=== NOTICE url: {u} ===\n{text}")
         if sum(len(b) for b in batch) > NOTICE_BATCH_CHARS:
             out.append(_batch_page(src, batch))
