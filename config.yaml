@@ -38,13 +38,14 @@ sources:
     kind: notices
     state: MO
     url: https://www.mopublicnotices.com/Search.aspx
-    keywords: ["trustee's sale", "sheriff's sale", "foreclosure", "delinquent land tax sale"]
+    # Names matching the site's "Popular Searches" menu use that saved search.
+    keywords: ["Foreclosure", "Sheriff Sales", "Tax Sale"]
   - id: ar_public_notices
     name: Arkansas Public Notices
     kind: notices
     state: AR
     url: https://www.arkansaspublicnotices.com/Search.aspx
-    keywords: ["foreclosure", "commissioner's sale", "trustee's sale"]
+    keywords: ["Foreclosure", "commissioner's sale"]
   - id: cosl_post_auction
     name: AR Commissioner of State Lands (post-auction)
     kind: page

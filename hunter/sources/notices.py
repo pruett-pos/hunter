@@ -31,11 +31,12 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int) -> list[
     try:
         page.goto(url, wait_until="domcontentloaded")
         page.wait_for_timeout(1500)
-        log.info("search form: %s", describe_form(page)[:1500])
-        _fill_keyword(page, keyword)
-        _tick_counties(page, counties)
-        _set_days(page, days)
-        _submit(page)
+        log.info("search form: %s", describe_form(page)[:600])
+        if not _popular_search(page, keyword):
+            _fill_keyword(page, keyword)
+            _tick_counties(page, counties)
+            _set_days(page, days)
+            _submit(page)
         after = snapshot(page)
         log.info("after search: %s\n%s\nlinks: %s", page.url, after.text[:2000].replace("\n", " / "),
                  [h for _, h in after.links][:40])
@@ -58,6 +59,30 @@ def read_notice(ctx, url: str) -> Page:
         return snapshot(page, url)
     finally:
         page.close()
+
+
+def _popular_search(page, keyword: str) -> bool:
+    """Use the site's own "Popular Searches" entry when one matches (e.g. Foreclosure, Sheriff Sales).
+
+    Picking one runs the site's saved search server-side, which is more reliable
+    than driving the advanced form. County filtering then happens when Claude reads the notices.
+    """
+    dd = page.locator("select[id*=PopularSearches i]")
+    if not dd.count():
+        return False
+    options = [o.strip() for o in dd.first.locator("option").all_inner_texts()]
+    match = next((o for o in options if o.lower() == keyword.lower()), None)
+    if not match:
+        return False
+    dd.first.select_option(label=match)
+    log.info("popular search: %s", match)
+    page.wait_for_timeout(1500)
+    try:
+        page.wait_for_load_state("networkidle", timeout=20_000)
+    except Exception:
+        pass
+    page.wait_for_timeout(1500)
+    return True
 
 
 def _fill_keyword(page, keyword: str) -> None:
@@ -130,7 +155,15 @@ def _set_days(page, days: int) -> None:
 
 
 def _submit(page) -> None:
-    clicked = page.evaluate(SUBMIT_JS)
+    btn = page.locator("[id*=btnGo i], [id*=btnSearch i]")
+    clicked = None
+    if btn.count():
+        try:
+            btn.first.click(timeout=5_000)
+            clicked = "button (real click)"
+        except Exception:
+            pass
+    clicked = clicked or page.evaluate(SUBMIT_JS)
     if not clicked:
         log.warning("form controls seen: %s", describe_form(page))
         raise RuntimeError("no Search button found; search form changed?")
