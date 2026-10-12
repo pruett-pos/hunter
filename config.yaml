@@ -27,7 +27,7 @@ claude:
   max_web_searches_per_arv: 5
 
 # How many days back to search public-notice sites each run.
-notice_lookback_days: 7
+notice_lookback_days: 14
 max_notices_per_site: 60
 
 # Sources. kind=notices drives a newspaper public-notice search site;

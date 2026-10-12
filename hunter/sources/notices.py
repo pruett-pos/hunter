@@ -20,6 +20,11 @@ from .browser import Page, snapshot
 log = logging.getLogger(__name__)
 
 DETAIL_RE = re.compile(r"Details\.aspx\?", re.I)
+# Snippets that read like a property sale; drops ballot measures, budgets etc. that match "sheriff" or "tax".
+SALE_RE = re.compile(
+    r"trustee|foreclos|deed of trust|mortgage|commissioner'?s sale|sheriff'?s sale|tax sale|"
+    r"delinquent (land|tax|real)|land tax|real (estate|property)|judicial sale|public auction|lien sale", re.I)
+JUNK_RE = re.compile(r"constitutional amendment|ballot|budget|election", re.I)
 def describe_form(page) -> str:
     """Short list of the page's non-checkbox form controls, for the run log."""
     return page.eval_on_selector_all(
@@ -47,6 +52,7 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int,
         want = {c.lower() for c in counties}
         found: list[str] = []
         rows_seen = 0
+        counties_seen: dict[str, int] = {}
         for n in range(1, 31):  # result pages
             rows = page.evaluate(ROWS_JS)
             if not rows:  # plain link list (older layout)
@@ -54,18 +60,21 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int,
             rows_seen += len(rows)
             oldest = None
             for r in rows:
+                counties_seen[r["county"]] = counties_seen.get(r["county"], 0) + 1
                 d = _date(r["date"])
                 if d:
                     oldest = d if oldest is None else min(oldest, d)
                 if d and d < cutoff:
                     continue
-                if _ours(r, want) and r["href"]:
+                if _ours(r, want) and r["href"] and SALE_RE.search(r["text"]) and not JUNK_RE.search(r["text"]):
                     found.append(urljoin(page.url, r["href"]))
             if oldest and oldest < cutoff:
                 break
             if not _next_page(page, n + 1):
                 break
-        log.info("%s: %d result rows read, %d from our counties", keyword, rows_seen, len(found))
+        top = sorted(counties_seen.items(), key=lambda kv: -kv[1])[:8]
+        log.info("%s: %d result rows read, %d sale notices from our counties (papers by county: %s)",
+                 keyword, rows_seen, len(found), top)
         return list(dict.fromkeys(found))
     finally:
         page.close()
@@ -130,6 +139,7 @@ def _popular_search(page, keyword: str) -> bool:
     options = [o.strip() for o in dd.first.locator("option").all_inner_texts()]
     match = next((o for o in options if o.lower() == keyword.lower()), None)
     if not match:
+        log.info("no popular search for %r; options: %s", keyword, options)
         return False
     dd.first.select_option(label=match)
     log.info("popular search: %s", match)
