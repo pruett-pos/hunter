@@ -113,3 +113,16 @@ def test_houses_valued_before_land(tmp_path):
     valued = {d.listing.address for d in deals}
     assert "1 House Rd" in valued and len(valued) == 3   # house + 2 land parcels
     assert "4 left for next run" in status["Summary"]
+
+
+def test_report_lists_notice_leads(tmp_path):
+    from hunter.store import Store
+    lead = {"id": "notice:x:1", "url": "https://x/Details.aspx?ID=1", "county": "Howell", "state": "MO",
+            "date": "October 12, 2026", "paper": "West Plains Daily Quill", "snippet": "NOTICE OF TRUSTEE'S SALE <b>"}
+    store = Store(tmp_path)
+    assert store.new_leads([lead]) == [lead]
+    store.add_leads([lead], "2026-10-12")
+    assert Store(tmp_path).new_leads([lead]) == []          # not repeated next run
+    subject, body = report.build([], {}, "2026-10-12", leads=[lead])
+    assert "1 notice" in subject and "West Plains Daily Quill" in body and "&lt;b&gt;" in body
+    assert "No new deals" not in body

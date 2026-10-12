@@ -7,19 +7,21 @@ onclick points at Details.aspx. We keep rows from our counties (or whose snippet
 names one), stop once results are older than the lookback, then open each notice
 so Claude can read the full text. Keywords with no popular search fall back to
 the advanced form.
+
+The detail pages sit behind a "complete the challenge" check, so Hunter can't
+read the full notice. It reports each matching result row (paper, date, county,
+opening lines and a link) as a lead for a person to open.
 """
 from __future__ import annotations
 
 import datetime as dt
 import logging
 import re
-from urllib.parse import urljoin
+from urllib.parse import parse_qs, urljoin, urlsplit
 
-from .browser import Page, snapshot
 
 log = logging.getLogger(__name__)
 
-DETAIL_RE = re.compile(r"Details\.aspx\?", re.I)
 # Snippets that read like a property sale; drops ballot measures, budgets etc. that match "sheriff" or "tax".
 SALE_RE = re.compile(
     r"trustee|foreclos|deed of trust|mortgage|commissioner'?s sale|sheriff'?s sale|tax sale|"
@@ -36,8 +38,8 @@ def describe_form(page) -> str:
 
 
 def search(ctx, url: str, keyword: str, counties: list[str], days: int,
-           today: dt.date | None = None) -> list[str]:
-    """Run one search; return detail-page URLs for notices from our counties."""
+           today: dt.date | None = None) -> list[dict]:
+    """Run one search; return result rows (leads) for sale notices from our counties."""
     page = ctx.new_page()
     try:
         page.goto(url, wait_until="domcontentloaded")
@@ -50,13 +52,11 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int,
         _per_page(page, 50)
         cutoff = (today or dt.date.today()) - dt.timedelta(days=days)
         want = {c.lower() for c in counties}
-        found: list[str] = []
+        found: list[dict] = []
         rows_seen = 0
         counties_seen: dict[str, int] = {}
         for n in range(1, 31):  # result pages
             rows = page.evaluate(ROWS_JS)
-            if not rows:  # plain link list (older layout)
-                found += [h for _, h in snapshot(page).links if DETAIL_RE.search(h)]
             rows_seen += len(rows)
             oldest = None
             for r in rows:
@@ -67,7 +67,7 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int,
                 if d and d < cutoff:
                     continue
                 if _ours(r, want) and r["href"] and SALE_RE.search(r["text"]) and not JUNK_RE.search(r["text"]):
-                    found.append(urljoin(page.url, r["href"]))
+                    found.append(_lead(page.url, r))
             if oldest and oldest < cutoff:
                 break
             if not _next_page(page, n + 1):
@@ -75,7 +75,7 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int,
         top = sorted(counties_seen.items(), key=lambda kv: -kv[1])[:8]
         log.info("%s: %d result rows read, %d sale notices from our counties (papers by county: %s)",
                  keyword, rows_seen, len(found), top)
-        return list(dict.fromkeys(found))
+        return list({l["id"]: l for l in found}.values())
     finally:
         page.close()
 
@@ -86,8 +86,22 @@ ROWS_JS = """() => [...document.querySelectorAll('table.wsResultsGrid table.nest
   const left = t.querySelector('div.left'), right = t.querySelector('div.right');
   const county = right ? (right.textContent.match(/County:\\s*([^\\n<]+)/) || [])[1] || '' : '';
   const date = left ? (left.textContent.match(/[A-Z][a-z]+ \\d{1,2}, \\d{4}/) || [''])[0] : '';
-  return {href: m ? m[0].replace(/&amp;/g, '&') : '', county: county.trim(), date, text: t.textContent.replace(/\\s+/g, ' ')};
+  const paper = left && left.querySelector('strong') ? left.querySelector('strong').textContent.trim() : '';
+  const body = t.querySelector('td[colspan]');
+  const snippet = body ? body.innerText.replace(/click 'view' to open the full text\\.?/i, '').replace(/\\s+/g, ' ').trim() : '';
+  return {href: m ? m[0].replace(/&amp;/g, '&') : '', county: county.trim(), date, paper, snippet,
+          text: t.textContent.replace(/\\s+/g, ' ')};
 })"""
+
+
+def _lead(page_url: str, row: dict) -> dict:
+    """A result row as a lead, with a link that doesn't depend on our browser session."""
+    full = urljoin(page_url, row["href"])
+    parts = urlsplit(full)
+    notice_id = parse_qs(parts.query).get("ID", [""])[0]
+    url = f"{parts.scheme}://{parts.netloc}/Details.aspx?ID={notice_id}" if notice_id else full
+    return {"id": f"notice:{parts.netloc}:{notice_id or full}", "url": url, "county": row["county"],
+            "date": row["date"], "paper": row["paper"], "snippet": row["snippet"]}
 
 
 def _date(s: str) -> dt.date | None:
@@ -115,16 +129,6 @@ def _per_page(page, n: int) -> None:
         page.wait_for_load_state("networkidle", timeout=20_000)
     except Exception as e:
         log.info("per-page not set: %s", str(e).splitlines()[0][:120])
-
-
-def read_notice(ctx, url: str) -> Page:
-    page = ctx.new_page()
-    try:
-        page.goto(url, wait_until="domcontentloaded")
-        page.wait_for_timeout(1000)
-        return snapshot(page, url)
-    finally:
-        page.close()
 
 
 def _popular_search(page, keyword: str) -> bool:

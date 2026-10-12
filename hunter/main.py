@@ -86,15 +86,17 @@ def main() -> None:
     today = datetime.now(ZoneInfo("America/Chicago")).strftime("%Y-%m-%d")
     store = Store(ROOT / "data")
     claude = Claude(cfg.claude)
-    pages, status = collect(cfg, debug_dir=ROOT / "debug")
+    pages, status, leads = collect(cfg, debug_dir=ROOT / "debug")
+    leads = store.new_leads(leads)
     deals, status = run(cfg, store, claude, pages, status, today,
                         args.max_arv if args.max_arv is not None else int(cfg.claude["max_arv_per_run"]),
                         int(cfg.claude.get("max_land_arv_per_run", 5)))
     store.add(deals)
+    store.add_leads(leads, today)
 
     subject, body = report.build(deals, status, today,
                                  min_land_arv=float(cfg.raw.get("min_land_value", 10_000)),
-                                 max_land=int(cfg.raw.get("max_land_in_email", 10)))
+                                 max_land=int(cfg.raw.get("max_land_in_email", 10)), leads=leads)
     (ROOT / "data" / "last_report.html").write_text(body)
     log.info("report: %s", subject)
     if not args.no_email and os.environ.get("SMTP_USER"):

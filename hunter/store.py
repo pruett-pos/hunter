@@ -29,6 +29,14 @@ class Store:
     def cached_arv(self, deal_id: str) -> dict | None:
         return self.seen.get(deal_id, {}).get("arv")
 
+    def new_leads(self, leads: list[dict]) -> list[dict]:
+        return [l for l in leads if l["id"] not in self.seen]
+
+    def add_leads(self, leads: list[dict], today: str) -> None:
+        for l in leads:
+            self.seen[l["id"]] = {"first_seen": today, "status": "notice", "url": l["url"]}
+        self.seen_path.write_text(json.dumps(self.seen, indent=1, sort_keys=True))
+
     def add(self, deals: list[Deal]) -> None:
         new_file = not self.csv_path.exists()
         with self.csv_path.open("a", newline="") as f:

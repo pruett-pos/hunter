@@ -48,13 +48,33 @@ def _table(title: str, deals: list[Deal], blurb: str) -> str:
     return f"<h3 style='margin:20px 0 4px'>{title} ({len(deals)})</h3><p style='margin:0 0 6px;color:#555'>{blurb}</p><table style='border-collapse:collapse;width:100%'>{rows}</table>"
 
 
+def _leads(leads: list[dict]) -> str:
+    if not leads:
+        return ""
+    rows = "".join(
+        f"""<tr><td style="padding:8px;border-bottom:1px solid #ddd;vertical-align:top;white-space:nowrap">
+<b>{html.escape(l.get('county') or '?')} Co., {html.escape(l.get('state', ''))}</b><br>
+<span style="color:#555">{html.escape(l.get('date') or '')}</span></td>
+<td style="padding:8px;border-bottom:1px solid #ddd;vertical-align:top">
+<span style="color:#555">{html.escape(l.get('paper') or '')}</span><br>{html.escape((l.get('snippet') or '')[:300])}
+<br><a href="{html.escape(l['url'])}">open notice</a></td></tr>""" for l in leads)
+    return ("<h3 style='margin:20px 0 4px'>Foreclosure and sale notices to check "
+            f"({len(leads)})</h3><p style='margin:0 0 6px;color:#555'>New newspaper notices from our counties. "
+            "The notice sites make you pass a quick check before showing the full text, so Hunter can't read "
+            "the address or sale date itself. Open the ones that look promising.</p>"
+            f"<table style='border-collapse:collapse;width:100%'>{rows}</table>")
+
+
 def build(deals: list[Deal], source_status: dict[str, str], date: str,
-          min_land_arv: float = 10_000, max_land: int = 10) -> tuple[str, str]:
+          min_land_arv: float = 10_000, max_land: int = 10,
+          leads: list[dict] | None = None) -> tuple[str, str]:
+    leads = sorted(leads or [], key=lambda l: (l.get("state", ""), l.get("county") or ""))
     good = sorted([d for d in deals if d.status == "deal"], key=lambda d: d.listing.price / d.arv.arv)
     land = sorted([d for d in deals if d.status == "land_deal" and d.arv.arv >= min_land_arv],
                   key=lambda d: -d.arv.arv)[:max_land]
     watch = sorted([d for d in deals if d.status == "watch"], key=lambda d: d.listing.sale_date or "9999")
-    subject = f"{_n(len(good), 'deal')}, {_n(len(watch), 'auction')} to watch ({date})"
+    subject = f"{_n(len(good), 'deal')}, {_n(len(watch), 'auction')} to watch" + (
+        f", {_n(len(leads), 'notice')}" if leads else "") + f" ({date})"
     health = "".join(
         f"<li>{html.escape(k)}: {html.escape(v)}</li>" for k, v in sorted(source_status.items())
     )
@@ -64,7 +84,8 @@ def build(deals: list[Deal], source_status: dict[str, str], date: str,
 {_table("Priced at or under 50% of ARV", good, "Asking price or opening bid is at or below half the estimated after-repair value.")}
 {_table("Upcoming auctions to watch", watch, "No opening bid published. Don't bid above the max offer.")}
 {_table("Land under 50% of value", land, f"Lots and acreage worth at least {money(min_land_arv)}, mostly tax-sale parcels. Top {max_land} by value; the rest are in deals.csv.")}
-{'' if good or watch or land else '<p><b>No new deals this run.</b></p>'}
+{_leads(leads)}
+{'' if good or watch or land or leads else '<p><b>No new deals this run.</b></p>'}
 <p style="color:#777;font-size:12px">ARV is an AI estimate from recent nearby sales found online. Check comps and title before bidding.
 Full history is in data/deals.csv in the hunter repo.</p>
 <details><summary style="color:#777;font-size:12px">Sources checked</summary><ul style="color:#777;font-size:12px">{health}</ul></details>
