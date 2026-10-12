@@ -1,14 +1,19 @@
 """Newspaper public-notice sites (mopublicnotices.com, arkansaspublicnotices.com).
 
-Both run the same search software: keyword box, county checkboxes, a
-"in the last N days" range and a Search button. Results link to a detail
-page per notice. We search each keyword with our counties ticked, then
-open each notice so Claude can read the full text.
+Both run the same search software. The site's "Popular Searches" (Foreclosure,
+Sheriff Sales, Tax Sale) return statewide results, newest first; each result row
+names the paper's county and opens its full text via a "view" button whose
+onclick points at Details.aspx. We keep rows from our counties (or whose snippet
+names one), stop once results are older than the lookback, then open each notice
+so Claude can read the full text. Keywords with no popular search fall back to
+the advanced form.
 """
 from __future__ import annotations
 
+import datetime as dt
 import logging
 import re
+from urllib.parse import urljoin
 
 from .browser import Page, snapshot
 
@@ -25,33 +30,82 @@ def describe_form(page) -> str:
     )
 
 
-def search(ctx, url: str, keyword: str, counties: list[str], days: int) -> list[str]:
-    """Run one search; return detail-page URLs."""
+def search(ctx, url: str, keyword: str, counties: list[str], days: int,
+           today: dt.date | None = None) -> list[str]:
+    """Run one search; return detail-page URLs for notices from our counties."""
     page = ctx.new_page()
     try:
         page.goto(url, wait_until="domcontentloaded")
         page.wait_for_timeout(1500)
-        log.info("search form: %s", describe_form(page)[:600])
         if not _popular_search(page, keyword):
             _fill_keyword(page, keyword)
             _tick_counties(page, counties)
             _set_days(page, days)
             _submit(page)
-        after = snapshot(page)
-        log.info("after search: %s\n%s", page.url, after.text[:600].replace("\n", " / "))
-        log.info("result item html: %s", page.evaluate("""() => {
-          const rows = document.querySelectorAll('table.wsResultsGrid > tbody > tr');
-          return [...rows].slice(1, 3).map(r => r.outerHTML.replace(/\\s+/g, ' ').slice(0, 2500)).join(' ||| ');
-        }"""))
+        _per_page(page, 50)
+        cutoff = (today or dt.date.today()) - dt.timedelta(days=days)
+        want = {c.lower() for c in counties}
         found: list[str] = []
-        for _ in range(10):  # result pages
-            snap = snapshot(page)
-            found += [h for _, h in snap.links if DETAIL_RE.search(h)]
-            if not _next_page(page):
+        rows_seen = 0
+        for n in range(1, 31):  # result pages
+            rows = page.evaluate(ROWS_JS)
+            if not rows:  # plain link list (older layout)
+                found += [h for _, h in snapshot(page).links if DETAIL_RE.search(h)]
+            rows_seen += len(rows)
+            oldest = None
+            for r in rows:
+                d = _date(r["date"])
+                if d:
+                    oldest = d if oldest is None else min(oldest, d)
+                if d and d < cutoff:
+                    continue
+                if _ours(r, want) and r["href"]:
+                    found.append(urljoin(page.url, r["href"]))
+            if oldest and oldest < cutoff:
                 break
+            if not _next_page(page, n + 1):
+                break
+        log.info("%s: %d result rows read, %d from our counties", keyword, rows_seen, len(found))
         return list(dict.fromkeys(found))
     finally:
         page.close()
+
+
+ROWS_JS = """() => [...document.querySelectorAll('table.wsResultsGrid table.nested')].map(t => {
+  const btn = t.querySelector('input.viewButton[onclick*="Details.aspx"], a[href*="Details.aspx"]');
+  const m = btn && (btn.getAttribute('onclick') || btn.getAttribute('href') || '').match(/Details\\.aspx\\?[^'"]+/);
+  const left = t.querySelector('div.left'), right = t.querySelector('div.right');
+  const county = right ? (right.textContent.match(/County:\\s*([^\\n<]+)/) || [])[1] || '' : '';
+  const date = left ? (left.textContent.match(/[A-Z][a-z]+ \\d{1,2}, \\d{4}/) || [''])[0] : '';
+  return {href: m ? m[0].replace(/&amp;/g, '&') : '', county: county.trim(), date, text: t.textContent.replace(/\\s+/g, ' ')};
+})"""
+
+
+def _date(s: str) -> dt.date | None:
+    try:
+        return dt.datetime.strptime(s, "%B %d, %Y").date()
+    except ValueError:
+        return None
+
+
+def _ours(row: dict, want: set[str]) -> bool:
+    from ..config import normalize_county
+    if row["county"] and normalize_county(row["county"]).lower() in want:
+        return True
+    text = row["text"].lower()
+    return any(f"{c} county" in text for c in want)
+
+
+def _per_page(page, n: int) -> None:
+    sel = page.locator("select[id*=PerPage i]")
+    if not sel.count():
+        return
+    try:
+        sel.first.select_option(str(n))
+        page.wait_for_timeout(1000)
+        page.wait_for_load_state("networkidle", timeout=20_000)
+    except Exception as e:
+        log.info("per-page not set: %s", str(e).splitlines()[0][:120])
 
 
 def read_notice(ctx, url: str) -> Page:
@@ -180,14 +234,24 @@ def _submit(page) -> None:
     page.wait_for_timeout(1500)
 
 
-def _next_page(page) -> bool:
-    nxt = page.get_by_role("link", name=re.compile(r"^(Next|>|»)", re.I))
+def _next_page(page, number: int) -> bool:
+    """Go to result page `number` via the grid pager; False when there is none."""
+    before = page.evaluate(ROWS_JS)
+    nxt = page.locator(
+        f"table.wsResultsGrid a:text-is('{number}'), [id*=btnNext i], [id*=lnkNext i], "
+        "input[title*=next i], a[title*=next i]")
     if not nxt.count():
+        nxt = page.get_by_role("link", name=re.compile(r"^(Next|>|»)", re.I))
+    if not nxt.count():
+        if number == 2:
+            log.info("no pager found: %s", page.evaluate(
+                "() => [...document.querySelectorAll('[id*=Page i], [class*=pag i]')].slice(0, 12)"
+                ".map(e => e.outerHTML.replace(/\\s+/g, ' ').slice(0, 300)).join(' | ')"))
         return False
     try:
-        nxt.first.click()
-        page.wait_for_load_state("domcontentloaded")
-        page.wait_for_timeout(1500)
-        return True
+        nxt.first.click(timeout=5_000)
+        page.wait_for_timeout(1000)
+        page.wait_for_load_state("networkidle", timeout=20_000)
+        return page.evaluate(ROWS_JS) != before
     except Exception:
         return False
