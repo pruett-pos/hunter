@@ -1,1 +1,432 @@
-{}
+{
+ "0047f6e57c0ba0cf": {
+  "arv": {
+   "arv": 140000.0,
+   "arv_high": 160000.0,
+   "arv_low": 120000.0,
+   "comps": [
+    "1100 N Mansfield Rd, Ava MO: fully renovated 3bd/2ba, 1,256 sqft, active listing cut to $159,900 from about $200k (not a sale; caps the top of the range)",
+    "Ava MO 65608: 2bd/1ba, 1,050 sqft, active listing at $129,900 (not a sale; address not shown)",
+    "23905 E State Hwy 14, Ava MO: 1bd/1ba, 852 sqft, active listing at $164,900 (not a sale)",
+    "1102 Golf Course Rd, Ava MO: 3bd/1ba, 1,324 sqft, sold Sep 24, 2025 (price not found)",
+    "315 Posey St, Ava MO: 3bd/2ba, 1,465 sqft, sold Sep 23, 2025 (price not found)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 950.0,
+   "reasoning": "I couldn't find any closed sale prices for Ava, so this estimate rests on asking prices of nearby homes, which aren't confirmed values: a renovated 3bd/2ba in town had to drop to $159,900, and a 2bd/1ba is listed at $129,900. A rural 3bd/1ba of 1,120 sqft on 0.51 acres with a 1-car garage should land around $140k once updated, with $120k to $160k as the realistic range and about $950 a month in rent."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "0f62e7bfe61d167d": {
+  "arv": {
+   "arv": 30000.0,
+   "arv_high": 45000.0,
+   "arv_low": 18000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The state land office tax-sale catalog seems to list this parcel as about 5.99 acres in Unit 7, Tract 9 of S29 T21N R25W, north of Eureka Springs near Holiday Island and Beaver, but the parcel number and description were next to each other in the listing, so the match isn't certain. I couldn't find any confirmed sold land comps, so this value assumes small rural tracts in Carroll County sell for about $3,000\u2013$7,500 per acre and leaves room for possible access, topography or title issues common in tax sales."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "244bd5e855e6fe58": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 8000.0,
+   "arv_low": 1000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find this parcel's acreage, road access, legal description or any recent nearby land sales, so the $3,000 figure ($1,000\u2013$8,000) is a cautious guess rather than a comp-based value. It assumes the low $417.41 opening bid means a small parcel, probably a subdivision lot near the Edgemont/Fairfield Bay end of Greers Ferry Lake (S14 T11N R12W), where small vacant lots often sell for a few thousand dollars; check the size and access on the county assessor's map before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "272fd2f3c187d32a": {
+  "arv": {
+   "arv": 220000.0,
+   "arv_high": 235000.0,
+   "arv_low": 205000.0,
+   "comps": [
+    "101 Canon Ave, Clever MO \u2013 about $214,500 (last list price), sold Mar 28, 2025, 1,292 sqft, 3bd/2ba, same street",
+    "127 N Carter Ct, Clever MO \u2013 $225,000 list, pending (not yet closed), 3bd/2ba",
+    "412 N Cherokee Trl, Clever MO \u2013 $229,000 list, pending (not yet closed), 3bd/2ba",
+    "212 Primrose Ln, Clever MO \u2013 $220,000 active listing, 1,248 sqft, 3bd/2ba"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1375.0,
+   "reasoning": "The best closed comp is a nearly identical 3/2 on the same street (101 Canon Ave, about 1,292 sqft) at around $214.5k ($166/sf), and current pending and active 3/2 listings near this size in Clever are asking $220k\u2013$229k, so a conservative updated value is about $220k for this 1,244\u20131,276 sqft home. My search tool hit its limit, so I only verified one closed sale and the rest are listing prices; rent is based on local 3/2 house rentals asking $1,295\u2013$1,300, with larger homes up to $1,795."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "53217a4aa3716bb1": {
+  "arv": {
+   "arv": 25000.0,
+   "arv_high": 55000.0,
+   "arv_low": 8000.0,
+   "comps": [
+    "Lot 95 Mountain Ranch Dr, Fairfield Bay AR \u2013 listed $2,500, 0.26 ac (active listing, not a sale)",
+    "217 E Blue Ridge Ter, Fairfield Bay AR \u2013 listed $2,500, ~0.28 ac (active listing, not a sale)",
+    "145 E Blue Ridge Ter, Fairfield Bay AR \u2013 golf course lot listed (active listing, price not confirmed)",
+    "Lots 126 & 127 Castle Ridge Hts, Fairfield Bay AR \u2013 listed and unsold for more than 418 days",
+    "Zillow shows about 140\u2013170 Fairfield Bay lots for sale, which means a large oversupply"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "These look like about 55 small subdivision lots in the Fairfield Bay area, where similar lots are listed at about $2,500 each but sell slowly against roughly 150 competing listings, so I assumed about $300\u2013$1,000 per lot (about $25k total) after discounting for the bulk sale and property-owner association dues. I found no confirmed sold comps or parcel details, I could not confirm whether the $154 opening bid covers one parcel or the whole group, and the lots may not be buildable, so confidence is low."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "55997d1c71a1012d": {
+  "arv": {
+   "arv": 105000.0,
+   "arv_high": 125000.0,
+   "arv_low": 90000.0,
+   "comps": [
+    "3699 Jackson 1, Bradford AR (the subject itself): recent MLS #26024713 listing, 1,176 sqft, 3 bed/1.5 bath, built 1989, 1.5 acres with a shop. Asking price was cut from $112,000 to $103,040 and it did not sell; Zestimate about $100,400",
+    "301 Jackson 7, Bradford AR: 3 bed/2 bath, 1,344 sqft on 5 acres, fixer sold in 2024 at about $127,300 (relisted at $185,000 as a manufactured home)",
+    "5085 Hwy 367N, Bradford AR: active listing at $143,900, 3 bed/2 bath, 1,348 sqft",
+    "178 Jackson 25, Bradford AR: active listing at $199,000, 3 bed/2 bath, 1,320 sqft",
+    "2969 Union Hill Rd, Bradford AR: active listing at $80,000, 3 bed/1 bath, 1,694 sqft"
+   ],
+   "confidence": "low",
+   "monthly_rent": 900.0,
+   "reasoning": "This house was recently listed in fair-to-good condition at $103,040 after a price cut, didn't sell, and Zillow estimates it at about $100,400, so a conservative updated value for this rural 1,176 sqft, 1989-built house on 1.5 acres with a shop is about $105,000. Only one older nearby sale (the 2024 fixer) could be confirmed and the rest are active listings, so confidence is low; the $10,000 REO bid suggests possible damage or title issues that need checking."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "5e33ef00f342eac8": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The DataScout/COSL records list this parcel as a vacant residential lot at 307 Grand Isle Dr in Fairfield Bay (Indian Hills Addition, Fairfield Bay POA), with an opening bid of about $73. I couldn't find any recent sold lot comps, so this is a conservative estimate from general knowledge: interior Fairfield Bay POA lots usually sell for a few hundred to a few thousand dollars because supply is high and POA dues apply."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "63fe7a015162e335": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 5000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Lot 226 Lakeview Dr, Fairfield Bay, AR: listed at $2,250 for a lot under 1 acre (asking price, not a sale; Land.com)",
+    "Lot 31 Edgewater Dr, Edgemont, AR: 1.02 ac listed at $34,900 (asking price for a lake-area lot, so a high outlier)",
+    "Lot 5 & 6 Ellen Ln, Higden, AR: listed under $50K (asking price; exact price not confirmed)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The very low opening bid, the size of the delinquent tax bill, and the parcel's location in S11 T11N R12W (the Fairfield Bay/Higden area) suggest a small, low-value subdivision lot; it also went unsold at the state COSL auction and was moved to post-auction sale. Similar small lots near Fairfield Bay are listed at about $1K\u2013$5K, but I couldn't confirm the parcel's acreage, road access, or utilities, and I found no verified sold comps, so this estimate is conservative and low-confidence."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "6b9d7be2c33c1838": {
+  "arv": {
+   "arv": 228000.0,
+   "arv_high": 240000.0,
+   "arv_low": 210000.0,
+   "comps": [
+    "2823 Laurie Dr (subject), West Plains MO \u2013 sold $219,000, May 6, 2024, 1,756 sqft, 3bd/2ba, updated (MLS 60260555)",
+    "2821 Laurie Dr, West Plains MO \u2013 sold (list $189,900), Jun 16, 2022, 2,000 sqft, 4bd/2ba",
+    "2814 Laurie Dr, West Plains MO \u2013 active list $239,900, 2025, 1,690 sqft, 3bd/2ba (listing, not a sale)",
+    "2820 Laurie Dr, West Plains MO \u2013 Zestimate ~$206,100, 1,856 sqft, 3bd/3ba, built 1970 (estimate, not a sale)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1600.0,
+   "reasoning": "The listing records show 1,756 sqft, not 1,990. The house itself sold updated for $219,000 in May 2024, and with that sale, a nearby listing at $239,900 and Redfin's ~$229K estimate, I put the after-repair value at about $228K. Confidence is only medium because I only found that one recent sale (the rest are a listing, estimates and a 2022 sale), so check MLS solds within the last 12 months before relying on this."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "7f387ee86ae13b38": {
+  "arv": {
+   "arv": 750000.0,
+   "arv_high": 875000.0,
+   "arv_low": 650000.0,
+   "comps": [
+    "Subject listing history: 110 Highland Park Dr, Eureka Springs AR. It was listed at $997,500 about a year ago, built 2025, 3bd/3.5ba, 4,422 sqft, Beaver Lake views. Asking price only, not a sale.",
+    "670 Highland Park Dr, Eureka Springs AR: sold $200,000 on 3/2/2021, 1,936 sqft, 1964 build, 3bd/2ba. Old sale of a dated, smaller home on the same road. Shows the lowest the street goes.",
+    "1357 Highland Park Dr, Eureka Springs AR: current asking price $360,000, 2,590 sqft, 3bd/2ba. Asking price only, not a sale.",
+    "1081 Highland Park Dr, Eureka Springs AR: automated value estimate about $414,000, 1,040 sqft. Not a sale.",
+    "Eureka Springs market overall: median sold price about $350K, average about 152 days on market (June 2025 report)."
+   ],
+   "confidence": "low",
+   "monthly_rent": 3000.0,
+   "reasoning": "The subject appears to be a newly built 4,422 sqft lake-view home, and I could not find recent closed sales of large lake-view homes nearby, so I valued it at a conservative $160-$200 per sqft (about $750K) for a slow, high-end Eureka Springs/Beaver Lake market. The original $997,500 list price apparently didn't sell, so the bank's current $775K asking price is likely near the top of what buyers will pay."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "7fe37aadd24f9ba5": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "COSL and DataScout records show this parcel is a vacant residential lot in Fairfield Bay: Lot 351, Block 9, Indian Hills Addition, at 307 Grand Isle Dr. I couldn't confirm any specific sold comps, so this low-confidence estimate relies on general knowledge that interior Fairfield Bay POA lots often sell for about $1\u20134K, and on the fact that nobody bid even $72.97 for it at the COSL auction, which points to very weak demand and possible POA dues owed (no rent, since it's vacant land)."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "8f65d6b9a4862925": {
+  "arv": {
+   "arv": 315000.0,
+   "arv_high": 345000.0,
+   "arv_low": 285000.0,
+   "comps": [
+    "Subject: MLS listing 3589512 shows 6 beds, 3 baths and 2,720 sq ft, not the 3 bed/2 bath in the input. It was previously listed at $325,000 and is now an REO list at $286,000",
+    "Camdenton market benchmark (Homes.com): median sale price over the last 12 months is about $340,000, with 434 sales and an average of 86 days on market",
+    "Market context only, not a matching comp: 244 Bluff Blvd Unit 2B, Camdenton, a condo, sold Jul 28, 2025 for about $220,000 (last list price); sq ft not found",
+    "Market context only, not a matching comp: 768 Clearwater Dr Unit 1A, Camdenton, 3 bed/2 bath, 1,185 sq ft, a condo that sold at about $224/sq ft (about $265k); sale date not found",
+    "Rent benchmark: 32 Belmont Dr, Camdenton, a 4 bed/3 bath duplex, listed for rent at $2,000/month"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2100.0,
+   "reasoning": "The listing says the home is 2,720 sq ft with 6 bed/3 bath and is described as well maintained, but it is off the water with only community boat-launch access, and it was already listed at $325k; off-water Camdenton homes at about $115-125/sq ft support a conservative ARV around $315k, close to the town's roughly $340k median. Confidence is low because I could not verify a usable sold comp of a similar off-water single-family home in the last 12 months (my searches were cut off), and the bed/bath count in the input doesn't match the listing."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "98f10cf47c496596": {
+  "arv": {
+   "arv": 55000.0,
+   "arv_high": 70000.0,
+   "arv_low": 42000.0,
+   "comps": [
+    "506 E Fir St, Piedmont MO \u2013 2bd/1ba, 1,148 sqft, sold Jan 6 2026, about $31k (~$27/sqft, appears dated)",
+    "432 E Elm St, Piedmont MO \u2013 2bd/1ba, 936 sqft, sold Dec 19 2025, about $27k (~$29/sqft, appears dated)",
+    "459 Wayne 453B, Piedmont MO \u2013 2bd/1ba, 1,024 sqft, sold Mar 31 2021 at about $30k; Trulia now estimates about $78k",
+    "0 Missouri 34, Piedmont MO \u2013 7 acres of land, sold Oct 1 2025, listed at $49,900 (~$7.1k/acre)",
+    "2677 Wayne Route CC, Piedmont MO \u2013 8.71 acres, sold Apr 2 2026, listed at $119,500"
+   ],
+   "confidence": "low",
+   "monthly_rent": 650.0,
+   "reasoning": "Dated 2bd/1ba homes in Piedmont recently sold for only about $27-31k, while updated homes on acreage sell for much more. A fully redone 525 sqft cabin on about 3.94 acres should bring roughly $45-70k, but this is low confidence because it is very small and there are no direct comps for updated homes this size."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "9f9c9b1966f726fb": {
+  "arv": {
+   "arv": 265000.0,
+   "arv_high": 290000.0,
+   "arv_low": 240000.0,
+   "comps": [
+    "344 Rockwood Ln, Clinton AR: sold $250,000, 2025-26 (exact date not shown), 4bd/2ba, 1,860 sqft",
+    "7403 Highway 110, Clinton AR: sold $225,000, Jun 8 2026, 3bd/1ba, 1,893 sqft",
+    "1139 Fayes Forest Rd, Clinton AR: sold $239,000, Aug 2026, sqft not shown",
+    "6643 Hwy 95 W, Clinton AR: sold $260,000, Sep 4 2024, rural acreage, sqft not shown",
+    "544 Fraser St, Clinton AR: sold $265,000, Jan 2025, 4bd/3ba, 2,363 sqft"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1350.0,
+   "reasoning": "The subject is a 2002-built 3 bed/2 bath house of about 1,630 sqft on 7.76 acres; it sold for $167K in 2017 and was most recently listed by a retail agent at $299,900. Similar updated rural homes in Clinton have sold for about $225K\u2013$265K, and I added a small amount for the acreage while staying conservative, so my estimate is about $265K (range $240K\u2013$290K)."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "a7a7047aa8a44c2f": {
+  "arv": {
+   "arv": 38000.0,
+   "arv_high": 75000.0,
+   "arv_low": 15000.0,
+   "comps": [
+    "Lot 73 Block 4 Dave Creek Pkwy, Fairfield Bay AR \u2013 $2,000 \u2013 sold 9/8/2025 \u2013 ~0.28 ac",
+    "Lot 151R Grand Isle Dr, Fairfield Bay AR \u2013 $16,500 \u2013 sold 8/8/2025 \u2013 premium lot",
+    "0000 Dave Creek, Fairfield Bay AR \u2013 $28,500 \u2013 sold 3/12/2026 \u2013 13,503 sf lot (premium)",
+    "Interior Fairfield Bay lots listed at $950\u2013$2,500 each (Hummingbird Rd, Robinhood Trl, Cedar Valley Rd) \u2013 active 2025-26 \u2013 ~0.28 ac",
+    "Lot 58/59 Mockingbird Rd, Fairfield Bay AR \u2013 $1,500 list \u2013 0.5 ac"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I haven't confirmed where these lots are, but S27 T12N R12W with ~38 small parcels looks like a Fairfield Bay/Shirley-area resort subdivision, where interior lots sell or list for about $1,000\u2013$2,500 each. Assuming roughly $1,000 per lot to allow for bulk sale, slow selling, POA dues and possibly unbuildable lots gives about $38k, and the true value per lot could range from almost nothing to a few thousand dollars."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "ab2a5a5092d7968a": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 8000.0,
+   "arv_low": 500.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the acreage, owner record, or any sold comps tied to this parcel online. The location (S4 T11N R12W, near Fairfield Bay and Greers Ferry Lake) and the very small tax-delinquent opening bid ($192.71) suggest a small rural or subdivision lot, which in that area often sells for about $500\u2013$8,000, so this is a cautious placeholder until the acreage and road access are checked with the county assessor or GIS."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "b00e14376481cd12": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "600-03163-000 (nearby Fairfield Bay lot, Cleburne Co.), sold at Arkansas COSL tax auction for $150, recent, sqft N/A",
+    "600-03240-000 (Fairfield Bay area lot, Cleburne Co.), sold at COSL tax auction for $300, recent, sqft N/A",
+    "600-02708-000 (Cleburne Co.), sold at COSL tax auction for $500, recent, sqft N/A"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "County records list this as a vacant residential lot (Lot 88, Block 3, East Ridge Heights, Fairfield Bay, 307 Grand Isle Dr) inside the Fairfield Bay Community Club POA. Nearby lots sold at tax auction for only $150 to $300, and Fairfield Bay has hundreds of lots for sale that carry POA dues, so I value it conservatively at about $2,000 as land; I found no retail sold comps, so confidence is low."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "b46a62f974055292": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 750.0,
+   "comps": [
+    "Lot 58/59 Mockingbird Rd, Fairfield Bay AR - $1,500 asking, ~0.5 ac (listing, not a sale)",
+    "73 Dave Creek Pkwy, Fairfield Bay AR - $2,500 asking, 0.31 ac (listing)",
+    "Lot 201 Blk 1 E Blue Ridge Terrace, Fairfield Bay AR - $2,500 asking, 0.25 ac (listing)",
+    "Parcel 600-04353-000 Sunnyside Ave, Fairfield Bay AR - sold for $1,499, 0.25 ac (date unknown)",
+    "Grenada Cir Lot 149, Fairfield Bay AR - $7,900 asking, 0.33 ac with water access (upper bound)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This parcel is a vacant residential lot at 307 Grand Isle Dr (Indian Hills Addition, Fairfield Bay POA, likely about 0.25\u20130.33 ac). Nearby Fairfield Bay interior lots usually list for $1,500\u2013$2,500, and one sold for about $1,500, so I'm valuing it at around $2,000; mandatory POA dues and any unpaid assessments weigh on resale, and it can't be rented as vacant land."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "b765cd635548e2f5": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Lot 33-34 Blk 7 Woodlawn Dr, Indian Hills, Fairfield Bay AR - $8,000 sold 11/21/2025, double lot ~34,412 sqft (0.79 ac), sold 47% below list",
+    "Lot 10 Blk 15 Fern Trail, Indian Hills, Fairfield Bay AR (Van Buren Co side) - sold, price not disclosed, 0.24 ac (~10,450 sqft)",
+    "0 Sycamore St, Indian Hills, Fairfield Bay AR - $3,500 asking (active listing, not a sale), single wooded lot, sqft not listed",
+    "Subject county assessor estimated market value: $2,000 (land only)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "County records list this parcel as a vacant residential lot in the Indian Hills subdivision of Fairfield Bay, with an assessed market value of about $2,000; the only recent nearby sale I found was an $8,000 double lot, and single lots are listed for around $3,500. These lots are oversupplied and slow to sell, and the property owners' association (POA) dues lower their value, so I'm conservatively valuing it at about $2,000 as land and couldn't estimate a rent."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "c974e07ceae3f741": {
+  "arv": {
+   "arv": 185000.0,
+   "arv_high": 225000.0,
+   "arv_low": 150000.0,
+   "comps": [
+    "Tbd Kentucky Ave, West Plains (subject?): 4.13 ac commercial land, listed at $225,000, about 762 days on market (active listing, not a sale)",
+    "000 Kentucky/63 Hwy, West Plains: 3.98 ac land, listed at $275,000 (active listing, not a sale)",
+    "000 Kentucky/63 Hwy, West Plains: 3.5 ac land, listed at $250,000 (active listing, not a sale)",
+    "000 Kentucky Ave, West Plains: 1.62 ac land, listed at $129,900 (active listing, not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This appears to be about 4.13 acres of vacant commercial land on Kentucky Ave near US-63, so I valued it as land, but the only nearby comparisons I found are other asking prices of about $63k-$80k per acre, not completed sales. The $225k asking price has gone unsold for about two years, so I applied a conservative discount to about $45k per acre, which gives roughly $185k."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "ca6f8b83813da5b7": {
+  "arv": {
+   "arv": 310000.0,
+   "arv_high": 340000.0,
+   "arv_low": 280000.0,
+   "comps": [
+    "Subject listing: 12210 County Rd 8390, West Plains \u2013 72 ac of pasture and timber, first listed at $349,900 and now asking $321,200 (asking prices, not sales)",
+    "000 County Rd 8390, West Plains \u2013 369 ac of pasture with river frontage, asking $1,790,000 (about $4,850/ac, asking price only)",
+    "Howell County land sales overall: median about $7,900/ac across 227 sold records, per Acres.com (smaller tracts push this number up)",
+    "Howell County land listings: median asking price about $5,917/ac, per Land.com",
+    "0000 County Rd 3810, West Plains \u2013 rural acreage asking $4,800/ac"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The subject looks like the 72-acre pasture and timber tract at 12210 County Rd 8390, so it is valued as land: about $4,000\u20134,700/ac fits large rural tracts in Howell County, and the asking price has already been cut from $349,900 to $321,200. Confidence is low because no closed sales of similar tracts were found, only asking prices and county-wide averages, and rent is left null because this is raw land."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "dfd752af5fe7ae92": {
+  "arv": {
+   "arv": 265000.0,
+   "arv_high": 290000.0,
+   "arv_low": 245000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": 1850.0,
+   "reasoning": "I confirmed the subject but my search limit ran out before I found any sold comps, so I have no verified sales to list. Listings show it as a 4-bed, 3-bath split-level with a fireplace, about 1,900-1,970 sq ft (not the 2,061 given), on a large fenced cul-de-sac lot in Southern Hills (65804); this conservative ARV is a judgment estimate assuming updated split-levels there sell for about $125-$140 per sq ft."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "e505b52a2bdec95f": {
+  "arv": {
+   "arv": 525000.0,
+   "arv_high": 575000.0,
+   "arv_low": 480000.0,
+   "comps": [
+    "2136 W Koryton Dr, Nixa (Hunting Hollow): 5 bed/4 bath, 3,200 sqft, about 3 acres, built 1994. No recent sale found; public-record valuation about $466K",
+    "2131 W Koryton Dr, Nixa: 4 bed/4.5 bath, 5,011 sqft, 4 acres. Listed for sale by owner at $725K; not a closed sale",
+    "2155 W Koryton Dr, Nixa: 4 bed/4 bath, 4,800 sqft, built 1989. Last sold 3/2019 (price not shown); Zestimate about $806K",
+    "Listing data for the subject: 4 bed/3 bath, 3,478 sqft, MLS 60335255, list price $500K"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2800.0,
+   "reasoning": "Listing data shows the subject is a 4 bed/3 bath, 3,478 sqft home on an acreage lot in Hunting Hollow, not the 2 bed/2 bath in the input. With no recent closed sales found (search was cut short by a tool limit), I applied about $140-165/sqft based on nearby Koryton valuations and listings, giving a conservative ARV of about $525K (range $480K-$575K)."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "e802407276f793f7": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Lot 95 Mountain Ranch Dr, Fairfield Bay, AR: listed for sale at $2,500 (active listing, not a sale), 0.26 ac",
+    "Lot 61 Cedar Valley Rd, Fairfield Bay, AR: listed for sale at $2,500 (active listing, not a sale), 0.25 ac",
+    "Lot 58/59 Mockingbird Rd, Fairfield Bay, AR: listed for sale at $1,500 (active listing, not a sale), 2 lots",
+    "Lot 50 Lakeview Dr, Fairfield Bay, AR: listed for sale at $15,000 (active listing, not a sale), premium lake-area lot",
+    "Lot 51 Block 18 Canterbury Dr, Fairfield Bay, AR: sold, price/date not found, wooded residential lot"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Records show parcel 600-03769-000 as a vacant residential lot in Fairfield Bay held by the Fairfield Bay Community Club POA. I found no sold prices, so this estimate rests on asking prices, which are usually higher than sale prices: with 130-170 lot listings in town, ordinary interior lots ask about $1,500-$2,500, and the POA dues that come with each lot hold values down, so I used a conservative $2,000."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "f145f2280d792149": {
+  "arv": {
+   "arv": 170000.0,
+   "arv_high": 190000.0,
+   "arv_low": 155000.0,
+   "comps": [
+    "319 S Division St, Bonne Terre \u2013 $205,000 sold (date unverified, last ~12 mo), 2bd/2ba, 1,038 sf",
+    "212 A St, Bonne Terre \u2013 ~$154,000 (last list price), sold Dec 12 2025, 2bd/1.5ba, 864 sf",
+    "233 Saint Michael St, Bonne Terre \u2013 ~$150,000 (last list price), sold Dec 8 2025, 2bd/1ba, 910 sf",
+    "205 N B St, Bonne Terre \u2013 $174,900 sold (date unverified, recent), 2bd/1ba, 825 sf",
+    "112 S Pine St, Bonne Terre \u2013 $189,900 sold (date unverified, recent), 3bd/2ba, 1,160 sf"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1150.0,
+   "reasoning": "An earlier listing describes this home as an updated 3bd/2ba of about 1,210 sf priced at $164,900, which doesn't match the 2bd/999 sf in the input, so the size needs checking. Small updated in-town homes in Bonne Terre have recently sold for about $150k\u2013$205k, so I used a conservative ARV of $170k; the dates on several comps and the rent estimate were not confirmed."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ }
+}
