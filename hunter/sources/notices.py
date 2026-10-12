@@ -38,8 +38,13 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int) -> list[
             _set_days(page, days)
             _submit(page)
         after = snapshot(page)
-        log.info("after search: %s\n%s\nlinks: %s", page.url, after.text[:2000].replace("\n", " / "),
-                 [h for _, h in after.links][:40])
+        log.info("after search: %s\n%s", page.url, after.text[:600].replace("\n", " / "))
+        log.info("result item html: %s", page.evaluate("""() => {
+          const v = [...document.querySelectorAll('a, input, button')].find(e => /^view$/i.test((e.value || e.textContent || '').trim()));
+          if (!v) return 'no view control';
+          let box = v; for (let i = 0; i < 4 && box.parentElement; i++) box = box.parentElement;
+          return box.outerHTML.slice(0, 3000);
+        }""").replace("\n", " "))
         found: list[str] = []
         for _ in range(10):  # result pages
             snap = snapshot(page)
