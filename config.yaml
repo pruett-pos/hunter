@@ -55,8 +55,9 @@ sources:
     name: Fannie Mae HomePath
     kind: page
     deal_type: reo_bank
-    urls:
-      - https://homepath.fanniemae.com/listing?location=West%20Plains%2C%20MO&radius=100
+    # HomePath is a single-page app; Hunter types the town into its search box.
+    search_text: West Plains, MO
+    urls: ["https://homepath.fanniemae.com/"]
   - id: usda
     name: USDA Rural Development resales
     kind: page
@@ -64,11 +65,15 @@ sources:
     urls:
       - https://properties.sc.egov.usda.gov/resales/public/searchSFH?state=MO
       - https://properties.sc.egov.usda.gov/resales/public/searchSFH?state=AR
+      - https://www.resales.usda.gov/resales/public/searchSFH?state=MO
+      - https://www.resales.usda.gov/resales/public/searchSFH?state=AR
   - id: vrm
     name: VA REO (VRM)
     kind: page
     deal_type: reo_va
-    urls: ["https://listings.vrmco.com/search?state=MO", "https://listings.vrmco.com/search?state=AR"]
+    urls:
+      - https://vrmproperties.com/Properties-For-Sale?state=MO&currentPage=1
+      - https://vrmproperties.com/Properties-For-Sale?state=AR&currentPage=1
   - id: auction_com
     name: Auction.com
     kind: page

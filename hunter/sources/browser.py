@@ -46,10 +46,14 @@ def snapshot(page, url: str | None = None) -> Page:
     return Page(url=page.url, text=text, links=[(t, urljoin(base, h)) for t, h in links if h])
 
 
-def load(ctx, url: str, wait_ms: int = 2500) -> Page:
+def load(ctx, url: str, wait_ms: int = 2500, search_text: str | None = None) -> Page:
     page = ctx.new_page()
     try:
         page.goto(url, wait_until="domcontentloaded")
+        if search_text:
+            box = page.locator("input[type=search], input[type=text]").first
+            box.fill(search_text, timeout=10_000)
+            box.press("Enter")
         try:
             page.wait_for_load_state("networkidle", timeout=15_000)
         except Exception:

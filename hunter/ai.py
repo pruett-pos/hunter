@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import json
 import logging
+import os
+import re
 
 import anthropic
 
@@ -33,7 +35,7 @@ basis, return arv null with confidence low. Be conservative."""
 class Claude:
     def __init__(self, cfg: dict, client: anthropic.Anthropic | None = None):
         self.cfg = cfg
-        self.client = client or anthropic.Anthropic()
+        self.client = client or anthropic.Anthropic(api_key=api_key_from_env())
 
     def _create(self, **kw):
         resp = self.client.beta.messages.create(
@@ -95,6 +97,15 @@ class Claude:
                 return ArvEstimate.model_validate_json(_text(resp))
             messages = messages[:1] + [{"role": "assistant", "content": resp.content}]
         raise RuntimeError("ARV search did not finish")
+
+
+def api_key_from_env() -> str | None:
+    """Read the key even if extra text (like a pasted curl example) came along with it."""
+    raw = os.environ.get("ANTHROPIC_API_KEY", "")
+    m = re.search(r"sk-ant-[A-Za-z0-9_\-]+", raw)
+    if m and m.group(0) != raw.strip():
+        log.warning("ANTHROPIC_API_KEY secret has extra text around the key; using just the key")
+    return m.group(0) if m else (raw.strip() or None)
 
 
 def _text(resp) -> str:

@@ -44,3 +44,11 @@ def test_extract_and_arv_requests():
     assert first["output_config"]["format"]["type"] == "json_schema"
     assert msgs.calls[1]["tools"][0]["type"] == "web_search_20260209"
     assert msgs.calls[2]["messages"][1]["role"] == "assistant"  # resumed after pause_turn
+
+
+def test_api_key_pulled_from_pasted_curl(monkeypatch):
+    from hunter.ai import api_key_from_env
+    monkeypatch.setenv("ANTHROPIC_API_KEY", 'curl https://api.anthropic.com/v1/messages \\\n --header "x-api-key: sk-ant-api03-AbC_d-123" \\\n --data \'{}\'')
+    assert api_key_from_env() == "sk-ant-api03-AbC_d-123"
+    monkeypatch.setenv("ANTHROPIC_API_KEY", " sk-ant-xyz \n")
+    assert api_key_from_env() == "sk-ant-xyz"

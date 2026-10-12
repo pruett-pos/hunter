@@ -44,12 +44,18 @@ def collect(cfg: Config, debug_dir: Path | None = None) -> tuple[list[RawPage], 
 
 
 def _pages(ctx, src: dict) -> list[RawPage]:
-    out = []
+    out, errors = [], []
     for url in src["urls"]:
-        page = browser.load(ctx, url)
-        if len(page.text.strip()) < 200:
-            raise RuntimeError(f"page looked empty: {url}")
-        out.append(RawPage(src["id"], src.get("deal_type"), page))
+        try:
+            page = browser.load(ctx, url, search_text=src.get("search_text"))
+            if len(page.text.strip()) < 200:
+                raise RuntimeError("page looked empty")
+            log.info("%s %s -> %s\n%s", src["id"], url, page.url, page.text[:800])
+            out.append(RawPage(src["id"], src.get("deal_type"), page))
+        except Exception as e:
+            errors.append(f"{url}: {str(e).splitlines()[0][:120]}")
+    if not out:
+        raise RuntimeError("; ".join(errors))
     return out
 
 

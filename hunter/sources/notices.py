@@ -15,6 +15,24 @@ from .browser import Page, snapshot
 log = logging.getLogger(__name__)
 
 DETAIL_RE = re.compile(r"Details\.aspx\?", re.I)
+OPTIONAL_MS = 5_000
+
+
+def _try(fn) -> None:
+    """Run an optional form step; skip it if the control is missing or hidden."""
+    try:
+        fn()
+    except Exception as e:
+        log.info("optional step skipped: %s", str(e).splitlines()[0])
+
+
+def describe_form(page) -> str:
+    """Short list of the page's form controls, for the run log when a search fails."""
+    return page.eval_on_selector_all(
+        "input, select, button, label",
+        "els => els.slice(0, 80).map(e => `${e.tagName}#${e.id || ''}[${e.type || ''}]` + "
+        "`'${(e.innerText || e.value || '').trim().slice(0, 30)}'`).join(' | ')",
+    )
 
 
 def search(ctx, url: str, keyword: str, counties: list[str], days: int) -> list[str]:
@@ -23,6 +41,7 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int) -> list[
     try:
         page.goto(url, wait_until="domcontentloaded")
         page.wait_for_timeout(1500)
+        log.info("search form: %s", describe_form(page)[:1500])
         _fill_keyword(page, keyword)
         _tick_counties(page, counties)
         _set_days(page, days)
@@ -53,9 +72,7 @@ def _fill_keyword(page, keyword: str) -> None:
     if not box.count():
         box = page.locator("input[type=text]").first
     box.fill(keyword)
-    exact = page.get_by_label(re.compile("Exact Phrase", re.I))
-    if exact.count():
-        exact.first.check()
+    _try(lambda: page.get_by_label(re.compile("Exact Phrase", re.I)).first.check(timeout=OPTIONAL_MS, force=True))
 
 
 def _tick_counties(page, counties: list[str]) -> None:
@@ -72,22 +89,21 @@ def _tick_counties(page, counties: list[str]) -> None:
         box = page.get_by_label(re.compile(rf"^\s*{re.escape(county)}\s*$", re.I))
         if box.count():
             try:
-                box.first.check()
+                box.first.check(timeout=OPTIONAL_MS, force=True)
                 ticked += 1
             except Exception as e:  # hidden or detached
                 log.debug("could not tick %s: %s", county, e)
     log.info("ticked %d/%d counties", ticked, len(counties))
     if ticked == 0:
+        log.warning("form controls seen: %s", describe_form(page))
         raise RuntimeError("no county checkboxes found; search form changed?")
 
 
 def _set_days(page, days: int) -> None:
-    radio = page.get_by_label(re.compile("In the last", re.I))
-    if radio.count():
-        radio.first.check()
+    _try(lambda: page.get_by_label(re.compile("In the last", re.I)).first.check(timeout=OPTIONAL_MS, force=True))
     num = page.locator("input[type=text][id*='Days'], input[type=text][id*='LastNum']")
     if num.count():
-        num.first.fill(str(days))
+        _try(lambda: num.first.fill(str(days), timeout=OPTIONAL_MS))
 
 
 def _submit(page) -> None:
