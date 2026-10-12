@@ -15,6 +15,7 @@ opening lines and a link) as a lead for a person to open.
 from __future__ import annotations
 
 import datetime as dt
+import hashlib
 import logging
 import re
 from urllib.parse import parse_qs, urljoin, urlsplit
@@ -100,7 +101,9 @@ def _lead(page_url: str, row: dict) -> dict:
     parts = urlsplit(full)
     notice_id = parse_qs(parts.query).get("ID", [""])[0]
     url = f"{parts.scheme}://{parts.netloc}/Details.aspx?ID={notice_id}" if notice_id else full
-    return {"id": f"notice:{parts.netloc}:{notice_id or full}", "url": url, "county": row["county"],
+    # Papers rerun a notice weekly under new IDs; key on its wording so each sale is reported once.
+    key = hashlib.sha1(f"{row['county']}|{row['snippet'][:250]}".lower().encode()).hexdigest()[:16]
+    return {"id": f"notice:{parts.netloc}:{key}", "url": url, "county": row["county"],
             "date": row["date"], "paper": row["paper"], "snippet": row["snippet"]}
 
 
