@@ -30,8 +30,8 @@ def describe_form(page) -> str:
     """Short list of the page's form controls, for the run log when a search fails."""
     return page.eval_on_selector_all(
         "input, select, button, label",
-        "els => els.slice(0, 80).map(e => `${e.tagName}#${e.id || ''}[${e.type || ''}]` + "
-        "`'${(e.innerText || e.value || '').trim().slice(0, 30)}'`).join(' | ')",
+        "els => els.filter(e => e.type !== 'hidden').slice(0, 80).map(e => `${e.tagName}#${e.id || ''}[${e.type || ''}]` + "
+        "`'${(e.innerText || e.value || '').replace(/\\s+/g, ' ').trim().slice(0, 30)}'`).join(' | ')",
     )
 
 
@@ -75,25 +75,27 @@ def _fill_keyword(page, keyword: str) -> None:
     _try(lambda: page.get_by_label(re.compile("Exact Phrase", re.I)).first.check(timeout=OPTIONAL_MS, force=True))
 
 
+TICK_JS = """(names) => {
+  const want = new Set(names.map(n => n.toLowerCase()));
+  const seen = []; let n = 0;
+  for (const cb of document.querySelectorAll('input[type=checkbox]')) {
+    let t = '';
+    if (cb.id) { const l = document.querySelector(`label[for="${cb.id}"]`); if (l) t = l.textContent; }
+    if (!t && cb.nextSibling) t = cb.nextSibling.textContent || '';
+    if (!t && cb.parentElement) t = cb.parentElement.textContent || '';
+    t = t.replace(/\\s+/g, ' ').trim().toLowerCase();
+    seen.push(t);
+    if (want.has(t)) { cb.checked = true; n++; }
+  }
+  return [n, seen.length, seen.slice(0, 15)];
+}"""
+
+
 def _tick_counties(page, counties: list[str]) -> None:
-    # Filter panels are often collapsed; open the County one if there is a toggle.
-    toggle = page.get_by_text(re.compile(r"^\s*County\s*$", re.I))
-    if toggle.count():
-        try:
-            toggle.first.click()
-            page.wait_for_timeout(500)
-        except Exception:
-            pass
-    ticked = 0
-    for county in counties:
-        box = page.get_by_label(re.compile(rf"^\s*{re.escape(county)}\s*$", re.I))
-        if box.count():
-            try:
-                box.first.check(timeout=OPTIONAL_MS, force=True)
-                ticked += 1
-            except Exception as e:  # hidden or detached
-                log.debug("could not tick %s: %s", county, e)
-    log.info("ticked %d/%d counties", ticked, len(counties))
+    # The county list sits in a collapsed panel, so set the boxes directly
+    # instead of clicking them; the form posts checked boxes either way.
+    ticked, total, sample = page.evaluate(TICK_JS, counties)
+    log.info("ticked %d/%d counties (%d checkboxes on page, e.g. %s)", ticked, len(counties), total, sample)
     if ticked == 0:
         log.warning("form controls seen: %s", describe_form(page))
         raise RuntimeError("no county checkboxes found; search form changed?")

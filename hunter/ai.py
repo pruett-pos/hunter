@@ -18,7 +18,8 @@ CHUNK_CHARS = 60_000
 EXTRACT_SYSTEM = """You read real-estate web pages and legal notices and pull out properties for sale.
 Return every property you find, but only residential or residential-usable land
 (houses, mobile homes, multi-family, lots/acreage). Skip vehicles, equipment and
-personal property. Use only facts on the page; leave a field null when the page
+personal property. Return one entry per property or parcel; never group
+several parcels into one entry. Use only facts on the page; leave a field null when the page
 does not say. Counties must be the county name only (e.g. "Howell").
 When the text holds several notices marked "=== NOTICE url: ... ===", set each
 property's url to the url of the notice it came from."""

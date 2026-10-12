@@ -9,6 +9,11 @@ radius_miles: 100
 # Keep deals priced at or below this share of the estimated after-repair value.
 max_price_to_arv: 0.50
 
+# Land (lots, acreage) goes in its own email section. Skip parcels worth less
+# than this, and show at most this many per email.
+min_land_value: 10000
+max_land_in_email: 10
+
 email:
   to: al@aaqualityroofing.com
   subject_prefix: "Hunter deals"

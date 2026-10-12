@@ -80,7 +80,9 @@ def main() -> None:
                         args.max_arv if args.max_arv is not None else int(cfg.claude["max_arv_per_run"]))
     store.add(deals)
 
-    subject, body = report.build(deals, status, today)
+    subject, body = report.build(deals, status, today,
+                                 min_land_arv=float(cfg.raw.get("min_land_value", 10_000)),
+                                 max_land=int(cfg.raw.get("max_land_in_email", 10)))
     (ROOT / "data" / "last_report.html").write_text(body)
     log.info("report: %s", subject)
     if not args.no_email and os.environ.get("SMTP_USER"):

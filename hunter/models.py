@@ -51,7 +51,7 @@ class Deal(BaseModel):
     source: str
     listing: Listing
     arv: Optional[ArvEstimate] = None
-    status: Literal["deal", "watch", "too_expensive", "no_arv", "out_of_area"] = "no_arv"
+    status: Literal["deal", "land_deal", "watch", "too_expensive", "no_arv", "out_of_area"] = "no_arv"
     max_offer: Optional[float] = None
     first_seen: str = ""
 

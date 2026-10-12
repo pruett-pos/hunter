@@ -90,3 +90,15 @@ def test_report_build():
     subject, body = report.build(deals, {"HUD Home Store": "ok"}, "2026-10-12")
     assert subject.startswith("1 deal, 1 auction to watch")
     assert "123 Elm St" in body and "$60,000" in body and "7 Pine" in body
+
+
+def test_land_goes_to_its_own_section():
+    arv = ArvEstimate(arv=30_000, confidence="low", reasoning="x")
+    tiny = ArvEstimate(arv=2_000, confidence="low", reasoning="x")
+    land = classify(Deal(id="l", source="cosl", listing=L(deal_type="tax_sale", property_type="land", price=500), arv=arv), 0.5)
+    scrap = classify(Deal(id="s", source="cosl", listing=L(address="Parcel 9", deal_type="tax_sale", property_type="vacant lot", price=74), arv=tiny), 0.5)
+    home = classify(Deal(id="h", source="cosl", listing=L(address="8 Ash", property_type="mobile home on land", price=5000), arv=arv), 0.5)
+    assert (land.status, scrap.status, home.status) == ("land_deal", "land_deal", "deal")
+    subject, body = report.build([land, scrap, home], {}, "2026-10-14")
+    assert subject.startswith("1 deal,") and "Land under 50% of value" in body
+    assert "Parcel 9" not in body
