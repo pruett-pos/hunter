@@ -18,6 +18,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "03e1c1e7c0dd9c9b": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 3000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Briar Hollow Dr, Fairfield Bay AR - 0.22 ac residential lot, listed $950 (active listing, LandWatch)",
+    "Hummingbird Rd, Fairfield Bay AR - 0.29 ac water-view lot, listed $999 cash (active listing, Land.com)",
+    "Net Dr, Fairfield Bay AR - about 0.25 ac homesite near the tennis courts (active listing, LandFlip, price not captured)",
+    "Lakewood Lot 155 Blk 21, Sec 4 T11N R12W, Fairfield Bay - state land post-auction sale for about $198 (COSL, 2020)",
+    "Fairfield Bay area 1 ac lot listed at $15,900/ac (Homes.com, upper bound)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't confirm this exact parcel, but Sec 4 T11N R12W falls in Fairfield Bay's Lakewood/Indian Hills subdivisions, and the low opening bid suggests a typical small platted lot that likely carries Fairfield Bay Community Club POA dues and liens. Similar small lots there are listed at about $950-$999 and often resell for very little at state auctions, so I'm conservatively estimating about $1,500 (range $500-$3,000), with no rent value."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
  "0f62e7bfe61d167d": {
   "arv": {
    "arv": 30000.0,
@@ -61,6 +80,66 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "2ec9b4f0953aebdd": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 8000.0,
+   "arv_low": 500.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the acreage, assessed value, or any sold comps for this parcel online. My estimate is an inference: the $154 opening bid and the township location (T12N R12W, near Fairfield Bay and Shirley) suggest a small vacant subdivision lot, and lots like that around Fairfield Bay usually sell for about $500 to $8,000, so I'm conservatively valuing it near the low end until the county assessor confirms its size, access, and assessed value."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "3d010796e4b5cd1e": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 5000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "226 Lakeview Dr, Fairfield Bay AR (Van Buren Co) \u2013 lot listed at $2,250, under 1 acre (active listing, not a sale)",
+    "Lot 138 Oak Park Ln, Fairfield Bay AR \u2013 0.29 ac lot listed at $4,500 (active listing)",
+    "Fairfield Bay 0.26 ac residential lot \u2013 sold through LandCentral, price not shown",
+    "Lot 61 Cedar Valley Rd, Fairfield Bay AR \u2013 lot listing, price not shown"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the acreage or any public record for this parcel, but its location (Sec 27 T12N R12W) and the $154 opening bid point to a small lot in or near Fairfield Bay, where lots under half an acre are listed for about $2,000\u2013$5,000 and often sell for less because of HOA dues. I'm using conservative small-lot land value with low confidence, and you should check the parcel's acreage, access, and any HOA liens with the Van Buren County assessor before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "3dc46e30f677a277": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 6000.0,
+   "arv_low": 500.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find this parcel's acreage, the specific sale records nearby, or any verified sold comps; Regrid confirms Van Buren County publishes parcel data, but nothing for this parcel came up. The $154.34 opening bid points to a small, low-value lot, and I'm guessing from location, without having checked it, that Sec 27 T12N R12W sits near Fairfield Bay/Shirley, where small lots often sell for about $500\u2013$6,000, so treat this as a rough guess only and confirm acreage, access, and HOA dues with the county assessor before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "4e6fb3eff94fa226": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 6000.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "0.31 ac lot, Indian Hills SD, Fairfield Bay (Sec 10 T11N R12W) \u2013 active listing on farmandranch.com, price not confirmed",
+    "0.30 ac wooded lot near Fairfield Bay/Mountain View \u2013 active listing on Homes.com, price not confirmed"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Sec 27 T12N R12W falls in or next to the Fairfield Bay subdivision area, and a $154 opening bid points to a small subdivision lot of about 0.25\u20130.5 ac. I found no closed sales or acreage for this parcel, so the ARV is a conservative guess based on typical Fairfield Bay interior lot prices of about $1k\u2013$6k; check the county assessor record and road and utility access before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
  },
  "53217a4aa3716bb1": {
   "arv": {
@@ -180,6 +259,37 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "87bea66cc97b8149": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 6000.0,
+   "arv_low": 1000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "State land records show this parcel as a vacant residential lot (Lot 4, Block 1, Grand Isle subdivision, 307 Grand Isle Dr, Fairfield Bay), but I found no sold lot comps before hitting my search limit, so this value is an estimate. It assumes typical Fairfield Bay interior lot prices of about $1,000\u2013$6,000, which are kept low by the many lots for sale and the yearly property-owners' association dues; check whether the lot is close to the lake, whether it has utilities, and whether any dues are unpaid before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "87c8681a4f533537": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 7500.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "Lot 25 Dave Creek Pkwy, Fairfield Bay AR \u2013 listed $4,500, 0.07 ac (active listing, not a sale)",
+    "Lot 65 Blk 4 Dave Creek Pkwy, Fairfield Bay AR \u2013 listed $7,500, lot (active listing, not a sale)",
+    "Lot 33-34 Blk 7 Woodlawn Dr (Indian Hills), Fairfield Bay AR \u2013 recently sold at about $10,127/ac, 34,412 sq ft (~0.79 ac); exact price and date not confirmed",
+    "Shirley AR, address withheld \u2013 listed $27,500, 1.93 ac (active listing; a larger tract, shown for the upper bound only)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't confirm the parcel's size or legal description. Sec 27 T12N R12W appears to be near Fairfield Bay/Shirley, and the $154 opening bid suggests a small, low-value subdivision lot, so I valued it as a lot based on Fairfield Bay lot prices, which are mostly asking prices running about $2.5k\u2013$10k, and set the estimate at the conservative low end."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
  "8f65d6b9a4862925": {
   "arv": {
    "arv": 315000.0,
@@ -198,6 +308,54 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "903be17beab4724c": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 6000.0,
+   "arv_low": 1000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find any record of this parcel online, so its acreage, road access and exact location are unconfirmed, and I found no sold comps. Sec 27 T12N R12W should be in the Fairfield Bay/Greers Ferry Lake area, and the $161.68 opening bid fits a small subdivision lot, which I'd expect to resell for roughly $1,000\u2013$6,000 (not verified with sales data), so this is a rough, conservative land-only estimate."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "987bce392240a2f3": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Briar Hollow Dr, Fairfield Bay AR 72088 \u2013 0.22 ac lot listed at $950 (LandWatch, current listing, not a sale)",
+    "Address withheld, Fairfield Bay AR 72088 \u2013 0.25 ac lot listed at $69,000 (Coldwell Banker, likely a lake/view premium lot, current listing)",
+    "000 Porter Rd, Shirley AR \u2013 10 ac listed at $50,000 (LandWatch, current listing)",
+    "Van Buren County average asking price is about $9,243/acre across 5,225 listed acres (LandSearch)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the parcel's acreage or a record online, and I found no sold comps; every figure above is an asking price. Sec 27 T12N R12W appears to be in the Fairfield Bay/Shirley area, and the $154 opening bid points to a small, low-assessed subdivision lot, which often sells for about $500\u2013$3,000 there, so I'm valuing it as a basic interior lot ($1,500) until the county assessor confirms acreage, access, and any POA dues."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "98decfeca6f2d483": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 3000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Cleburne County 2026 state-land auction: parcel 600-03163-000 sold for $150 (nearby Fairfield Bay lot; size not listed)",
+    "Cleburne County 2026 state-land auction: parcel 600-03240-000 sold for $300 (lot not described)",
+    "Cleburne County 2026 state-land auction: parcel 600-02708-000 sold for $500 (lot not described)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Public records show this parcel is a small vacant residential lot in Fairfield Bay, inside the Fairfield Bay Community Club POA (listed as Lot 4, Block 1, Grand Isle Addition, though one source gives a different subdivision). I couldn't find any retail sold comps, so this estimate leans on nearby lots that sold at the same state auction for $150\u2013$500 and on rough asking prices for POA interior lots, which are pulled down by ongoing POA dues; check the acreage, POA dues owed and access before you bid."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
  },
  "98f10cf47c496596": {
   "arv": {
@@ -218,6 +376,22 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "9a3116712157e263": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 8000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Fairfield Bay-area subdivision lots: Van Buren County COSL tax-sale lots, many 0-acre platted lots in T11N R12W subdivisions such as Glen View and Chelsea Glade; final prices and dates not confirmed",
+    "Lot 335-336 Woodlawn Dr, Fairfield Bay, AR: about 0.86 acre, asking $12,000\u2013$44,950 (active listing, not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the acreage, legal lot description, or any sold comp for this parcel. Its $169 opening bid and location in Sec 27 T12N R12W, just north of the Fairfield Bay subdivisions, suggest it is probably a small platted subdivision lot, so I valued it like the many delinquent Fairfield Bay-area lots, which tend to sell for a few hundred to a few thousand dollars, and the range should be checked against the county assessor's record."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
  "9f9c9b1966f726fb": {
   "arv": {
    "arv": 265000.0,
@@ -236,6 +410,35 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "a0826f6ffb2f819e": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "No verified sold comps found. Market context: interior Fairfield Bay subdivision lots (Indian Hills and similar) without lake or golf frontage usually sell for about $500\u2013$3,000, based on general market knowledge, not sales pulled for this report",
+    "Subject: 307 Grand Isle Dr, Fairfield Bay (Indian Hills Addn, Blk 009 / Lot 351), residential vacant lot, acreage N/A, state-certified tax parcel"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Public records show the parcel is a vacant residential lot at 307 Grand Isle Dr in Fairfield Bay's Indian Hills subdivision, an area full of interior lots that sell for little because buyers inherit POA dues and there are far more lots than demand. I found no verified sold comps, so I valued it conservatively at about $1,500 (range $500\u2013$4,000); check unpaid POA dues and title issues before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "a3ce9ea54544ec73": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 6000.0,
+   "arv_low": 1000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The parcel is a vacant residential lot (Lot 82, Block 12) in the Indian Hills subdivision of Fairfield Bay. I couldn't confirm any sold comps before my search limit ran out, so this value isn't backed by recent sales; based on general knowledge, interior lots like this often sell for low single-digit thousands, held down by heavy lot supply and POA dues."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
  },
  "a7a7047aa8a44c2f": {
   "arv": {
@@ -286,6 +489,37 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "b230a0db75e0e24d": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 5000.0,
+   "arv_low": 1000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Records show this parcel is a state-held vacant residential lot at Blue Jay Way and Locust Dr, likely in the Fairfield Bay subdivision area (Sec 11 T11N R12W). I couldn't verify sold comps, so this conservative land value is based on general market knowledge that interior subdivision lots there usually sell for about $1,000\u2013$5,000, and the tiny opening bid points to a small, low-value lot."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "b2677a007e534f72": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 5000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Lot 95 Mountain Ranch Dr, Fairfield Bay, AR 72088: $2,500 asking price (active listing on Trulia, not a sale), 0.26 acres, date not given",
+    "LOT 126&127 Castle Ridge Hts, Fairfield Bay, AR 72088: price not captured; Zillow listing on market about 418 days, which suggests slow lot demand",
+    "Lot 58/59 area, 0.30 acres near Fairfield Bay / Mountain View: asking price not captured (Homes.com listing)",
+    "Market context: about 140-172 lot and land listings in Fairfield Bay (Zillow/Trulia), mostly small subdivision lots asking roughly $1,500-$5,000"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the parcel's acreage or road access. Based on the low $154 opening bid and its location (Sec 27 T12N R12W, near Fairfield Bay and Shirley), it is probably a small, tax-delinquent subdivision lot, and those have a heavily oversupplied market with active listings mostly asking about $1,500-$5,000. I found no closed sales, only listings, so I valued it conservatively at about $2,000; check the acreage and access with the Van Buren County Assessor before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
  "b46a62f974055292": {
   "arv": {
    "arv": 2000.0,
@@ -322,6 +556,19 @@
   },
   "first_seen": "2026-10-12",
   "status": "deal"
+ },
+ "c0b43498bb284df7": {
+  "arv": {
+   "arv": 4000.0,
+   "arv_high": 8000.0,
+   "arv_low": 1500.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the acreage, the parcel record or any sold comps for this parcel, so this is a rough, conservative estimate. The $161.68 opening bid likely covers a few years of back taxes plus fees, which suggests a small or subdivision-type lot in the T12N R12W area (roughly between Clinton and Fairfield Bay) with an assessed market value of about $3,000\u20136,000; check the size and access on the county GIS before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
  },
  "c974e07ceae3f741": {
   "arv": {
@@ -360,6 +607,36 @@
   "first_seen": "2026-10-12",
   "status": "too_expensive"
  },
+ "d2009a10a5c46749": {
+  "arv": {
+   "arv": 6000.0,
+   "arv_high": 12000.0,
+   "arv_low": 3000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "A 2022 Commissioner of State Lands sale list appears to match this parcel to Lot 1, Block 4, Unit 6 of the Holiday Island Addition (about 0.752 acres), but the listing text was jumbled, so that match is not certain. I found no sold comparables before hitting the search limit, so this conservative land value is based on my general knowledge that vacant Holiday Island lots, which carry POA dues and are often tax-delinquent, usually sell for low single to low double-digit thousands."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "df9094347891daa5": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "No verified sold comps found; COSL/DataScout records show this parcel is Lot 351, Block 009, Indian Hills Addition, Fairfield Bay (307 Grand Isle Dr), vacant residential, acreage not listed",
+    "Neighboring parcel 600-03768-000 (Indian Hills, Fairfield Bay): also a state-held vacant residential lot; no sale price found",
+    "COSL post-sale results: Fairfield Bay Indian Hills lots (e.g., Lot 346, Block 009) were offered at roughly $73 opening bids; at least one went to Fairfield Bay Community Club POA"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This parcel is an ordinary vacant lot in the Fairfield Bay POA subdivision. Lots like this usually sell for only a few hundred to a few thousand dollars because there are so many of them and POA dues and assessments come with ownership, so I used a conservative, unverified estimate of about $2,000 and no rent."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
  "dfd752af5fe7ae92": {
   "arv": {
    "arv": 265000.0,
@@ -372,6 +649,22 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "e0d0e5855aa8325c": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 4000.0,
+   "arv_low": 300.0,
+   "comps": [
+    "600-03775-000 (adjacent parcel, Cleburne Co. COSL tax auction) sold for $150 at auction, acreage not listed",
+    "Fairfield Bay Indian Hills subdivision lots (Sec 11 T11N R12W) show up again and again in COSL tax sales; I found no recorded market sale prices"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Public records list this parcel as a vacant residential lot (shown as 0 acres) that appears to sit in the Indian Hills subdivision of Fairfield Bay, which carries Fairfield Bay Community Club POA dues and liens; the neighboring parcel sold for only $150 at tax auction, and lots like this rarely sell for more than a few thousand dollars on the open market. I could not find any sold market comps, so the $1,500 value is a conservative estimate based on the auction result and the lot's POA burden, not on comparable sales."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
  },
  "e505b52a2bdec95f": {
   "arv": {
@@ -410,6 +703,39 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "e98961faa95682a1": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 7500.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "Lot 65 Block 4, Dave Creek Pkwy, Fairfield Bay AR - listed $7,500 (asking price, not a sale; date and size unknown)",
+    "120 Cedar Valley Rd Lot 586, Fairfield Bay AR - active lot listing (price, date and size unconfirmed)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Sec 27 T12N R12W appears to be in the Fairfield Bay/Shirley area, where small subdivision lots often list for about $1,000\u2013$7,500, and the $154 opening bid suggests a small, low-value lot; I could not confirm the parcel's size, its access or any recorded sales. This is a land-only estimate based on asking prices, and the value could be lower if the lot carries owners' association dues or has poor access or terrain, so confidence is low."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "ebc7345d51235fec": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Hummingbird Rd, Fairfield Bay AR \u2013 0.29 ac water-view residential lot, listed (not sold) at $999 cash (land.com)",
+    "0.30 ac treed lot near Fairfield Bay/Mountain View AR \u2013 listing on Homes.com, price not shown",
+    "Address withheld, Fairfield Bay AR 72088 \u2013 0.25 ac lot, listed (not sold) at $69,000 (premium lot, upper outlier)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the parcel's acreage, and I found no confirmed sales, only current listings. My best guess is that it's a small vacant subdivision lot, likely in the Fairfield Bay area (Sec 27 T12N R12W), because of the $154 opening bid and the township/range; in that area, ordinary interior lots are listed for about $500\u2013$4,000, with lake-view or premium lots much higher, so check the county assessor for the acreage and any POA dues before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
  "f145f2280d792149": {
   "arv": {
    "arv": 170000.0,
@@ -428,5 +754,69 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "f6170134bc693e76": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 5000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Hummingbird Rd, Fairfield Bay, AR 72088 \u2013 0.29 ac lot, listed at $950 (active listing on Zillow, not a sale)",
+    "Fairfield Bay, AR \u2013 about 172 lot/land listings on Zillow, many interior lots listed at roughly $1K\u2013$10K (not sales)",
+    "Lot 50 Lakeview Dr / Lot 81 Hilltop Dr, Fairfield Bay \u2013 listed on land.com in the $10K\u2013$50K price band; these are premium or view lots (asking prices)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The listing doesn't give acreage or the parcel's exact location, but a $154 opening bid and the Sec 27 T12N R12W location suggest a small, likely interior lot in or near the Fairfield Bay subdivision. Those lots have an oversupplied market, often sell for under $1K\u2013$5K and carry POA dues, so I valued it conservatively at about $2K; this rests on list prices rather than confirmed sales, so verify the acreage, access and POA status before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "f6f1a5526a91e016": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 6000.0,
+   "arv_low": 1000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Public records (DataScout/COSL) list parcel 600-03670-000 as a residential vacant lot in Sec 11 T11N R12W. That puts it in western Cleburne County near Greers Ferry/Higden, and the very low ~$74 opening bid points to a small, low-assessed lot; similar small vacant lots in that area typically sell for about $1,000\u2013$6,000, but I found no parcel-specific acreage, access details or verified sold comps, so this is a conservative guess."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "fa31f784e33c6533": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 8000.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "0.30-acre wooded lot near Fairfield Bay/Mountain View, Van Buren Co. AR \u2013 active listing on Homes.com, low price range (asking price only, not a sale)",
+    "Lot 49 Mustang Dr, Clinton, AR \u2013 active listing on Land.com in the $10K\u2013$50K band (asking price only)",
+    "1.93 ac, Shirley, AR 72153 \u2013 $27,500 asking (MLS 26027573, active, not sold)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't confirm the parcel's acreage, frontage or access. The very low opening bid ($161.68) suggests a small, low-assessed parcel, likely a subdivision-type lot in the Shirley/Fairfield Bay/Clinton area, where small lots typically sell for about $1K\u2013$8K and asking prices for larger tracts don't apply, so I used a conservative $3,000 ARV that should be checked against the assessor's record for size and access before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "fc84dbb7068956c5": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 7500.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Lot 25 Dave Creek Pkwy, Fairfield Bay AR \u2013 listed $4,500, 0.07-0.15 ac (asking price, not a sale; date unknown)",
+    "Lot 65 Blk 4 Dave Creek Pkwy, Fairfield Bay AR \u2013 listed $7,500, small lot (asking price, not a sale; date unknown)",
+    "Lots 33-34 Blk 7 Woodlawn Dr, Indian Hills, Fairfield Bay AR \u2013 sold at about $10,127/ac, 34,412 sqft (~$8,000; date unknown)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the acreage or exact location for this parcel. Based on the very low $154 opening bid and the Sec 27 T12N R12W location, I'm guessing it's a small subdivision lot near Fairfield Bay or Shirley. Small interior lots like this there typically ask $1,000-$7,500 and often sell for less, so I put a conservative land-only value at about $2,500, with no rent estimate."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
  }
 }
