@@ -40,17 +40,9 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int) -> list[
         after = snapshot(page)
         log.info("after search: %s\n%s", page.url, after.text[:600].replace("\n", " / "))
         log.info("result item html: %s", page.evaluate("""() => {
-          const out = [];
-          for (const e of document.querySelectorAll('a, input, button, img, span')) {
-            const t = [e.value, e.title, e.alt, e.textContent, e.getAttribute('onclick'), e.getAttribute('href')].join(' ');
-            if (/view/i.test(t) && (e.textContent || '').length < 60) out.push(e.outerHTML.slice(0, 400));
-            if (out.length >= 6) break;
-          }
-          const snip = [...document.querySelectorAll('td, div, span, p')].find(e => /click 'view'/i.test(e.textContent) && e.textContent.length < 1500);
-          let box = snip; for (let i = 0; i < 3 && box && box.parentElement; i++) box = box.parentElement;
-          out.push('ITEM: ' + (box ? box.outerHTML.slice(0, 2500) : 'none'));
-          return out.join(' || ');
-        }""").replace("\n", " "))
+          const rows = document.querySelectorAll('table.wsResultsGrid > tbody > tr');
+          return [...rows].slice(1, 3).map(r => r.outerHTML.replace(/\\s+/g, ' ').slice(0, 2500)).join(' ||| ');
+        }"""))
         found: list[str] = []
         for _ in range(10):  # result pages
             snap = snapshot(page)
