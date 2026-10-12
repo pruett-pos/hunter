@@ -50,6 +50,43 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "11f2a3f968ef3791": {
+  "arv": {
+   "arv": 165000.0,
+   "arv_high": 180000.0,
+   "arv_low": 150000.0,
+   "comps": [
+    "1209 Holly St, Jonesboro AR 72401 - sold $161,500 (MLS 25015243, 2025, updated 3/2) - 1,801 sqft",
+    "1209 Holly St (earlier listing, MLS 25002395) - listed $189,900, did not sell at that price - 1,801 sqft",
+    "1106 Holly St, Jonesboro AR 72401 - est. value ~$145,258 (not sold) - 1,678 sqft",
+    "Holly St median home value ~$123,700 across 30 properties (Homes.com)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1350.0,
+   "reasoning": "The best comp is 1209 Holly St, an updated 3-bed, 2-bath home of 1,801 sqft on the same street that sold for $161,500 (about $90/sqft) in 2025, after an earlier $189,900 listing. At that rate this 1,838 sqft home comes to about $165k after repair, but I only found one true sold comp and the street median is much lower, so treat this estimate with caution."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "21e6b428f6201711": {
+  "arv": {
+   "arv": 180000.0,
+   "arv_high": 205000.0,
+   "arv_low": 160000.0,
+   "comps": [
+    "104 Church St, Bay AR \u2013 $164,900 sold Nov 28 2025, 3bd/2ba, 1,321 sf (~$125/sf)",
+    "217 Forrest St, Bay AR \u2013 $38,500 sold (distressed, same street), 3bd/2ba, 1,568 sf",
+    "389 County Road 635, Bay AR \u2013 $58,000 sold Jun 26 2025, 3bd/2ba, 1,461 sf (distressed)",
+    "700 S Bay Dr, Bay AR \u2013 $219,000 active list, 4bd/2ba, ~1,662 sf",
+    "107 Terra Dr, Bay AR \u2013 $149,900 active list, 4bd/1.5ba, 1,386 sf"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "Recent retail sales of updated homes in Bay closed at about $124\u2013151/sf, while distressed sales, including one on the same street, went for $40/sf or less. I conservatively applied about $105/sf to the 1,709 sf for an ARV near $180k, but this is low confidence because there were only a few verified sold comps and the 217 Forrest St sale date I found looks wrong."
+  },
+  "first_seen": "2026-10-12",
+  "status": "watch"
+ },
  "244bd5e855e6fe58": {
   "arv": {
    "arv": 3000.0,
@@ -94,6 +131,57 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "3116e6f54826f611": {
+  "arv": {
+   "arv": 130000.0,
+   "arv_high": 150000.0,
+   "arv_low": 110000.0,
+   "comps": [
+    "Subject: 107 County Rd 4433, Boss, MO. Zillow shows about $140,000 (probably a Zestimate, not a sale), 3bd/1ba, 1,344 sqft",
+    "13435 Hwy KK, Boss, MO: active listing at $139,900 (not sold), 1bd/2ba, 792 sqft",
+    "Salem, MO (Coldwell Banker): active 3bd/1ba listing at $165,000 (not sold), 1,277 sqft",
+    "368 County Rd 5280, Boss, MO: sold Sep 2020 after being listed at $92,000, 2bd/1ba, 1,120 sqft (sale is old)",
+    "235 County Rd 4410, Boss, MO: Redfin estimate $68,173 (not a sale), 798 sqft"
+   ],
+   "confidence": "low",
+   "monthly_rent": 950.0,
+   "reasoning": "I couldn't find any verified sold comps from the last 12 months for rural Boss, so this estimate leans on Zillow's roughly $140K figure for the subject and on active 3bd/1ba listings in Salem at $165K\u2013170K, discounted for Boss's remote rural location. To stay conservative I set the ARV at about $130K, roughly $97 per sqft."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "31f016b3b75dcc50": {
+  "arv": {
+   "arv": 115000.0,
+   "arv_high": 135000.0,
+   "arv_low": 95000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": 875.0,
+   "reasoning": "I couldn't pull any verified sold comps because the web search limit ran out, so this is a conservative estimate. It assumes updated 2-bed, 1-bath rural homes of about 1,100 sq ft in northeast Greene County, near Cardwell, MO, sell for roughly $95\u2013135k, and notes that this property's earlier listing at about $70k and the $60k opening bid suggest its current condition is poor."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "35d4fcdbb7380980": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 178000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "150 Bobbye Ln, Batesville AR 72501: sold for $165,000 on 3/21/2025, 1,296 sqft, 3 bed/2 bath ($127/sqft)",
+    "184 Stone Flag Rd, Batesville AR 72501: recently sold (MLS 24-363), 1,604 sqft, built 2015. I couldn't find the sale price.",
+    "188 Stone Flag, Batesville AR 72501: active listing at $218,500 (was $222,000), 1,496 sqft, 3 bed/2 bath, built 2018 ($146/sqft). Not a closed sale.",
+    "171 Stone Flag Rd, Batesville AR 72501: listed at $230,000 and went pending 5/31/2025, 1,886 sqft, 3 bed/2.5 bath, built 2018 ($122/sqft)",
+    "194 Stone Flag Rd, Batesville AR 72501: listed at $224,500, 3 bed/2 bath, 0.4 acre. Not a closed sale."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1250.0,
+   "reasoning": "Newer homes on Stone Flag Rd (Riverwoods Estates) are listed or pending at about $122\u2013146 per sqft, and the one confirmed nearby sale (150 Bobbye Ln) closed at $127 per sqft, so I applied a conservative ~$140 per sqft to the smaller 1,140 sqft, 1.5-bath subject to get about $160K. Confidence is low because most of these are asking prices rather than verified sales, I couldn't confirm the subject's year built or condition, and the rent figure is my estimate, not based on rental comps."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
  "3d010796e4b5cd1e": {
   "arv": {
    "arv": 2000.0,
@@ -124,6 +212,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "4b4400fd9a564d6d": {
+  "arv": {
+   "arv": 195000.0,
+   "arv_high": 212000.0,
+   "arv_low": 175000.0,
+   "comps": [
+    "1736 Westwood Cv (same cul-de-sac), Jonesboro AR \u2013 $169,900 \u2013 sold 7/13/2023 \u2013 1,512 sqft, 4bd/1.5ba, remodeled (relisted at $185,000 in Nov 2024)",
+    "1917 Westwood Dr, Jonesboro AR \u2013 $182,500 \u2013 sold 7/14/2022 \u2013 1,957 sqft, 4bd/2ba (Redfin now estimates about $205K)",
+    "1915 Westwood Dr, Jonesboro AR \u2013 $160,000 \u2013 sold 8/1/2022 \u2013 1,734 sqft, 3bd/2.5ba townhouse",
+    "1509 Brookhaven Rd, Jonesboro AR \u2013 $100,000 \u2013 sold 10/7/2024 \u2013 1,080 sqft, 3bd/1ba",
+    "Subject was previously listed at $172,900; Redfin estimates it at about $207.7K, and RealtyHop estimates about $204K"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1450.0,
+   "reasoning": "I could only find older sales on the subject's street and in the Brookhaven/Briarwood area: a remodeled 1,512 sqft home on the same cul-de-sac sold for $169.9K in 2023, and a 1,957 sqft home nearby sold for $182.5K in 2022. Recent neighborhood sales average about $108\u2013120 per sqft, which works out to about $200\u2013220K for 1,849 sqft, and online estimates put the subject at $204\u2013208K, so I took a conservative ARV of $195K, but I did not find any directly comparable sales from the last 12 months."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
  },
  "4e6fb3eff94fa226": {
   "arv": {
@@ -209,6 +316,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "6939dce4fbcd2f3c": {
+  "arv": {
+   "arv": 82000.0,
+   "arv_high": 100000.0,
+   "arv_low": 65000.0,
+   "comps": [
+    "512 Wayne St, Trumann AR \u2013 $59,688 \u2013 sold 2/24/2026 \u2013 936 sqft (3bd/1ba, average condition)",
+    "30521 Pratt, Trumann AR \u2013 $57,000 \u2013 sold 3/11/2026 \u2013 1,180 sqft (2bd/1ba)",
+    "1205 3rd St, Trumann AR \u2013 $116,000 \u2013 sold early 2026 \u2013 sqft unknown (3bd/2ba)",
+    "708 Dwight St, Trumann AR \u2013 $187,500 \u2013 sold 2/27/2026 \u2013 1,308 sqft (3bd/2ba, well kept, upper bound)",
+    "412 Olive St, Trumann AR \u2013 $9,000 \u2013 sold 2026 \u2013 1,028 sqft (1ba, distressed, same older core area)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 750.0,
+   "reasoning": "Small 1-bath homes of about 900\u20131,200 sqft in Trumann's older core near Oak, Olive and Maple St sold for $57\u201360k in average condition, and larger renovated 3/2 homes sold for $116k to $187k, so a fully updated 904 sqft 1-bath house here reasonably tops out around $80\u201385k. I couldn't confirm the subject's bedroom count or condition, and the area has many distressed and low-value sales, so I set confidence to low and kept the estimate conservative."
+  },
+  "first_seen": "2026-10-12",
+  "status": "watch"
+ },
  "6b9d7be2c33c1838": {
   "arv": {
    "arv": 228000.0,
@@ -226,6 +352,62 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "73f997ae9ce86a78": {
+  "arv": {
+   "arv": 225000.0,
+   "arv_high": 240000.0,
+   "arv_low": 205000.0,
+   "comps": [
+    "874 W Pearl St, Bolivar MO (subject) \u2013 previously listed at $234,900, 3bd/2ba, 1,374 sqft (asking price; sale and date not confirmed)",
+    "1505 S Sunset Ave, Bolivar MO \u2013 $262,500 asking, 3bd/2ba (active listing, sqft not confirmed)",
+    "2215 W Colgate St, Bolivar MO \u2013 $179,900 asking, 3bd/2ba (active listing)",
+    "410 N Wilson Ave, Bolivar MO \u2013 $184,000 asking, 3bd/2ba (active listing)",
+    "1816 S Hedgewood Dr, Bolivar MO \u2013 $229,900 asking, 3bd/2ba (active listing)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "I couldn't find confirmed sold comps. The estimate rests on the subject's earlier $234,900 list price and current Bolivar asking prices of about $180k\u2013$262k for 3-bed, 2-bath homes. Nearby Pearl St homes built in 1995\u20132002 with about 1,200 sqft support a conservative ARV of about $225k, which leaves little spread over the $176k opening bid."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "7618ef7bec25644d": {
+  "arv": {
+   "arv": 180000.0,
+   "arv_high": 195000.0,
+   "arv_low": 165000.0,
+   "comps": [
+    "86 Swaying Oak Dr, Gassville AR (subject) - sold $170,000, Nov 21, 2024, 1,220 sqft, 3bd/2ba, listed as move-in ready ($139/sf)",
+    "320 Magness Dr, Gassville AR - sold $203,000, May 19, 2025, 1,320 sqft, 3bd/2ba, built 2006 ($154/sf)",
+    "620 Pine St, Gassville AR - listed at $209,900 (sale not confirmed), 1,359 sqft, 3bd/2ba, fully renovated, built 1994",
+    "404 Travelers Way, Gassville AR - listed at $200,000 (active, not a sale), 1,100 sqft, 3bd/2ba"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1250.0,
+   "reasoning": "The subject house itself sold move-in ready for $170K ($139/sf) in Nov 2024, and online estimates are about $175-178K. Nearby updated 3bd/2ba Gassville homes sold or are listed at $150-155/sf, so I used about $147/sf (roughly $180K), a conservative figure because only one other closed sale could be confirmed."
+  },
+  "first_seen": "2026-10-12",
+  "status": "watch"
+ },
+ "7b59e9173a489274": {
+  "arv": {
+   "arv": 200000.0,
+   "arv_high": 230000.0,
+   "arv_low": 175000.0,
+   "comps": [
+    "40214 Ken Ln, Campbell MO (subject) - listed at $189,900, sold Mar 9 2022 (price not disclosed), 2,297 sqft per MLS, 2.7 ac, brick, shop with living quarters; Redfin estimate about $223k-$251k",
+    "39907 Billy Blvd, Campbell MO - 3bd/2ba, 2,517 sqft, 0.79 ac, sold Apr 5 2021 (price not shown); Trulia estimate about $183k",
+    "16627 US Hwy 62, Campbell MO - 3bd/2ba, 2,405 sqft, 5.65 ac, sold 2020 (price not shown); Trulia estimate about $277k",
+    "39988 Billy Blvd, Campbell MO - 3bd/2ba, 1,735 sqft, active listing at $189,900 after a $39k price drop",
+    "39325 State Hwy 53, Campbell MO - 3bd/2ba, 1,165 sqft, active listing at $138,000"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1200.0,
+   "reasoning": "Public listings show the subject as a 1977 brick home of 2,297 sqft (not 1,347) on 2.7 acres with a shop, and it was listed at $189,900 before its 2022 sale. My search tool hit its limit before I could get recent sold prices, so this conservative $200k ARV is based on the 2022 list price, Redfin and Trulia estimates and current Campbell asking prices, which is why confidence is low."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
  },
  "7f387ee86ae13b38": {
   "arv": {
@@ -290,6 +472,44 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "87f8dc051208ffa9": {
+  "arv": {
+   "arv": 150000.0,
+   "arv_high": 170000.0,
+   "arv_low": 130000.0,
+   "comps": [
+    "1014 Sassafras St, Willow Springs MO - sold Apr 21, 2026 - 3bd/2ba, 1,758 sqft - sale price not found",
+    "512 N Grand St, Willow Springs MO - sold Apr 17, 2026 - 3bd/2ba, 1,496 sqft - sale price not found",
+    "1029 N Center St, Willow Springs MO - recently sold - 4bd/2ba, 2,108 sqft - sale price not found",
+    "758 Highway 137, Willow Springs MO - sold May 8, 2026 - 3bd/2ba, 1,201 sqft - sale price not found",
+    "1024 N Ferguson, Willow Springs MO - active listing at $135,000 - 3bd/2ba, 1,360 sqft (not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1100.0,
+   "reasoning": "I found recent in-town sales of 3-bed, 2-bath homes near this size but no sale prices, so this estimate leans on active listings (for example a 1,360 sqft 3/2 at $135k) and typical Willow Springs prices of roughly $85-95 per sqft for updated homes. The subject was listed at $179,900 and later cut to $84,900 without selling, and it is now a bank sale with a $40k opening bid, so I kept the ARV conservative at about $150k."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "8ea399f2c799b866": {
+  "arv": {
+   "arv": 215000.0,
+   "arv_high": 240000.0,
+   "arv_low": 195000.0,
+   "comps": [
+    "Subject 3457 W Lombard St \u2013 recently listed for $211,000 (MLS 60313738); earlier listings at $270,000 and $194,500; 1,400 sqft, built 1989, 1.82 acres",
+    "5462 W Lombard St, Springfield 65802 \u2013 sold 5/8/2026, price not found, 1,468 sqft, 3 bed/2 bath",
+    "3247 W Lombard St, Springfield 65802 \u2013 listed for $190,000, 1,557 sqft, 3 bed/2 bath, built 2007",
+    "2931 W Grand St, Springfield 65802 \u2013 sold for about $167,500 on 7/10/2026, 960 sqft, 3 bed/1 bath, built 1987 ($174/sqft)",
+    "2551 W Grand St, Springfield 65802 \u2013 listed for $135,000 (investor condition), 968 sqft, 3 bed/2 bath"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1500.0,
+   "reasoning": "West-side Springfield 3 bed/2 bath homes of about 1,400\u20131,550 sqft list and sell for roughly $165\u2013215k ($145\u2013175/sqft), and the subject's rare 1.82-acre corner lot in the city adds some value. My searches ran out before I could confirm comp sale prices, and the subject's own listing history ($270k down to $194.5k and $211k) suggests a conservative updated value of about $215k."
+  },
+  "first_seen": "2026-10-12",
+  "status": "watch"
+ },
  "8f65d6b9a4862925": {
   "arv": {
    "arv": 315000.0,
@@ -321,6 +541,24 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "938ae71e092a9a2b": {
+  "arv": {
+   "arv": 85000.0,
+   "arv_high": 100000.0,
+   "arv_low": 70000.0,
+   "comps": [
+    "315 S Park Ln, Dexter MO: active listing at $112,000, 2bd/1ba, 884 sqft, updated bungalow (asking price, not a sale)",
+    "109 S Catalpa St (subject): earlier listing at $78,500 (also seen at $74,900), 2bd/1ba, 916 sqft, built 1930 (date unknown)",
+    "203 N Nelson Ave, Dexter MO: pending at $29,900, 2bd/1ba, 852 sqft, distressed (shows as-is value range)",
+    "Dexter market: about 144 homes sold in the last 12 months, median sale price about $165,000 (mostly larger 3-bed homes)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 750.0,
+   "reasoning": "I couldn't confirm any closed 2bd/1ba sales near 900 sqft in Dexter because my searches hit a limit, so this estimate is based on active, pending and earlier asking prices, not sold comps. The subject was listed before at $74.9k\u2013$78.5k and an updated 884 sqft bungalow is asking $112k, so a conservative ARV for this 1930 house after repairs is about $85k, and it previously rented for $600, with about $750 likely after updates."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
  },
  "987bce392240a2f3": {
   "arv": {
@@ -392,6 +630,24 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "9b9348c8a6c48806": {
+  "arv": {
+   "arv": 180000.0,
+   "arv_high": 205000.0,
+   "arv_low": 155000.0,
+   "comps": [
+    "905 Grayson St (subject), Paragould AR \u2013 $149,000, sold 3/29/2023, 5bd/2ba, 2,520 sqft",
+    "400 W Poplar St, Paragould AR \u2013 $211,500, sold 7/29/2025, 5bd/3ba, 3,016 sqft ($70/sqft)",
+    "901 Grayson St, Paragould AR (next door) \u2013 $79,000, sold 4/13/2020 remodeled, 4bd/2ba, 1,716 sqft (dated)",
+    "Paragould citywide median sale price about $176,900 in June 2025, about $115\u2013123/sqft"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1400.0,
+   "reasoning": "The subject sold in livable condition for $149K in 2023. A large older 5-bed in Paragould sold in 2025 at about $70/sqft ($211.5K), and online estimates for the subject run from $150K to $188K, so I'm using a conservative, renovated value of about $71/sqft, or roughly $180K, with low confidence because I found few recent 5-bed sales in the same size range."
+  },
+  "first_seen": "2026-10-12",
+  "status": "watch"
+ },
  "9f9c9b1966f726fb": {
   "arv": {
    "arv": 265000.0,
@@ -423,6 +679,19 @@
    "confidence": "low",
    "monthly_rent": null,
    "reasoning": "Public records show the parcel is a vacant residential lot at 307 Grand Isle Dr in Fairfield Bay's Indian Hills subdivision, an area full of interior lots that sell for little because buyers inherit POA dues and there are far more lots than demand. I found no verified sold comps, so I valued it conservatively at about $1,500 (range $500\u2013$4,000); check unpaid POA dues and title issues before bidding."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "a32722bef29d28de": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 8000.0,
+   "arv_low": 1000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't find the parcel's acreage or any recent sold comps, so this figure has little support: the $154 opening bid points to a small, low-assessed lot or tract, and Sec 27 T12N R12W appears to fall near the Fairfield Bay / upper Greers Ferry Lake area, where vacant subdivision lots often sell for only a few thousand dollars. My conservative guess is about $3,000, but check the acreage, road access and any POA dues or liens with the Van Buren County assessor/GIS or the Commissioner of State Lands before bidding."
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
@@ -459,6 +728,44 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "a96afe8c6783f9ce": {
+  "arv": {
+   "arv": 135000.0,
+   "arv_high": 155000.0,
+   "arv_low": 115000.0,
+   "comps": [
+    "7 CR 137, Corning AR: $100,000, sold May 2024, 1,480 sqft, 3 bed/2 bath",
+    "172 County Road 137, Corning AR: $188,000, sold May 2024, 2,036 sqft",
+    "712 Vine St, Corning AR: $95,000, sold May 2024, 1,536 sqft, 3 bed/2 bath",
+    "1203 US 67, Corning AR: $97,000, sold Apr 2024, 1,302 sqft, 3 bed, brick with metal roof",
+    "Subject: 287 CR 147 sold for $125,000 in Sep 2020, about 1,568-1,596 sqft, built 1999, about 2 acres (Zillow estimate about $153.7K)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1050.0,
+   "reasoning": "Corning sales are thin, but recent rural 3 bed/2 bath homes of 1,300-2,000 sqft on county roads sold for about $65-92 per sqft. Updated, this 1999 home on about 2 acres comes to roughly $85 per sqft, or about $135K, which is below Zillow's $153.7K estimate. Confidence is low because most comps are from 2024 and the home's condition is unknown."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "a9769b523fec7597": {
+  "arv": {
+   "arv": 150000.0,
+   "arv_high": 162000.0,
+   "arv_low": 135000.0,
+   "comps": [
+    "2124 Timberwood Ct, Lebanon MO (the subject property): $115,000, sold Sep 22, 2022, 1,344 sqft, 3 bed/2 bath",
+    "2125 Timberwood Ct, Lebanon MO: listed at $154,900, sale pending (date not found), 1,344 sqft, 3 bed/2 bath, built 1997, 0.32 acres",
+    "2141 Timberwood Ct, Lebanon MO: list price $139,900, sold May 23, 2024, 1,456 sqft, 4 bed/2 bath (final sale price not shown)",
+    "30568 Pelican Dr, Lebanon MO: manufactured home, sold Sep 9, 2024 (price not shown), 1,440 sqft, 3 bed/2 bath, about 1 acre",
+    "2116 Timberwood Ct, Lebanon MO: Zillow estimate $151,400 (not a sale), 1,040 sqft, 3 bed/2 bath, built 1999"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1150.0,
+   "reasoning": "The house across the street, an identical 1997 model with 1,344 sqft, went pending at $154,900, and a 1,456 sqft 4-bed home on the same court was listed at $139,900 before selling in May 2024. Since this property sold for $115k in 2022 and appears to be a late-1990s home (possibly manufactured, which limits upside), a fully updated ARV of about $150k is a conservative estimate, with market rent around $1,100\u20131,200 a month."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
  "ab2a5a5092d7968a": {
   "arv": {
    "arv": 2500.0,
@@ -485,6 +792,25 @@
    "confidence": "low",
    "monthly_rent": null,
    "reasoning": "County records list this as a vacant residential lot (Lot 88, Block 3, East Ridge Heights, Fairfield Bay, 307 Grand Isle Dr) inside the Fairfield Bay Community Club POA. Nearby lots sold at tax auction for only $150 to $300, and Fairfield Bay has hundreds of lots for sale that carry POA dues, so I value it conservatively at about $2,000 as land; I found no retail sold comps, so confidence is low."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "b0cdb1aecf1509ae": {
+  "arv": {
+   "arv": 135000.0,
+   "arv_high": 155000.0,
+   "arv_low": 115000.0,
+   "comps": [
+    "1066 Midway Rd area, Hoxie AR - recent sale, 1,212 sqft, about $128/sqft (~$155k), date not confirmed",
+    "100 NW Randolph, Hoxie AR - 3bd/2ba, 1,247 sqft, $149,000 (listing price, status/date not confirmed)",
+    "1813 SE Front St, Hoxie AR - 3bd/2ba, 1,359 sqft, $192,000 asking (active listing, not a sale)",
+    "406 Circle Dr, Hoxie AR - 3bd/2ba, 1,280 sqft, $207,500 asking (active listing, not a sale)",
+    "Subject 302 SW Broad St - earlier REO list price $110,000 (shown as 2bd/2ba, 1,300 sqft), as-is"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1000.0,
+   "reasoning": "I couldn't confirm specific recent Hoxie sales. Over the last 12 months, the median sale price there was about $115k\u2013117k, one updated home sold at about $128/sqft, and remodeled 3bd/2ba homes are asking $149k\u2013207k, so I valued the 1,341 sqft subject conservatively at about $100/sqft, or roughly $135k. The subject was listed earlier at $110k as a bank-owned home in as-is condition, and the rent figure is a rough estimate for a small-town 3bd/2ba, so confidence is low."
   },
   "first_seen": "2026-10-12",
   "status": "deal"
@@ -557,6 +883,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "b9f7c6e3adfe3b5e": {
+  "arv": {
+   "arv": 125000.0,
+   "arv_high": 135000.0,
+   "arv_low": 110000.0,
+   "comps": [
+    "174 Highway 9 Spur, Melbourne AR (the subject property): sold $129,900, 8/30/2022, 1,084 sqft",
+    "174 AR 9 Spur Hwy, Melbourne AR (the subject property): listed for sale in 2025 at $127,900\u2013$139,900 after updates, 1,084 sqft (asking price only; sale not confirmed)",
+    "206 Vines Dr, Melbourne AR: 3 bed/2 bath, sold $110,000, 5/29/2024, 1,280 sqft",
+    "424 School St, Melbourne AR: 3 bed/2 bath, listed at $129,900 (asking price only), 1,144 sqft",
+    "147 Winfree Ln, Melbourne AR: 3 bed/2 bath, listed at $139,900 (asking price only), sqft unknown"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 900.0,
+   "reasoning": "The subject is a 1,084 sqft 3/2 built in 2002. It sold remodeled for $129,900 in 2022 and was relisted in 2025 at $127,900\u2013$139,900 (it apparently didn't sell), while 206 Vines Dr, a 3/2, sold for $110,000 in 2024 and Redfin puts Melbourne's recent median sale price at about $120K, down year over year. That supports a conservative ARV of about $125K, but there are few recent closed comps, so the value is held near the bottom of the subject's own asking range."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
  "c0b43498bb284df7": {
   "arv": {
    "arv": 4000.0,
@@ -620,6 +965,80 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "d275c28667413758": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Lot 58/59 Mockingbird Rd, Fairfield Bay AR \u2013 listed at $1,500 (asking price, double lot, current Homes.com listing)",
+    "Lot #44 Cedar Valley Rd, Fairfield Bay AR \u2013 listed at $2,000 (asking price, current listing)",
+    "Lot 92 Dave Creek Pkwy, Fairfield Bay AR \u2013 listed at $5,000 (asking price, current listing)",
+    "Lot 81 Hilltop Dr, Fairfield Bay AR \u2013 listed at $10,000 (asking price, 0.23 ac, current listing)",
+    "Oak Ridge Addition Blk 2 lots (27-12N-12W), many on the 9/9/2026 COSL tax sale \u2013 opening bids about $138 each (not sales)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This parcel looks like one of many small interior lots in the Oak Ridge Addition subdivision of Fairfield Bay, which is run by a property owners' association (POA). Dozens of lots in the same block are going to the state tax sale, and around 170 Fairfield Bay lots are listed for sale, often at $1,500\u2013$5,000 asking prices. Because of that oversupply and the ongoing POA dues, I'm valuing it conservatively at about $1,500, and I couldn't find any confirmed recent sale prices."
+  },
+  "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "d2b07d81ccb90925": {
+  "arv": {
+   "arv": 195000.0,
+   "arv_high": 220000.0,
+   "arv_low": 170000.0,
+   "comps": [
+    "1448 AR Hwy 175, Hardy, AR (subject): Redfin estimate $197,005. Not a sale. Listed as 3bd/1.5ba, 1,512 sqft",
+    "1598 AR Hwy 175, Hardy, AR: Redfin estimate $310,806. Not a sale. 1,620 sqft, built 1984, on 40 acres, so the land inflates the value",
+    "1588 AR Hwy 175, Hardy, AR: Redfin estimate $664,001. Not a sale. 1,976 sqft, probably large acreage, so not comparable"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1200.0,
+   "reasoning": "I couldn't find any verified sales from the last 12 months because I hit the search limit, so this value rests on Redfin's automated estimate of about $197K for the subject (listed there as 1.5 baths, not 2). I also used general Hardy-area pricing of roughly $115\u2013145/sqft for updated 3-bed, 2-bath homes around 1,500 sqft, with a conservative discount for a rural highway location and an unknown lot size, so check real sold comps before relying on it."
+  },
+  "first_seen": "2026-10-12",
+  "status": "watch"
+ },
+ "d54b663dfcdf66b3": {
+  "arv": {
+   "arv": 140000.0,
+   "arv_high": 155000.0,
+   "arv_low": 120000.0,
+   "comps": [
+    "713 E Locust St (subject) \u2013 sold 11/20/2018 fully updated, listed at $92,000, 1,140 sf; recently relisted on the MLS at $114,900\u2013$114,999 as a 2bd/1ba with an attached garage on 0.33 ac",
+    "713 E Locust St (subject) \u2013 Zestimate $152,300, rent Zestimate $1,094 (AVM, not a sale)",
+    "1305 W Locust St, Bolivar \u2013 recently sold, about $189,900 (~$140/sf), 1,356 sf, built 1989 (newer and larger; upper bound)",
+    "918 E Locust St, Bolivar \u2013 bank-owned (REO) sale via Auction.com, 2bd/1ba, 707 sf (price not shown)",
+    "1019 W Jackson St, Bolivar \u2013 sold 3/16/2026, $65,000 last list price (as-is low end)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1075.0,
+   "reasoning": "I couldn't find closed sales of similar 2\u20133 bed, 1 bath homes from the last 12 months, so this is mostly based on the subject's own listing history: it sold fully updated for about $92k in 2018, was recently listed around $115k, and Zillow estimates it at $152k. Local active listings for comparable 2bd/1ba homes run $90\u2013150k, so I set a conservative updated value of about $140k (roughly $123/sf), with rent around $1,050\u20131,100 a month."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "dbcb4a30c410264c": {
+  "arv": {
+   "arv": 200000.0,
+   "arv_high": 225000.0,
+   "arv_low": 175000.0,
+   "comps": [
+    "150 Bobbye Ln, Batesville AR 72501 - $165,000 - sold Mar 21, 2025 - 1,296 sqft ($127/sf)",
+    "3bd/2ba Batesville AR (address not shown in search results) - ~$196,000 ($99/sf) - sold early 2025 - 1,980 sqft",
+    "2240 Case St, Batesville AR 72501 - $210,000 list price (active/not sold) - 1,779 sqft 3bd/2ba",
+    "Subject: 100 Caney Creek Rd currently listed at $124,900 as-is (MLS 26040123), 4bd/2ba, 1,868 sqft",
+    "Batesville market: median sale price about $210k-$225k, average about $135/sf (Homes.com)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "Recent sales of similar 3/2 homes in Batesville went for about $99-$127/sf, which puts this rural 1,868 sqft home at about $185k-$235k once updated; I used a conservative $107/sf since it is in a rural area off Caney Creek and I only found a few sold comps. The low confidence is because I could only verify one specific comp sale, and the subject's own as-is listing at $124,900 sets a floor."
+  },
+  "first_seen": "2026-10-12",
+  "status": "deal"
+ },
  "df9094347891daa5": {
   "arv": {
    "arv": 2000.0,
@@ -665,6 +1084,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "e1df519f4356c049": {
+  "arv": {
+   "arv": 185000.0,
+   "arv_high": 210000.0,
+   "arv_low": 160000.0,
+   "comps": [
+    "1100 W McRae Ave, Searcy AR 72143 \u2013 $174,900 active listing (not a sale), 3bd/2ba, 1,344 sqft, current",
+    "917 Holmes Rd, Searcy AR 72143 \u2013 $120,000 sold Nov 22, 2022, 4bd/1ba, 1,272 sqft (older, needed work)",
+    "1989 Holmes Rd, Searcy AR 72143 \u2013 $205,000 sold Dec 16, 2020, 4bd/2.5ba, 2,207 sqft on acreage",
+    "2182 Holmes Rd, Searcy AR 72143 \u2013 Redfin estimate ~$137,600 (not a sale), 1,884 sqft, next door",
+    "2176 Holmes Rd, Searcy AR 72143 \u2013 Redfin estimate ~$160K+ (not a sale), 1,864 sqft, nearby"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "I couldn't find any closed sales of similar 3bd/2ba ~1,440 sqft homes from the last 12 months, so this estimate leans on Searcy-wide figures (median about $220K, listings around $145/sqft, which would put this house near $209K) and older sales and automated estimates on Holmes Rd. Several nearby Holmes Rd homes are estimated at only $137K\u2013$165K, so I discounted to a conservative $185K; check this against county records or MLS sold data before bidding at the foreclosure."
+  },
+  "first_seen": "2026-10-12",
+  "status": "watch"
  },
  "e505b52a2bdec95f": {
   "arv": {
@@ -751,6 +1189,25 @@
    "confidence": "medium",
    "monthly_rent": 1150.0,
    "reasoning": "An earlier listing describes this home as an updated 3bd/2ba of about 1,210 sf priced at $164,900, which doesn't match the 2bd/999 sf in the input, so the size needs checking. Small updated in-town homes in Bonne Terre have recently sold for about $150k\u2013$205k, so I used a conservative ARV of $170k; the dates on several comps and the rent estimate were not confirmed."
+  },
+  "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "f58b58b1db316006": {
+  "arv": {
+   "arv": 300000.0,
+   "arv_high": 340000.0,
+   "arv_low": 265000.0,
+   "comps": [
+    "902 N Poplar St, Dexter MO \u2013 sold Jun 5, 2026, 2,608 sqft, 4bd/4ba \u2013 sale price not found",
+    "16747 Chalk Bluff Trail, Dexter MO \u2013 active listing $289,999 after a price cut, 2,528 sqft, 4bd/3.5ba \u2013 not a sale",
+    "902 Albert St, Dexter MO \u2013 active listing $259,900 after a price cut, 1,976 sqft, 4bd/2ba \u2013 not a sale",
+    "1110 State Hwy AD, Dexter MO \u2013 listing $305,000, 3,152 sqft (duplex) \u2013 not a sale",
+    "1009 Ridge Top Dr (subject) \u2013 current bank (REO) list price $351,000; RealtyTrac lists it at $334,882 \u2013 not a sale"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1700.0,
+   "reasoning": "I couldn't find any sold prices; the only true sale found (902 N Poplar, June 2026) had no price, and similar large homes in Dexter are listed at about $260k\u2013$305k after price cuts, about $110\u2013$130 per sq ft. For this 1967 home of 2,618 sq ft on 1.13 acres, I estimate an updated value of about $300k, below the bank's $351k asking price, with low confidence until sold comps are checked."
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
