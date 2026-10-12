@@ -102,3 +102,14 @@ def test_land_goes_to_its_own_section():
     subject, body = report.build([land, scrap, home], {}, "2026-10-14")
     assert subject.startswith("1 deal,") and "Land under 50% of value" in body
     assert "Parcel 9" not in body
+
+
+def test_houses_valued_before_land(tmp_path):
+    cfg = config_mod.load()
+    land = [L(address=f"Parcel {i}", deal_type="tax_sale", property_type="land", price=74) for i in range(6)]
+    house = L(address="1 House Rd", property_type="single family", price=30_000)
+    claude = FakeClaude(land + [house])
+    deals, status = run(cfg, Store(tmp_path), claude, page(), {}, "2026-10-14", max_arv=4, max_land_arv=2)
+    valued = {d.listing.address for d in deals}
+    assert "1 House Rd" in valued and len(valued) == 3   # house + 2 land parcels
+    assert "4 left for next run" in status["Summary"]

@@ -23,6 +23,7 @@ claude:
   extract_effort: low      # reading listings out of pages
   arv_effort: medium       # estimating ARV with web search
   max_arv_per_run: 25      # cost cap: new properties valued per run
+  max_land_arv_per_run: 5  # of those, at most this many lots/acreage (houses go first)
   max_web_searches_per_arv: 5
 
 # How many days back to search public-notice sites each run.

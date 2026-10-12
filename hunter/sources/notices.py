@@ -15,22 +15,12 @@ from .browser import Page, snapshot
 log = logging.getLogger(__name__)
 
 DETAIL_RE = re.compile(r"Details\.aspx\?", re.I)
-OPTIONAL_MS = 5_000
-
-
-def _try(fn) -> None:
-    """Run an optional form step; skip it if the control is missing or hidden."""
-    try:
-        fn()
-    except Exception as e:
-        log.info("optional step skipped: %s", str(e).splitlines()[0])
-
-
 def describe_form(page) -> str:
-    """Short list of the page's form controls, for the run log when a search fails."""
+    """Short list of the page's non-checkbox form controls, for the run log."""
     return page.eval_on_selector_all(
-        "input, select, button, label",
-        "els => els.filter(e => e.type !== 'hidden').slice(0, 80).map(e => `${e.tagName}#${e.id || ''}[${e.type || ''}]` + "
+        "input, select, button, label, a[id]",
+        "els => els.filter(e => !['hidden', 'checkbox'].includes(e.type) && !(e.tagName === 'LABEL' && e.control && e.control.type === 'checkbox'))"
+        ".slice(0, 80).map(e => `${e.tagName}#${e.id || ''}[${e.type || ''}]` + "
         "`'${(e.innerText || e.value || '').replace(/\\s+/g, ' ').trim().slice(0, 30)}'`).join(' | ')",
     )
 
@@ -72,13 +62,18 @@ def _fill_keyword(page, keyword: str) -> None:
     if not box.count():
         box = page.locator("input[type=text]").first
     box.fill(keyword)
-    _try(lambda: page.get_by_label(re.compile("Exact Phrase", re.I)).first.check(timeout=OPTIONAL_MS, force=True))
+    page.evaluate("""() => {
+      const r = document.querySelector("input[type=radio][value=EXACT i], input[type=radio][value=exact i]");
+      if (r) r.checked = true;
+    }""")
 
 
 TICK_JS = """(names) => {
   const want = new Set(names.map(n => n.toLowerCase()));
   const seen = []; let n = 0;
-  for (const cb of document.querySelectorAll('input[type=checkbox]')) {
+  let boxes = document.querySelectorAll('input[type=checkbox][id*=County i]');
+  if (!boxes.length) boxes = document.querySelectorAll('input[type=checkbox]');
+  for (const cb of boxes) {
     let t = '';
     if (cb.id) { const l = document.querySelector(`label[for="${cb.id}"]`); if (l) t = l.textContent; }
     if (!t && cb.nextSibling) t = cb.nextSibling.textContent || '';
@@ -101,17 +96,48 @@ def _tick_counties(page, counties: list[str]) -> None:
         raise RuntimeError("no county checkboxes found; search form changed?")
 
 
+DAYS_JS = """(days) => {
+  // Pick the "In the last N days" option and fill in N.
+  for (const lab of document.querySelectorAll('label')) {
+    if (!/in the last/i.test(lab.textContent)) continue;
+    const radio = lab.control || lab.querySelector('input[type=radio]') || lab.previousElementSibling;
+    if (radio && radio.type === 'radio') radio.checked = true;
+    let el = (radio || lab).nextElementSibling;
+    for (let i = 0; el && i < 4; i++, el = el.nextElementSibling) {
+      if (el.tagName === 'INPUT' && el.type === 'text') { el.value = String(days); return el.id || 'days box'; }
+    }
+  }
+  const box = document.querySelector("input[type=text][id*=Days i], input[type=text][id*=LastNum i]");
+  if (box) { box.value = String(days); return box.id; }
+  return null;
+}"""
+
+SUBMIT_JS = """() => {
+  const byId = document.querySelector("[id*=btnGo i], [id*=btnSearch i], [id*=lnkSearch i], [id*=btnSubmit i]");
+  const isGo = e => /^(search|go|submit)$/i.test((e.value || e.textContent || '').trim());
+  const el = byId || [...document.querySelectorAll("input[type=submit], input[type=button], input[type=image], button, a")].find(isGo);
+  if (!el) return null;
+  el.click();
+  return `${el.tagName}#${el.id}`;
+}"""
+
+
 def _set_days(page, days: int) -> None:
-    _try(lambda: page.get_by_label(re.compile("In the last", re.I)).first.check(timeout=OPTIONAL_MS, force=True))
-    num = page.locator("input[type=text][id*='Days'], input[type=text][id*='LastNum']")
-    if num.count():
-        _try(lambda: num.first.fill(str(days), timeout=OPTIONAL_MS))
+    log.info("date range box: %s", page.evaluate(DAYS_JS, days))
 
 
 def _submit(page) -> None:
-    btn = page.locator("input[type=submit][value*='Search' i], button:has-text('Search')").first
-    btn.click()
-    page.wait_for_load_state("domcontentloaded")
+    try:
+        with page.expect_navigation(wait_until="domcontentloaded", timeout=30_000):
+            clicked = page.evaluate(SUBMIT_JS)
+            if not clicked:
+                log.warning("form controls seen: %s", describe_form(page))
+                raise RuntimeError("no Search button found; search form changed?")
+            log.info("clicked %s", clicked)
+    except RuntimeError:
+        raise
+    except Exception as e:  # results may load in place without a page navigation
+        log.info("no navigation after search (%s)", str(e).splitlines()[0])
     page.wait_for_timeout(2500)
 
 

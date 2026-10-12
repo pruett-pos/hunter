@@ -12,7 +12,7 @@ from . import report
 from .ai import Claude
 from .collect import RawPage, collect
 from .config import ROOT, Config, normalize_county
-from .evaluate import classify
+from .evaluate import classify, is_land
 from .models import ArvEstimate, Deal, listing_id
 from .store import Store
 
@@ -20,7 +20,8 @@ log = logging.getLogger("hunter")
 
 
 def run(cfg: Config, store: Store, claude: Claude, pages: list[RawPage],
-        status: dict[str, str], today: str, max_arv: int) -> tuple[list[Deal], dict[str, str]]:
+        status: dict[str, str], today: str, max_arv: int,
+        max_land_arv: int = 5) -> tuple[list[Deal], dict[str, str]]:
     area = [f"{s}: {c}" for s, c in sorted(cfg.counties)]
     by_id: dict[str, Deal] = {}
     found: dict[str, int] = {}
@@ -45,17 +46,19 @@ def run(cfg: Config, store: Store, claude: Claude, pages: list[RawPage],
     for sid, n in sorted(found.items()):
         status[f"{sid} in-area listings"] = str(n)
 
-    valued = 0
-    for d in by_id.values():
+    # Value houses before land, so cheap tax parcels don't use up the per-run cap.
+    valued = land_valued = 0
+    for d in sorted(by_id.values(), key=lambda d: (is_land(d.listing), d.listing.price is None, d.listing.price or 0)):
         cached = store.cached_arv(d.id)
         if cached:
             d.arv = ArvEstimate.model_validate(cached)
-        elif valued < max_arv:
+        elif valued < max_arv and (not is_land(d.listing) or land_valued < max_land_arv):
             try:
                 d.arv = claude.estimate_arv(d.listing)
             except Exception as e:
                 log.warning("ARV failed for %s: %s", d.listing.address, e)
             valued += 1
+            land_valued += is_land(d.listing)
         classify(d, cfg.max_ratio)
     pending = sum(1 for d in by_id.values() if d.arv is None)
     status["Summary"] = (f"{len(by_id)} new in-area properties, {valued} valued this run"
@@ -77,7 +80,8 @@ def main() -> None:
     claude = Claude(cfg.claude)
     pages, status = collect(cfg, debug_dir=ROOT / "debug")
     deals, status = run(cfg, store, claude, pages, status, today,
-                        args.max_arv if args.max_arv is not None else int(cfg.claude["max_arv_per_run"]))
+                        args.max_arv if args.max_arv is not None else int(cfg.claude["max_arv_per_run"]),
+                        int(cfg.claude.get("max_land_arv_per_run", 5)))
     store.add(deals)
 
     subject, body = report.build(deals, status, today,
