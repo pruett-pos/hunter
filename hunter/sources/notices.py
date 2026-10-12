@@ -36,6 +36,9 @@ def search(ctx, url: str, keyword: str, counties: list[str], days: int) -> list[
         _tick_counties(page, counties)
         _set_days(page, days)
         _submit(page)
+        after = snapshot(page)
+        log.info("after search: %s\n%s\nlinks: %s", page.url, after.text[:2000].replace("\n", " / "),
+                 [h for _, h in after.links][:40])
         found: list[str] = []
         for _ in range(10):  # result pages
             snap = snapshot(page)
@@ -127,18 +130,18 @@ def _set_days(page, days: int) -> None:
 
 
 def _submit(page) -> None:
+    clicked = page.evaluate(SUBMIT_JS)
+    if not clicked:
+        log.warning("form controls seen: %s", describe_form(page))
+        raise RuntimeError("no Search button found; search form changed?")
+    log.info("clicked %s", clicked)
+    # Results come back either as a full postback or an in-place update; wait for both.
+    page.wait_for_timeout(1500)
     try:
-        with page.expect_navigation(wait_until="domcontentloaded", timeout=30_000):
-            clicked = page.evaluate(SUBMIT_JS)
-            if not clicked:
-                log.warning("form controls seen: %s", describe_form(page))
-                raise RuntimeError("no Search button found; search form changed?")
-            log.info("clicked %s", clicked)
-    except RuntimeError:
-        raise
-    except Exception as e:  # results may load in place without a page navigation
-        log.info("no navigation after search (%s)", str(e).splitlines()[0])
-    page.wait_for_timeout(2500)
+        page.wait_for_load_state("networkidle", timeout=20_000)
+    except Exception:
+        pass
+    page.wait_for_timeout(1500)
 
 
 def _next_page(page) -> bool:

@@ -71,10 +71,14 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-email", action="store_true")
     ap.add_argument("--max-arv", type=int)
+    ap.add_argument("--sources", help="comma-separated source ids to run (default: all)")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 
     cfg = config_mod.load()
+    if args.sources:
+        keep = {x.strip() for x in args.sources.split(",") if x.strip()}
+        cfg.raw["sources"] = [src for src in cfg.sources if src["id"] in keep]
     today = datetime.now(ZoneInfo("America/Chicago")).strftime("%Y-%m-%d")
     store = Store(ROOT / "data")
     claude = Claude(cfg.claude)
