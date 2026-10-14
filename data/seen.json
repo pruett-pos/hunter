@@ -18,6 +18,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "0105dcc34a5df1eb": {
+  "arv": {
+   "arv": 285000.0,
+   "arv_high": 315000.0,
+   "arv_low": 260000.0,
+   "comps": [
+    "94 Lakeshore Dr (subject; public records show 3bd/2ba, 1,630 sqft rather than the 1bd/1ba in the input), already remodeled, sold $239,900 on 9/9/2022",
+    "132 Lakeshore Dr, Kimberling City, 1,716 sqft, built 1965, listed $349,900 Feb 2026, sold 5/29/2026 (sale price not found)",
+    "24 Elm Dr, Kimberling City, 3bd/2ba, 1,535 sqft, listed at $339,000 in 2026 (active, not sold)",
+    "8 Northwoods Dr, Kimberling City, 3bd/2ba, 1,292 sqft, listed at $337,500 in 2026 (active, not sold)",
+    "26 Trail Ridge Dr, Kimberling City, 3bd/2ba, 1,412 sqft, listed at $359,500 in 2026 (active, not sold)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1600.0,
+   "reasoning": "The subject appears to be a 3bd/2ba, 1,630 sqft 1970 ranch with a lake view in Kimberling Hills, not a 1bd/1ba. It sold remodeled for $239,900 in 2022, Redfin estimates it at about $276k, and similar 3/2 homes nearby are listed at $337k-$360k, so I discounted those asking prices and used a conservative ARV near $285k (the only nearby 2026 sale, 132 Lakeshore, had no sale price I could find)."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
  "03e1c1e7c0dd9c9b": {
   "arv": {
    "arv": 1500.0,
@@ -36,6 +55,61 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "040e058af23d0fbf": {
+  "arv": {
+   "arv": 95000.0,
+   "arv_high": 115000.0,
+   "arv_low": 75000.0,
+   "comps": [
+    "39344 E Sue Dr, Malden MO \u2013 2bd/1ba, 1,093 sqft \u2013 sold May 6, 2026; last list price $115,000",
+    "39352 W Sue Dr, Malden MO \u2013 2bd/1ba, 1,108 sqft \u2013 active listing at $110,000 (updated, Maco Acres)",
+    "505 S Kimball St, Malden MO \u2013 2bd/1ba \u2013 sold Aug 15, 2025; last list price $15,000 (distressed, sets the floor)",
+    "300 Frisco St, Malden MO \u2013 2ba, 2,671 sqft \u2013 sold Jan 16, 2026 (price not found)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 800.0,
+   "reasoning": "The only updated 2bd/1ba homes I found in Malden are about 1,100 sqft and list or sold for $110\u2013115K, but they're in the Maco Acres subdivision. The subject is an older in-town house (about 1,484 sqft, 0.2 acre), so I set a conservative $95K ARV with low confidence, since I couldn't confirm sold prices and the town has many distressed sales under $30K."
+  },
+  "first_seen": "2026-10-14",
+  "status": "deal"
+ },
+ "050a75792729a4ac": {
+  "arv": {
+   "arv": 195000.0,
+   "arv_high": 215000.0,
+   "arv_low": 175000.0,
+   "comps": [
+    "185 Highway 11, Searcy AR 72143 \u2013 about $182,000 (estimated from $131/sf), recently sold, 1,388 sqft, 3/2, built 2011",
+    "1408 Springvine Dr, Searcy AR 72143 \u2013 $239,000, recently sold, 1,638 sqft, 3/2",
+    "210 Williams Ave, Searcy AR 72143 \u2013 $175,000, sold 06/11/26, 3/2, sqft not found",
+    "134 March Cv, Searcy AR 72143 \u2013 $178,900 list price (active, not sold), 1,484 sqft, 3/2, built 1996",
+    "410 Calvin Ct, Searcy AR 72143 \u2013 $202,000 list price (active, not sold), 1,353 sqft, 3/2"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "Updated 3-bed, 2-bath homes of about 1,350\u20131,650 sqft in the 72143 zip code have recently sold or been listed for roughly $175K\u2013$240K, which works out to about $130\u2013145 per sqft, so a 1,440 sqft home comes to about $195K before any adjustment for the lot. Confidence is low because I could not confirm the subject's lot size, year built or condition, and the Holmes Rd parcels nearby are often several acres, which could push the value higher."
+  },
+  "first_seen": "2026-10-14",
+  "status": "watch"
+ },
+ "07d7706a15bc03d8": {
+  "arv": {
+   "arv": 320000.0,
+   "arv_high": 350000.0,
+   "arv_low": 290000.0,
+   "comps": [
+    "230 Wagonwheel Dr, Camdenton MO 65020 \u2013 next door, listed at $389,900 (no confirmed sale price), 2,480 sqft, 3bd/3ba",
+    "103 Dogwood Dr, Camdenton MO 65020 \u2013 sold Jul 21, 2026, sale price not found, 2,500 sqft, 5bd/3ba",
+    "200 Wagonwheel Dr (this property) \u2013 earlier MLS list price $325,000 (MLS 3589512), 2,720 sqft, 6bd/3ba, now an REO listed at $286,000",
+    "278 Ballpark Rd, Camdenton MO 65020 \u2013 sold Jul 16, 2026, sale price not found, 1,236 sqft, 3bd/2ba"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2000.0,
+   "reasoning": "Listings show the house is actually 6bd/3ba, 2,720 sqft and described as well maintained (not the 3bd/2ba in the input), with community boat-launch access but not on the water. Off-water Camdenton homes usually sell for about $115\u2013130/sqft, and the earlier $325k list price was cut to $286k, so I estimate a conservative ARV near $320k; confidence is low because no confirmed nearby sale prices were found."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
  },
  "0f62e7bfe61d167d": {
   "arv": {
@@ -67,6 +141,44 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "19ac762969536039": {
+  "arv": {
+   "arv": 170000.0,
+   "arv_high": 200000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "105 Jonas Ct, Fairfield Bay AR \u2014 $240,000 sold Apr 11, 2025, 1,302 sqft, 3bd/2ba, built 1973, remodeled and furnished ($184/sqft)",
+    "118 Deer Run Trl, Fairfield Bay AR \u2014 $186,633 sold Nov 6, 2025, 2,171 sqft, 2ba",
+    "242 Snead Dr, Fairfield Bay AR \u2014 $305,000 sold Nov 3, 2025, 2,120 sqft, 3bd/2.5ba",
+    "139 Dunn Hollow Dr (neighbor, 1974, Chelsea Glade) \u2014 Redfin estimate $99K\u2013$118K in as-is condition, not a sale",
+    "214 Greenwood Rd, Fairfield Bay AR \u2014 active listing $230,000 after a $49K cut, 2,056 sqft, 3bd/2ba"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1150.0,
+   "reasoning": "The MLS listing (#26032328) shows the subject as a 1970s HUD bungalow with 2 bedrooms, 2 baths, a bonus room and 1,448 sqft, not 3 bedrooms; nearby as-is homes on Dunn Hollow are valued around $100K\u2013$118K, and the best renovated match (105 Jonas Ct) sold for $184/sqft but was furnished. I estimated the ARV conservatively at about $115\u2013$120/sqft because I could find few sold comps for 2026 and I couldn't confirm the subject's condition."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
+ "1e9442df69130086": {
+  "arv": {
+   "arv": 200000.0,
+   "arv_high": 235000.0,
+   "arv_low": 170000.0,
+   "comps": [
+    "410 Church St, Hardy AR \u2013 3bd/2ba, 1,680 sf, sold ~$225k ($134/sf), recent",
+    "77 Rainbow Trail, Hardy AR \u2013 3bd/2.5ba, 1,658 sf, sold ~$190k ($115/sf), recent",
+    "14 Arkansaw Traveller Rd, Hardy AR \u2013 3bd/2ba, ~2,400 sf on 2 ac, sold $158,000, Apr 2026",
+    "224 Robinhood Ln, Hardy AR \u2013 3bd/2ba, 1,792 sf, sold $399,000, Aug 2026 (upper-end outlier)",
+    "1328 AR Hwy 175, Hardy AR \u2013 3bd/2ba, 1,579 sf, listed (not sold) at $289,000, same road"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1150.0,
+   "reasoning": "Updated 3bd/2ba homes of about 1,500\u20131,700 sf around Hardy recently sold for roughly $115\u2013$135 per sf, so applying about $130/sf to 1,512 sf gives roughly $200k. I picked a conservative figure because I couldn't confirm the subject's lot size (records could mean about 3.8 acres or a larger tract), I found few sold comps with exact prices, and the nearby $289k listing on Hwy 175 hasn't sold."
+  },
+  "first_seen": "2026-10-14",
+  "status": "watch"
  },
  "21e6b428f6201711": {
   "arv": {
@@ -182,6 +294,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "389b48d6258df16b": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 5000.0,
+   "arv_low": 750.0,
+   "comps": [
+    "Briar Hollow Dr, Fairfield Bay, AR \u2013 0.22 ac wooded lot, listed $950 (LandWatch, current listing, not a sale)",
+    "Meadowcliff Cir, Fairfield Bay, AR \u2013 0.2 ac lot, listed $7,995 (LandWatch, current listing, not a sale)",
+    "Parcel 4300150060000, Indian Hills Lot 6 Blk 15, Fairfield Bay \u2013 0.31 ac on gravel road, listed (farmandranch.com, price not confirmed)",
+    "Fairfield Bay area lot, 0.24 ac \u2013 listed $999 (LandWatch, current listing, not a sale)",
+    "000 Mountain Ranch Dr, Fairfield Bay \u2013 about 1 ac, listed about $15,900/ac (Homes.com, current listing, not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't confirm this parcel's acreage, access or subdivision, and I found no closed sales, only listings. The low opening bid and its location near Fairfield Bay/Shirley suggest a small subdivision-style lot, and lots like that around Fairfield Bay are listed at roughly $950 to $8,000, so I used a conservative $2,000."
+  },
+  "first_seen": "2026-10-14",
+  "status": "land_deal"
+ },
  "3d010796e4b5cd1e": {
   "arv": {
    "arv": 2000.0,
@@ -212,6 +343,43 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "441e0d84c216acb5": {
+  "arv": {
+   "arv": 150000.0,
+   "arv_high": 170000.0,
+   "arv_low": 130000.0,
+   "comps": [
+    "701 N Center St, Willow Springs MO \u2013 $179,900, sold 04/21/2025, 3bd/2ba, 1,239 sqft",
+    "512 N Grand St, Willow Springs MO \u2013 sold 04/17/2026, 3bd/2ba, 1,496 sqft (price not found)",
+    "1014 Sassafras St, Willow Springs MO \u2013 sold 04/21/2026, 3bd/2ba, 1,758 sqft (price not found)",
+    "1113 N Walnut St, Willow Springs MO \u2013 sold 09/29/2026, 3bd/1.5ba (price and sqft not found)",
+    "406 N Garfield St (subject) \u2013 3bd/1ba, 1,313 sqft, 0.52 ac; last sold 11/23/2022; earlier list price $119,900, now $100,000 REO/HUD"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1000.0,
+   "reasoning": "This home is 1,313 sqft. In-town Willow Springs homes in updated condition sell for about $110\u2013135 per sqft (the area median is about $131/sqft), and the only nearby sale with a known price was a 3-bed/2-bath at $179,900, so I trimmed the estimate to about $150k because this home has only one bath. Confidence is low because I could only confirm one sale price and ran out of searches; rent is estimated at about $1,000 because local 3-bed rents range from about $850 to $1,200, and a house next door at 402 Garfield is listed at $1,200."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
+ "469a8614bcea38b5": {
+  "arv": {
+   "arv": 265000.0,
+   "arv_high": 290000.0,
+   "arv_low": 235000.0,
+   "comps": [
+    "709 County Rd 393, Thayer MO \u2013 sold Apr 12, 2024, list price $209,900 (closing price not confirmed), 3bd/2ba, 1,821 sqft, renovated brick home",
+    "354 County Rd 393, Thayer MO \u2013 active listing (not a sale) at $210,000, 3bd/2ba, 1,636 sqft (~$128/sqft)",
+    "410 County Rd 393, Thayer MO (subject) \u2013 earlier listing at $275,000, 2,786 sqft on 1 acre; Trulia estimate ~$286,400",
+    "310 S 5th St, Thayer MO \u2013 3bd/1.5ba, 1,498 sqft; sold May 2024 as a fixer (listed $39,900), Redfin shows a later May 2026 sale near $120,000"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1500.0,
+   "reasoning": "Records show the subject is about 2,786 sqft on 1 acre, and renovated 3-bed homes on the same road have sold or are listed for about $115\u2013128 per sqft, which points to roughly $290\u2013320k before discounting. I lowered that to about $265k because big homes in the Thayer market tend to sell for less per sqft, the house was previously listed at $275k, and I found few recent sales, so confidence is low."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
  },
  "4b4400fd9a564d6d": {
   "arv": {
@@ -286,6 +454,62 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "5a1ac2b164455915": {
+  "arv": {
+   "arv": 155000.0,
+   "arv_high": 175000.0,
+   "arv_low": 130000.0,
+   "comps": [
+    "22 St Joseph St, Viburnum MO \u2013 3bd/1.5\u20132ba, 1,244 sqft; listed at $144,500, sold 11/26/2025 (sale price not confirmed)",
+    "4 Live Oak Ct, Viburnum MO \u2013 3bd/1ba, 1,785 sqft; sold 12/19/2025 (sale price not found)",
+    "42 Spruce St, Viburnum MO \u2013 2bd/1ba, 1,144 sqft; pending at $149,995 (2026 list price)",
+    "29 Spruce St, Viburnum MO \u2013 3bd/1ba, 1,300 sqft; active listing at $139,995",
+    "16 Maple St, Viburnum MO (neighbor) \u2013 built 1968, about 1,896 sqft; online estimate about $134,900 (about $71/sqft)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1100.0,
+   "reasoning": "Updated 3-bedroom homes in Viburnum mostly list or sell for about $140,000\u2013$150,000 at 1,100\u20131,300 sqft, and Maple St values cluster around $116,000\u2013$135,000. This home's 2,156 sqft supports a modest premium, but this small mining town limits how much extra size adds, and confirmed sale prices were scarce, so I kept the ARV conservative at about $155,000."
+  },
+  "first_seen": "2026-10-14",
+  "status": "watch"
+ },
+ "5a65522476757a33": {
+  "arv": {
+   "arv": 180000.0,
+   "arv_high": 200000.0,
+   "arv_low": 160000.0,
+   "comps": [
+    "320 Magness Dr, Gassville AR - $203,000, sold May 19, 2025, 1,320 sqft ($154/sf)",
+    "341 Bayless Ct, Gassville AR - $120,000, sold Jun 24, 2025, 3bd/2ba, 1,176 sqft ($102/sf, likely dated condition)",
+    "620 Pine St, Gassville AR - fully renovated 1,359 sqft, recent sale/listing around $205,000 (sale price not confirmed)",
+    "86 Swaying Oak Dr (subject) - earlier listed at $178,000 as a move-in-ready 3bd/2ba, 1,220 sqft; Trulia estimate about $175,300"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1200.0,
+   "reasoning": "I based the value on recent Gassville sales of updated 3bd/2ba homes. They sold for about $145\u2013$155 per sq ft, which is roughly $177k\u2013$190k for this 1,220 sq ft house, and that fits the subject's earlier $178k list price and the roughly $175k online estimate. I stayed conservative at $180k because my search was cut short, so I could confirm only a few closed sales and the Pine St price is unverified."
+  },
+  "first_seen": "2026-10-14",
+  "status": "watch"
+ },
+ "5ae209282e532ee6": {
+  "arv": {
+   "arv": 270000.0,
+   "arv_high": 290000.0,
+   "arv_low": 250000.0,
+   "comps": [
+    "1901 S Jefferson Ave, Springfield MO 65807 \u2013 $300,000 list (sold) \u2013 Feb 21, 2025 \u2013 1,954 sqft, 4bd/3ba",
+    "2002 E Wayland St, Springfield MO 65804 \u2013 sold, price not shown in search results \u2013 Aug 18, 2025 \u2013 1,796 sqft, 3bd/2ba",
+    "823 E Seminole St, Springfield MO 65807 \u2013 $180,000 list (sold, dated/as-is) \u2013 Dec 16, 2024 \u2013 2,193 sqft, 4bd/2ba",
+    "310 E Seminole St, Springfield MO 65807 \u2013 $219,900 list (sold) \u2013 Apr 8, 2024 \u2013 1,675 sqft, 4bd/1.5ba",
+    "Seminole-Holland neighborhood \u2013 $275,000 average sale price over the last 12 months (Homes.com)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1650.0,
+   "reasoning": "x"
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
  "5e33ef00f342eac8": {
   "arv": {
    "arv": 2000.0,
@@ -353,6 +577,23 @@
   "first_seen": "2026-10-12",
   "status": "too_expensive"
  },
+ "6f0ebef5ef5b67ba": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 8000.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "0.31 ac residential lot, Indian Hills SD, Fairfield Bay (S10 T11N R12W), Parcel 4300150060000. This is a land-marketplace listing, not a sale, and I found no price or date.",
+    "Fairfield Bay vacant lots of about 0.2 ac on LandWatch and Homes.com: active listings only, mostly asking low to mid four figures. No confirmed sold prices.",
+    "Van Buren Co. COSL post-auction tax-sale lots, e.g. Chelsea Glade SD (S03 T11N R12W): small subdivision lots that usually sell at auction for a few hundred to a few thousand dollars."
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't confirm this parcel's acreage, access or subdivision, and I found no verified sold comps. The $154 opening bid and the S27 T12N R12W location near Fairfield Bay and Shirley suggest a small subdivision lot, and similar lots there usually sell for about $1,000 to $8,000, so this is a conservative placeholder until you check the county assessor record."
+  },
+  "first_seen": "2026-10-14",
+  "status": "land_deal"
+ },
  "73f997ae9ce86a78": {
   "arv": {
    "arv": 225000.0,
@@ -389,6 +630,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "watch"
+ },
+ "7b14ba7334a45388": {
+  "arv": {
+   "arv": 115000.0,
+   "arv_high": 130000.0,
+   "arv_low": 100000.0,
+   "comps": [
+    "1607 Stokelan Dr, Malden MO - $80,778 (last list price) - sold 2025-11-26 - 1,140 sqft, 3bd/1ba, built 1979",
+    "2303 Burge St, Malden MO - $69,000 (last list price) - sold 2025-11-17 - 1,108 sqft, 3bd/1ba",
+    "516 Norman Dr, Malden MO - $56,000 (last list price) - sold 2026-02-26 - 1,373 sqft, 3bd/1.5ba",
+    "Malden 63863 nearby updated sales - about $105/sqft (Redfin area summary); 63863 median recently sold about $145K (June 2026)",
+    "39826 Myers St (subject) - online estimate about $111K; listed at auction for $135,000 - 1,144 sqft, 0.41 ac, built 1973"
+   ],
+   "confidence": "low",
+   "monthly_rent": 900.0,
+   "reasoning": "Updated 3-bed, 1-bath homes of about 1,100\u20131,400 sqft in Malden appear to sell for roughly $95\u2013110/sqft, which puts a 1,144 sqft subject on 0.41 acres near $115K, below its $135K list price. Confidence is low because the comp prices are mostly last list prices for homes in mixed condition, not confirmed sale prices, and the subject's square footage varies by source (1,144 vs. 1,521)."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
  },
  "7b59e9173a489274": {
   "arv": {
@@ -489,6 +749,25 @@
    "reasoning": "I found recent in-town sales of 3-bed, 2-bath homes near this size but no sale prices, so this estimate leans on active listings (for example a 1,360 sqft 3/2 at $135k) and typical Willow Springs prices of roughly $85-95 per sqft for updated homes. The subject was listed at $179,900 and later cut to $84,900 without selling, and it is now a bank sale with a $40k opening bid, so I kept the ARV conservative at about $150k."
   },
   "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "8d1084de81b9f2cb": {
+  "arv": {
+   "arv": 225000.0,
+   "arv_high": 260000.0,
+   "arv_low": 190000.0,
+   "comps": [
+    "476 Jimmy Mitchell Rd, Mountain View AR - $220,000 - Dec 3 2025 - 1,464 sqft (3bd/2ba)",
+    "741 Hayden Heights Rd, Mountain View AR - $250,000 - Nov 21 2025 - sqft n/a",
+    "215 Maple Heights Dr, Mountain View AR - $241,000 - Nov 14 2025 - sqft n/a (3bd)",
+    "Mountain View AR 72560 - $187,000 - Feb 26 2025 - 1,404 sqft",
+    "1956 Wilcox Dr, Mountain View AR - $170,000 - Feb 6 2025 - sqft n/a"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1250.0,
+   "reasoning": "Updated homes in Mountain View sold in 2025 for about $130\u2013150 per sq ft, so a conservative $120\u2013140 per sq ft on 1,860 sq ft gives roughly $225K. Confidence is low because I couldn't find any details on the subject property (beds, baths, age, acreage) or any close comps of similar size."
+  },
+  "first_seen": "2026-10-14",
   "status": "deal"
  },
  "8ea399f2c799b866": {
@@ -630,6 +909,24 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "9b248c0d47a4b03e": {
+  "arv": {
+   "arv": 85000.0,
+   "arv_high": 100000.0,
+   "arv_low": 70000.0,
+   "comps": [
+    "149 S Magnolia Dr, Trumann AR \u2013 1 ba, 864 sqft, sold (Zillow, price and date not shown)",
+    "132 N Crest Ave, Trumann AR \u2013 $115,500, sold 10/02/2020, 3bd/1ba, 1,242 sqft (old sale, about $93/sqft)",
+    "1252 Highway 69 Blvd, Trumann AR \u2013 listed at $144,900 (active, not sold), 3bd/2ba, 1,184 sqft",
+    "Trumann market overall: median sale price about $143K\u2013$165K, average about $109\u2013$116/sqft (Homes.com)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 750.0,
+   "reasoning": "Trumann homes average about $109\u2013116/sqft, but small 1-bath houses from the 1960s on lower-value streets like Oak St (Oak St assessed values are very low) usually sell below that once updated, so I used about $85\u2013105/sqft on 904 sqft, which gives roughly $85K. My web search limit ran out before I could find recent sold comps that matched closely, so treat this as a low-confidence figure and check it against MLS or Poinsett County sales before bidding."
+  },
+  "first_seen": "2026-10-14",
+  "status": "watch"
+ },
  "9b9348c8a6c48806": {
   "arv": {
    "arv": 180000.0,
@@ -665,6 +962,25 @@
    "reasoning": "The subject is a 2002-built 3 bed/2 bath house of about 1,630 sqft on 7.76 acres; it sold for $167K in 2017 and was most recently listed by a retail agent at $299,900. Similar updated rural homes in Clinton have sold for about $225K\u2013$265K, and I added a small amount for the acreage while staying conservative, so my estimate is about $265K (range $240K\u2013$290K)."
   },
   "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "a02a3c0159eac358": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 180000.0,
+   "arv_low": 140000.0,
+   "comps": [
+    "600 4th St, Park Hills MO: listed at $199,900, sold 10/31/2025 for an undisclosed price (Missouri is a non-disclosure state); 2bd/1ba, 1,176 sqft, built 2023, so this is a ceiling comp",
+    "310 2nd St, Park Hills MO: list price $120,000 (shown as $167/sqft), sold 1/10/2025; 2bd/1ba, 720 sqft, updated",
+    "203 Houser St, Park Hills MO: about $85,000, sold 11/2025; 2bd/1ba, 840 sqft, unclear if updated",
+    "213 Congress St, Park Hills MO: $114,900, under contract (not closed); 2bd/1ba, 1,184 sqft",
+    "513 W Elvins Blvd, Park Hills MO: $129,900, under contract (not closed); 2bd/1ba, 1,088 sqft"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1000.0,
+   "reasoning": "Updated 2bd/1ba homes in Park Hills recently sold or went under contract at about $115k-$150k for 700-1,200 sqft, and a 2023-built home of the same size was listed at $199,900 before it sold (the closing price isn't public), so a 1,193 sqft updated home on a 0.3-acre lot should land around $150k-$165k; Redfin's estimate for this house is about $161k. Confidence is only medium because most comps are list prices or pending deals rather than confirmed closings, and local 2-bedroom apartments rent for $895-$950, which supports about $1,000/month for a renovated house."
+  },
+  "first_seen": "2026-10-14",
   "status": "too_expensive"
  },
  "a0826f6ffb2f819e": {
@@ -902,6 +1218,19 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "c08405dc423fd19c": {
+  "arv": {
+   "arv": 180000.0,
+   "arv_high": 220000.0,
+   "arv_low": 140000.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": 1450.0,
+   "reasoning": "Web search hit its usage limit, so I couldn't pull any sold comps. This is a cautious estimate from general market knowledge, not verified sales data: older homes near central Paragould that have been updated usually sell for about $65\u201385/sqft, which puts a 2,520 sqft 5bd/2ba at about $180K (range $140K\u2013$220K), with rent around $1,450/mo."
+  },
+  "first_seen": "2026-10-14",
+  "status": "watch"
+ },
  "c0b43498bb284df7": {
   "arv": {
    "arv": 4000.0,
@@ -914,6 +1243,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "c86f521fe9134513": {
+  "arv": {
+   "arv": 175000.0,
+   "arv_high": 190000.0,
+   "arv_low": 160000.0,
+   "comps": [
+    "103 N B St, Bonne Terre (subject): 3bd/2ba, 1,188 sqft. Earlier listed at $175,000 (Coldwell Banker Hulsey); Zillow estimate about $180.3K. This is not a sale.",
+    "105 Twin St, Bonne Terre: 3bd/2ba, 1,188 sqft single family. Coming-soon list price $185,000 (MLS 26060815), 2026. Not sold yet.",
+    "1428 Rue Cynthia, Bonne Terre (Terre du Lac): 3bd/2ba, 1,008 sqft. Active list price $227,000, 2026. Not sold yet.",
+    "305 Rue Charlemagne, Bonne Terre: 3bd/2ba, 1,152 sqft. Listed at $107,800, likely a dated or dated-condition home.",
+    "2520 Warren St, Bonne Terre: 3bd/2ba, 1,054 sqft manufactured home. Pending at $124,900."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "I couldn't verify closed sales because I ran out of searches. This estimate rests on the subject's earlier $175K list price, Zillow's $180K estimate, and a same-size 3/2 nearby listed at $185K, with an older in-town home at $108K as the low end. The $175K is a conservative midpoint for a renovated 1,188 sqft 3/2 in town, and you should check it against MLS closed sales before relying on it."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
  },
  "c974e07ceae3f741": {
   "arv": {
@@ -1039,6 +1387,44 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "dc0f664188d071ae": {
+  "arv": {
+   "arv": 170000.0,
+   "arv_high": 190000.0,
+   "arv_low": 150000.0,
+   "comps": [
+    "Address not disclosed, Bald Knob AR 72010 - sold $130,000 - May 8, 2026 - 1,108 sqft, 3bd/1ba",
+    "116 Newell Rd, Bald Knob AR 72010 - sold $52,600 - Apr 30, 2026 - 916 sqft, 3bd/1ba (distressed, low bound)",
+    "206 S Collison Ave (subject), Bald Knob AR - sold $110,000 - Apr 13, 2021 - 1,952 sqft, 3bd/2ba",
+    "309 W Cleveland St, Bald Knob AR - active list $167,500 (not a sale) - 2026 - 1,428 sqft, 3bd/2ba",
+    "103 Hurricane Lake Rd, Bald Knob AR - active list $165,000 (not a sale) - 2026 - 1,768 sqft, 3bd/2ba on 1.41 ac"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1250.0,
+   "reasoning": "I found only two recent Bald Knob sales, and the other figures are asking prices, not sales. Those limited figures suggest updated 3-bed/2-bath homes here run about $85-100/sqft, so I put the 1,952 sqft subject at about $170k and kept the estimate conservative because this is a small, thin market, the subject sold for $110k in 2021, and it is now an REO listed at $121k."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
+ "de828135367a1bf0": {
+  "arv": {
+   "arv": 192000.0,
+   "arv_high": 205000.0,
+   "arv_low": 178000.0,
+   "comps": [
+    "904 E Smith St (subject), Springfield MO 65803: listed at $195,000 and sold Feb 8, 2024 (MLS 60258931); 3bd/2ba, 1,276 sqft; Missouri doesn't disclose sale prices, so the price is assumed to be near list",
+    "904 E Smith St (subject): later listed at $197,000 (1,313 sqft per that listing); Redfin estimate $177,718; Redfin rent estimate $1,220/mo",
+    "1950 E Smith St, Springfield MO 65803: sold Oct 20, 2021 (price not disclosed); 3bd/1.5ba, 1,633 sqft; Redfin estimate about $220,000",
+    "1128 E Smith St, Springfield MO 65803: fully renovated 3bd/2ba, 1,154 sqft; sold 2018 (old, used only as a reference)",
+    "1106 E Smith St, Springfield MO 65803: listed at $124,900 and sold Jul 22, 2020; 3bd/1.5ba, 1,414 sqft (old reference)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1275.0,
+   "reasoning": "The subject sold in Feb 2024 after listing at $195,000, Redfin estimates it at about $178,000, and the nearby estimates on E Smith St support an updated value of about $185,000\u2013$205,000 for this 1,276 sqft 3bd/2ba in Doling Park. I couldn't pull recent sold comps within 12 months, so this is a cautious estimate with low confidence, and the $181,240 list price leaves little room for a flip."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
  "df9094347891daa5": {
   "arv": {
    "arv": 2000.0,
@@ -1085,6 +1471,24 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "e1afc45167df7629": {
+  "arv": {
+   "arv": 180000.0,
+   "arv_high": 195000.0,
+   "arv_low": 160000.0,
+   "comps": [
+    "40 Lorene St, Calico Rock AR (subject, earlier sale): $182,500, sold 8/28/2023, 1,840 sqft, 4bd/2ba, about 1 acre",
+    "2598 Highway 56, Calico Rock AR: $100,500, sold 8/22/2025, 1,248 sqft, 2bd/1ba (smaller home, rural)",
+    "279 Chessmond Ferry Rd, Calico Rock AR: $185,000 list price (active, not sold), 1,427 sqft, 2bd/2ba",
+    "119 Chessmond Ferry Rd, Calico Rock AR: $40,000 list price (active, distressed, not sold), 1,394 sqft, 2bd/2ba"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1100.0,
+   "reasoning": "Listings show the subject as a 1,840 sqft, 3\u20134 bed, 2 bath home on about 1 acre, not the 2-bed home in the input; it sold for $182,500 in good condition in August 2023, and Redfin's current estimate is about $187K. My search limit ran out before I could find more sold comps, so I set the ARV conservatively at about $98/sqft, which fits the limited Calico Rock sales, and confidence is low."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
  "e1df519f4356c049": {
   "arv": {
    "arv": 185000.0,
@@ -1103,6 +1507,43 @@
   },
   "first_seen": "2026-10-12",
   "status": "watch"
+ },
+ "e2b787b975bd7de9": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 185000.0,
+   "arv_low": 140000.0,
+   "comps": [
+    "114 Mallard Cove, Bay AR \u2013 $210,000, sold Jul 10 2025, 1,693 sqft, 4bd/2ba, built 2014 ($124/sf, a newer home so this sets the ceiling)",
+    "217 Forrest St, Bay AR (next door) \u2013 $38,500, sold Sep 2 2026, 1,568 sqft, 3bd/2ba (distressed sale; it sold for $129,000 in Feb 2022 in normal condition)",
+    "700 S Bay Dr, Bay AR \u2013 $219,000 asking (active listing, not a sale), 1,662 sqft, 4bd/2ba",
+    "107 Terra Dr, Bay AR \u2013 $149,900 asking (active listing, not a sale), 1,386 sqft, 4bd/1.5ba",
+    "406 Rosemary St, Bay AR \u2013 $199,000 asking (active listing, not a sale), 2,097 sqft, 4bd/2.5ba"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "Redfin puts Bay's median sale price at about $89/sf. Fully updated older homes on Forrest St should sell for roughly $90-100/sf, about $160K for 1,709 sqft, which is below the $210K paid for a 2014 build on Mallard Cove and the $150K-$219K asking prices for 4-bed listings in town."
+  },
+  "first_seen": "2026-10-14",
+  "status": "watch"
+ },
+ "e4eb5ce3fd5e879f": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 5000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Lot 95 Mountain Ranch Dr, Fairfield Bay, AR: 0.26 ac, listed for $2,500, active listing, not a sale (Trulia)",
+    "217 E Blue Ridge Ter, Fairfield Bay, AR: 0.28 ac, listed for $2,500, active listing, not a sale (Zillow)",
+    "Lot 33-34 Blk 7 Woodlawn Dr (Indian Hills), Fairfield Bay, AR: about 34,412 sq ft land, recently sold, price and date not found (Homes.com)",
+    "LOT 126&127 Castle Ridge Hts, Fairfield Bay, AR: active listing, 418 days on market, asking price not found (Zillow)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The acreage is unknown, but S27 T12N R12W appears to fall in the Fairfield Bay/Shirley area, and a $154 opening bid usually means a small subdivision lot with low back taxes; similar quarter-acre lots there are listed for about $2,500 and sit on the market a long time, with about 170 lots for sale, so I'm assuming it would sell for less than that. I couldn't confirm acreage, road access, or whether the lot carries POA dues or liens, so check the county assessor/GIS record before bidding."
+  },
+  "first_seen": "2026-10-14",
+  "status": "land_deal"
  },
  "e505b52a2bdec95f": {
   "arv": {
@@ -1242,6 +1683,25 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "f97c8678fe3defeb": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 175000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "205 S Jackson St, Desloge (the subject): last sold 11/3/2023 for $169,900, 1,281 sqft, 2bd/1ba",
+    "210 Cowling Ave, Desloge: sold 10/11/2024 for about $139,000, 1,326 sqft",
+    "209 N Washington St area, Desloge: recent sale at about $144/sqft, 1,008 sqft, built 1930 (about $145k)",
+    "405 S Jackson St, Desloge: active listing at $132,000, 888 sqft, 2bd/1ba (asking price, not a sale)",
+    "303 E Ash St, Desloge: active listing at $129,900, 808 sqft, 2bd/1ba (asking price, not a sale)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1050.0,
+   "reasoning": "The subject is about 1,281 sqft and sold for $169,900 in late 2023, and fixed-up older Desloge 2/1 homes are selling or listed for about $120\u2013145 per sqft. That puts a cautious ARV near $160k, but I hit a search limit before confirming exact 2026 sale prices, so the comps beyond the subject's own sale history are rough."
+  },
+  "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
  "fa31f784e33c6533": {
   "arv": {
    "arv": 3000.0,
@@ -1341,6 +1801,31 @@
   "status": "notice",
   "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=288230"
  },
+ "notice:www.arkansaspublicnotices.com:955dab6078a913a4": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=289612"
+ },
+ "notice:www.arkansaspublicnotices.com:9a978663aeef99ea": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=285660"
+ },
+ "notice:www.arkansaspublicnotices.com:a4326ab94bd248b4": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=285710"
+ },
+ "notice:www.arkansaspublicnotices.com:b43b4c60aaaf35d9": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=286057"
+ },
+ "notice:www.arkansaspublicnotices.com:bd9fd8c5c0f1a6e8": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=289613"
+ },
  "notice:www.mopublicnotices.com:1280374": {
   "first_seen": "2026-10-12",
   "status": "notice",
@@ -1350,5 +1835,25 @@
   "first_seen": "2026-10-12",
   "status": "notice",
   "url": "https://www.mopublicnotices.com/Details.aspx?ID=1284628"
+ },
+ "notice:www.mopublicnotices.com:25cd167adaa7a0c6": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.mopublicnotices.com/Details.aspx?ID=1284492"
+ },
+ "notice:www.mopublicnotices.com:29bf10a95a789413": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.mopublicnotices.com/Details.aspx?ID=1288963"
+ },
+ "notice:www.mopublicnotices.com:e852a79aadb055f0": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.mopublicnotices.com/Details.aspx?ID=1289040"
+ },
+ "notice:www.mopublicnotices.com:ebb61cad9392bab3": {
+  "first_seen": "2026-10-14",
+  "status": "notice",
+  "url": "https://www.mopublicnotices.com/Details.aspx?ID=1280374"
  }
 }
