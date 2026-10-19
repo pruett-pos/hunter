@@ -109,6 +109,23 @@
   "first_seen": "2026-10-14",
   "status": "deal"
  },
+ "0424adf1e4875102": {
+  "arv": {
+   "arv": 265000.0,
+   "arv_high": 285000.0,
+   "arv_low": 245000.0,
+   "comps": [
+    "626 E Wayland St, Springfield MO 65807 \u2013 Zestimate $192,600 (estimate only, not a sale), 2bd/2ba, 1,174 sqft, rent Zestimate $1,150",
+    "616 E Wayland St, Springfield MO 65807 \u2013 3bd/1.5ba, 1,372 sqft, built 1958; last recorded sale 3/26/2019 at $800 (not an arm's-length sale, not usable)",
+    "Mardeana Hills area, 65807 \u2013 updated 3bd/2ba, about 1,250 sqft, 2-car garage, active listing (price not captured)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1750.0,
+   "reasoning": "The subject is a 4bd/2ba, about 1,900 sqft, roughly 1958 ranch on 0.26 acres in south-central Springfield, listed as bank-owned at $230k. I couldn't find any verified sold comps because my searches were cut off, so this ARV of about $265k comes from applying roughly $135\u2013150/sqft for an updated home to nearby estimates (626 E Wayland is about $164/sqft at a smaller size) and should be checked against recent MLS sales before relying on it."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
+ },
  "050a75792729a4ac": {
   "arv": {
    "arv": 195000.0,
@@ -144,6 +161,63 @@
    "reasoning": "Listings show the house is actually 6bd/3ba, 2,720 sqft and described as well maintained (not the 3bd/2ba in the input), with community boat-launch access but not on the water. Off-water Camdenton homes usually sell for about $115\u2013130/sqft, and the earlier $325k list price was cut to $286k, so I estimate a conservative ARV near $320k; confidence is low because no confirmed nearby sale prices were found."
   },
   "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
+ "08130d3d1c82212e": {
+  "arv": {
+   "arv": 165000.0,
+   "arv_high": 190000.0,
+   "arv_low": 140000.0,
+   "comps": [
+    "1204 Dupwe Dr (subject), Jonesboro AR \u2013 sold $177,800, 6/12/2023, 2,022 sqft 4bd/2ba per Redfin/MLS 10105665 (older records show 1,572 sqft); current online estimates $177K\u2013$196K",
+    "1216 Dupwe Dr, Jonesboro AR \u2013 sold $203,000, 8/31/2022, 1,500 sqft 3bd/2ba (relisted at $210,000 in 11/2023)",
+    "1204 Dupwe Dr (subject) \u2013 earlier sale $117,000, 2/15/2019, 1,572 sqft",
+    "900 Warren St, Jonesboro AR 72401 \u2013 active listing $129,260, 1,108 sqft 3bd/2ba (asking price, not a sale)",
+    "511 Ridgecrest St, Jonesboro AR 72401 \u2013 active as-is listing $124,900, 1,505 sqft 3bd/2ba (asking price, not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1300.0,
+   "reasoning": "I couldn't find any closed sales from the last 12 months, so I weighed the subject's June 2023 sale ($177.8K, recorded as 2,022 sqft), a nearby 3bd/2ba on the same street that sold for $203K in 2022, and current listings around $125\u2013130K for 1,100\u20131,500 sqft homes, then discounted for the 1,097 sqft you gave. Confidence is low because public records list this house at 1,572\u20132,022 sqft and 4 beds, not 1,097 sqft and 3 beds; if the larger size is right, the ARV is probably closer to $180\u2013195K."
+  },
+  "first_seen": "2026-10-19",
+  "status": "deal"
+ },
+ "092f7dea26805c7b": {
+  "arv": {
+   "arv": 125000.0,
+   "arv_high": 145000.0,
+   "arv_low": 100000.0,
+   "comps": [
+    "709 S Carty St, Salem MO \u2013 sold $125,080, Jul 2026, 1,028 sqft, 3 bd/2 ba (town lot, about 18 mi west)",
+    "1000 E Mondy St, Salem MO \u2013 asking $165,000 (listing, not a sale), 1,277 sqft, 3 bd/1 ba",
+    "902 S Carty St, Salem MO \u2013 asking $174,900 (listing, not a sale), 1,310 sqft, 3 bd/1 ba",
+    "303 W 9th St, Salem MO \u2013 asking $79,000 (listing, not a sale; likely needs work), 1,176 sqft, 3 bd/1 ba",
+    "107 County Rd 4433, Boss MO (subject) \u2013 Zillow figure about $140,000, not a sale; Xome reserve $27,000"
+   ],
+   "confidence": "low",
+   "monthly_rent": 900.0,
+   "reasoning": "Updated 3 bd/1 ba homes of 1,200\u20131,350 sqft in Salem are listed at about $150\u2013175k, and one similar Salem home sold for about $125k in Jul 2026, but the subject sits on a gravel county road in remote Boss, so I discounted it to about $125k (roughly $93/sqft), close to but below Zillow's figure of about $140k. I couldn't find any recent sales in Boss itself, the lot and land details are unknown, and search limits cut the research short, so confidence is low and the comps should be checked against Dent County records."
+  },
+  "first_seen": "2026-10-19",
+  "status": "deal"
+ },
+ "0cbd22f3d0e03e1f": {
+  "arv": {
+   "arv": 170000.0,
+   "arv_high": 195000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "105 Jonas Ct, Fairfield Bay \u2013 $240,000, sold 4/11/2025, 1,302 sf, 3/2 remodeled (upper bound, more than 12 months old)",
+    "171 Pine Knot Rd, Fairfield Bay \u2013 $155,000, sold 6/3/2026, 2bd/2.5ba (sqft not found)",
+    "215 Greenwood Rd, Fairfield Bay \u2013 $115,000, sold 2/6/2026, 1,104 sf, 2/1.5",
+    "109 Dunn Hollow Dr, Fairfield Bay \u2013 $48,000, sold 2/10/2026, 1,388 sf, 3/2 (distressed, low bound)",
+    "636 W Cliff Dr, Fairfield Bay \u2013 $189,900 active list (not a sale), 1,364 sf, 3/2"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1150.0,
+   "reasoning": "The subject is a 1978 HUD bungalow with 1,448 sf, listed as 2 bedrooms, 2 baths and a bonus room. Fairfield Bay's median sale price is about $118K, while updated 3/2 homes sell or are listed at about $150K\u2013$240K, so I used a conservative ~$117/sf for a renovated home; confidence is low because I found few verified sold comps from the last 12 months with square footage."
+  },
+  "first_seen": "2026-10-19",
   "status": "too_expensive"
  },
  "0f62e7bfe61d167d": {
@@ -284,6 +358,25 @@
   "first_seen": "2026-10-12",
   "status": "too_expensive"
  },
+ "2dee41a9fbe91a0d": {
+  "arv": {
+   "arv": 110000.0,
+   "arv_high": 125000.0,
+   "arv_low": 95000.0,
+   "comps": [
+    "803 N Layne Dr, Malden MO - list $128,000 (sold price not shown) - sold 2026-02-09 - 1,788 sqft, 3bd/2ba",
+    "39344 E Sue Dr, Malden MO - list $115,000 (sold price not shown) - sold 2026-05-06 - sqft not found, 2bd/1ba",
+    "210 N Douglass St, Malden MO - list $85,000 (sold price not shown) - sold 2026-01-02 - 1,351 sqft, 4bd/2ba",
+    "516 Norman Dr, Malden MO - list $56,000 (sold price not shown) - sold 2026-02-26 - 1,373 sqft, 3bd/1.5ba",
+    "39335 W Sue Dr, Malden MO - list $45,500 (sold price not shown) - sold 2025-10-03 - 1,108 sqft, 3bd/1ba"
+   ],
+   "confidence": "low",
+   "monthly_rent": 850.0,
+   "reasoning": "The subject is a 1973 home with 3 beds and 1 bath, about 1,144 sqft (one source shows 1,521) on 0.41 acres, and an online estimate puts it near $111k; recent Malden sales list for about $45k to $128k, and updated homes around this size land at about $85-100/sqft, which supports roughly $110k. The $135k list price looks high for 63863, the comp prices I found are last list prices rather than confirmed sale prices, and the square footage is uncertain, so confidence is low."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
+ },
  "2ec9b4f0953aebdd": {
   "arv": {
    "arv": 2500.0,
@@ -367,6 +460,23 @@
   "first_seen": "2026-10-16",
   "status": "too_expensive"
  },
+ "37be3fa7679820b3": {
+  "arv": {
+   "arv": 125000.0,
+   "arv_high": 140000.0,
+   "arv_low": 105000.0,
+   "comps": [
+    "330 Manchester St, Reeds Spring MO \u2013 listed at $235,000, sold Jul 31, 2025 \u2013 1,713 sqft (about $137/sqft)",
+    "RealtyTrac automated value for the subject, 81 Claybough St \u2013 $136,214 \u2013 852 sqft (an estimate, not a sale)",
+    "12 Claybough St, Reeds Spring MO \u2013 rental listing at $795/mo \u2013 2 bed/1 bath, 575 sqft (supports the rent estimate)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 925.0,
+   "reasoning": "I found only one sold comp, and it is about twice the subject's size; my search limit ran out before I could find more, so the ARV rests mostly on that sale's ~$137/sqft, a RealtyTrac automated estimate of about $136K, and local pricing for small homes, giving roughly $125K after a conservative markdown. I estimated rent at about $925/mo by scaling up from the $795/mo 2/1 listing on the same street."
+  },
+  "first_seen": "2026-10-19",
+  "status": "deal"
+ },
  "389b48d6258df16b": {
   "arv": {
    "arv": 2000.0,
@@ -416,6 +526,63 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "3fbbad26e0c04e7d": {
+  "arv": {
+   "arv": 140000.0,
+   "arv_high": 165000.0,
+   "arv_low": 115000.0,
+   "comps": [
+    "118 Oak St, Leadwood MO: fully remodeled 3bd/1.5ba, 1,056 sqft, built 1940; sold May 14, 2025, last list price $179,900 (about $170/sqft)",
+    "204 Church St, Leadwood MO: 3bd/2ba, 1,232 sqft; pending at $169,900 (2025)",
+    "200 10th St (subject): listed for $64,000 as-is (MLS 23017499), last sold 6/21/2023; Zestimate about $90,000 as-is",
+    "204 W North St, Leadwood MO: 3bd/1ba, 1,500 sqft; listed for $49,000\u2013$59,000 as-is (dated)",
+    "604 Hoffman St, Leadwood MO: 3bd/1ba, 2,443 sqft on 0.93 acres; listed at $125,000\u2013$149,900"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1000.0,
+   "reasoning": "The only remodeled sale I found nearby is 118 Oak St, which sold around $170/sqft, and a 3bd/2ba is pending near $170K, while as-is homes in Leadwood list for $50K\u2013$90K. To stay conservative for a 1-bath 1950 house in a cheap market, I used about $120/sqft on 1,160 sqft to get roughly $140K, and confidence is low because I could only confirm one closed sale."
+  },
+  "first_seen": "2026-10-19",
+  "status": "watch"
+ },
+ "421638ecd6ee6b92": {
+  "arv": {
+   "arv": 155000.0,
+   "arv_high": 172000.0,
+   "arv_low": 135000.0,
+   "comps": [
+    "401 S Grant St, Desloge \u2013 about $155,000 \u2013 2026 (exact date unclear) \u2013 1,308 sqft, 2bd/1ba",
+    "405 S Vandervoot St, Desloge \u2013 about $164,900 \u2013 Jul/Aug 2026 \u2013 784 sqft, 2bd/1ba, updated",
+    "303 E Ash St, Desloge \u2013 about $129,900 \u2013 Sep 2026 \u2013 808 sqft, 2bd/1ba",
+    "201 S School St, Desloge \u2013 about $119,900 \u2013 Jul/Aug 2026 \u2013 874 sqft, 2bd/1ba",
+    "306 S Lincoln St, Desloge \u2013 price not found \u2013 Jun 24, 2026 \u2013 1,344 sqft, 3bd/1ba (listing says 2bd), similar older in-town home"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1100.0,
+   "reasoning": "Updated 2bd/1ba older homes in central Desloge sold for about $120k\u2013$165k in 2026, and the subject's larger 1,281 sqft on a 0.27-acre lot points to the upper-middle of that range, roughly $155k, against a 63601 median near $169k. Confidence is medium because the search snippets did not clearly show which sale prices and dates go with which address, so these comp figures should be checked against MLS or county records."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
+ },
+ "43d712e399870912": {
+  "arv": {
+   "arv": 170000.0,
+   "arv_high": 200000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "40214 Ken Ln (subject), Campbell MO: listed at $189,900, sold 3/9/2022 (price not disclosed), 3bd/2ba, 2,297 sqft per Redfin, brick on 2.7 acres",
+    "39988 Billy Blvd, Campbell MO: listed at $178,500 after a $50K cut (active listing, not a sale), 3bd/2ba, 1,735 sqft",
+    "39325 State Hwy 53, Campbell MO: listed at $138,000 (active listing, not a sale), 3bd/2ba, 1,165 sqft",
+    "1918 Boone Ln, Campbell MO: listed at $247,500 (active listing, not a sale), 3bd/2ba, 2,060 sqft",
+    "812 Car St, Campbell MO: sold 12/11/2025, price not found, 3bd/1ba, 1,309 sqft (in-town reference)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1100.0,
+   "reasoning": "The subject is a brick house on 2.7 rural acres that listed for $189,900 in 2022, and Redfin's records show 2,297 sqft, not the 1,347 in the input; country 3bd/2ba listings nearby run about $138K\u2013$248K, while in-town Campbell homes sit near a $91K median listing price. I couldn't confirm the square footage or find sold comps with prices, so I set a conservative ARV of about $170K, below Redfin's $223K\u2013$250K automated estimate."
+  },
+  "first_seen": "2026-10-19",
+  "status": "deal"
  },
  "441e0d84c216acb5": {
   "arv": {
@@ -564,6 +731,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "56898c82a797853a": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 180000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "2125 Timberwood Ct, Lebanon MO \u2013 list $154,900 (sale pending, date unclear) \u2013 3bd/2ba, 1,344 sqft, 1997 manufactured, 0.3 ac",
+    "2141 Timberwood Ct, Lebanon MO \u2013 sold $139,900 list, 5/23/2024 \u2013 4bd/2ba, 1,456 sqft",
+    "2117 Timberwood Ct, Lebanon MO \u2013 Redfin estimate $180,451 (not a sale) \u2013 3bd/2ba, 1,273 sqft",
+    "2109 Timberwood Ct, Lebanon MO \u2013 Redfin estimate $187,793 (not a sale) \u2013 4bd/2ba, 1,352 sqft",
+    "2100 Timberwood Ct, Lebanon MO \u2013 sold $289,900, 7/15/2025 \u2013 2,332 sqft, 2002 manufactured (larger, upper bound)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1150.0,
+   "reasoning": "Timberwood Ct is mostly late-1990s manufactured homes on small city lots, and the matching house across the street (2125, also 1,344 sqft) was listed at $154,900, while 2141 sold for about $140k in 2024; automated estimates for nearby homes are about $180\u2013188k, but those are estimates, not sales. My searches were cut off before I could confirm sale dates, so I found no 12-month sold comp that closely matches, and I put the updated value conservatively at about $160k (range $145\u2013180k), with rent around $1,150 a month."
+  },
+  "first_seen": "2026-10-19",
+  "status": "deal"
+ },
  "5a1ac2b164455915": {
   "arv": {
    "arv": 155000.0,
@@ -689,6 +875,43 @@
   "first_seen": "2026-10-16",
   "status": "too_expensive"
  },
+ "600a9ce629c476a7": {
+  "arv": {
+   "arv": 270000.0,
+   "arv_high": 295000.0,
+   "arv_low": 245000.0,
+   "comps": [
+    "87 Lakeshore Dr, Kimberling City \u2013 $305,900, closed 4/2/2026, ~3,566 sqft (public record)",
+    "94 Lakeshore Dr (subject) \u2013 $239,900, sold 9/9/2022, 1,630 sqft 3bd/2ba; current Redfin estimate about $276K",
+    "88 Towers Aly Unit 102, Kimberling City \u2013 sold 5/15/2026, 1,062 sqft 2bd/2ba condo (price not shown)",
+    "Kimberling City median sale price over the last 12 months is about $214,000 (Homes.com)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1500.0,
+   "reasoning": "Listings show the subject as a 1970 3bd/2ba ranch of about 1,630\u20131,850 sqft listed at $221K, not the 1bd/1ba in the input; it sold for $239,900 in 2022 and Redfin now estimates about $276K. Using a conservative ~$145\u2013160/sqft for an updated 1970s non-lakefront ranch on Lakeshore Dr, the ARV comes to about $270K, but confidence is low because I could not verify sale prices for close, similar-sized comps."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
+ },
+ "6221a9d37ea26b95": {
+  "arv": {
+   "arv": 110000.0,
+   "arv_high": 125000.0,
+   "arv_low": 95000.0,
+   "comps": [
+    "1603 E Stoddard St, Dexter MO: 2bd/1ba, 1,080 sqft, updated; listed at $149,900, sold Jun 17, 2026 (sale price not confirmed)",
+    "1308 E Oak St, Dexter MO: 2bd/1ba, 976 sqft, fully renovated in 2025; listed at $119,000 in 2025-26 (active/sold status not confirmed)",
+    "727 W Fannetta St, Dexter MO: 2bd/1ba, 920 sqft; sold Jun 3, 2026 (price not found)",
+    "1400 Scott Ave, Dexter MO: 2bd/1ba, 1,575 sqft, updated and move-in ready; $140,000 (list price, larger home)",
+    "818 N Sassafrass St, Dexter MO: 2bd/1ba, 1,396 sqft, dated; listed at $70,000, sold Feb 7, 2025 (as-is low end)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 800.0,
+   "reasoning": "Updated 2-bed, 1-bath homes of about 900-1,100 sqft in town Dexter list for roughly $119k-$150k, and dated ones sell for $55-70k. I could only confirm list prices, not sale prices, and the subject was previously listed as-is at $74.9k-$78.5k, so I kept the ARV conservative at about $110k ($120/sqft); rent of about $800 is based on local 2-bed rentals at $745-$950."
+  },
+  "first_seen": "2026-10-19",
+  "status": "deal"
+ },
  "63fe7a015162e335": {
   "arv": {
    "arv": 2000.0,
@@ -743,6 +966,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "watch"
+ },
+ "69910fafdf4d0cfe": {
+  "arv": {
+   "arv": 150000.0,
+   "arv_high": 170000.0,
+   "arv_low": 130000.0,
+   "comps": [
+    "1113 N Walnut St, Willow Springs MO: 3bd/1.5ba, 1,362 sqft, sold 9/29/2026, price not found",
+    "709 N Pine St, Willow Springs MO: 4bd/2ba, 1,422 sqft, sold 9/22/2026, price not found",
+    "1191 County Road 5250, Willow Springs MO: 3bd/1ba, 1,392 sqft, sold 9/25/2026, price not found",
+    "304 W 10th St, Willow Springs MO: 3bd/2ba, 1,518 sqft, active listing at $179,900 (not a sale)",
+    "415 N Grand St, Willow Springs MO: active listing at $89,900 (not a sale; beds/baths and sqft not found)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1000.0,
+   "reasoning": "I found similar in-town homes that sold in Willow Springs in Sept 2026 (1,360\u20131,420 sqft), but no sale prices, so this estimate rests on the area median of about $131/sqft on listings, discounted because the house was built in 1900 and has 1 bath, plus nearby listings priced from $90K to $180K. Applying roughly $105\u2013130/sqft to the 1,313 sqft house on a 0.52-acre corner lot gives a conservative ARV of about $150K; the rent figure is my own estimate for a small Ozarks town, not taken from rental listings."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
  },
  "6b9d7be2c33c1838": {
   "arv": {
@@ -891,6 +1133,25 @@
   "first_seen": "2026-10-16",
   "status": "too_expensive"
  },
+ "7d76f90a81f56c0e": {
+  "arv": {
+   "arv": 172000.0,
+   "arv_high": 188000.0,
+   "arv_low": 155000.0,
+   "comps": [
+    "40 Lorene St (subject, prior sale in updated condition), Calico Rock: $182,500, Aug 2023, 1,840 sqft",
+    "279 Chessmond Ferry Rd, Calico Rock: $150,075, ~late 2025, 1,427 sqft, 2bd/2ba",
+    "8564 Hwy 177 S, Calico Rock: $165,000, Dec 22, 2025, 1,458 sqft, 3bd/2ba",
+    "613 E 1st St, Calico Rock: $124,000, Jul 6, 2026, 1,300 sqft, 3bd/2ba",
+    "37 Highland St, Calico Rock: $126,000, Aug 29, 2025, 1,128 sqft, 3bd/2ba"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1100.0,
+   "reasoning": "Online records describe the subject as 1,840 sqft with 3\u20134 beds and 2 baths on about 1 acre in town, not the 2 beds listed in the input. It sold updated for $182.5k in 2023, and recent in-town 2-bath sales at about $95\u2013115/sqft, applied conservatively, point to an ARV of about $172k (Zestimate ~$149k, Redfin ~$187k)."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
+ },
  "7f387ee86ae13b38": {
   "arv": {
    "arv": 750000.0,
@@ -922,6 +1183,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "deal"
+ },
+ "819b03c6cf2cc7e2": {
+  "arv": {
+   "arv": 145000.0,
+   "arv_high": 160000.0,
+   "arv_low": 130000.0,
+   "comps": [
+    "505 W Main St, Park Hills (subject): Redfin estimate $135,681; 1,168 sqft, 2 bed/1 bath; this is an estimate, not a sale",
+    "608 W Main St, Park Hills: Redfin estimate $136,532; 1,108 sqft, 3 bed/1 bath; estimate, not a sale",
+    "605 W Main St, Park Hills: Redfin estimate $161,887; 1,632 sqft, 3 bed/2 bath; estimate, not a sale",
+    "604 W Main St, Park Hills: Redfin estimate about $185,000; 1,500 sqft, 3 bed/1.5 bath; estimate, not a sale",
+    "509 W Main St, Park Hills: Redfin estimate $131,785; 5 bed/2 bath; sqft unknown; estimate, not a sale"
+   ],
+   "confidence": "low",
+   "monthly_rent": 950.0,
+   "reasoning": "I could not find any confirmed sold comps before my search limit ran out, so the only data is Redfin estimates for this block of W Main: the subject at about $136k for 1,168 sqft and similar homes at $131k to $162k. My conservative after-repair value is about $145k (roughly $124 per sqft), which is below the $155k REO list price, and the $950 rent figure is my own assumption rather than something I found in a source."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
  },
  "87a2fb8d43a34e75": {
   "arv": {
@@ -991,6 +1271,24 @@
   },
   "first_seen": "2026-10-12",
   "status": "deal"
+ },
+ "8a1dfa10491e60e8": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 3000.0,
+   "arv_low": 750.0,
+   "comps": [
+    "Neighboring tax parcels 800-01132-000 and 800-01133-000 (same Horseshoe Bend MRID subdivision), sold at the state tax sale for about $86 and $78 (2025, lot size not given; these are tax-sale prices, not market sales)",
+    "Lot 401, Lynwood Addition, Horseshoe Bend (APN 800-06689-000), listed with seller financing at $79/month (asking price, not a sale; date and size not given)",
+    "203 E Lansing Ave, Horseshoe Bend, 0.33-acre wooded lot, listed by a land flipper (asking price, not a sale; date not given)",
+    "2208 Peaceful Hollow Dr, Horseshoe Bend, about 0.40 acre, listed at about $8,835/acre, or roughly $3,500 (asking price, not a sale; date not given)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This parcel is a small vacant lot (Lot 18, Block 1, Tract C, City Subdivision 101) in Horseshoe Bend, where there are thousands of similar lots and cash sales usually run about $750\u2013$3,000, below the higher seller-financed asking prices that flippers list. I found no closed market sales for this subdivision, and neighboring lots went for under $100 at the tax sale, so this is a low-confidence land-only estimate with no rental value."
+  },
+  "first_seen": "2026-10-19",
+  "status": "land_deal"
  },
  "8d1084de81b9f2cb": {
   "arv": {
@@ -1099,6 +1397,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "964070b2ffa22a56": {
+  "arv": {
+   "arv": 90000.0,
+   "arv_high": 110000.0,
+   "arv_low": 72000.0,
+   "comps": [
+    "39344 E Sue Dr, Malden MO - 2bd/1ba, 1,093 sf - $115,000 list, sold May 2026 (~$105/sf)",
+    "210 N Douglass St, Malden MO - 4bd/2ba, 1,351 sf - $85,000 list, sold Jan 2, 2026 (~$63/sf)",
+    "516 Norman Dr, Malden MO - 3bd/1.5ba, 1,373 sf - $56,000 list, sold Feb 26, 2026 (~$41/sf, dated)",
+    "607 Stevenson St, Malden MO - $89,900 list, sold May 20, 2025",
+    "207 W Park St, Malden MO - $96,000 list, sold Feb 28, 2025"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 750.0,
+   "reasoning": "The subject is a 2-bed, 1-bath REO with about 1,484 sf on a 0.2-acre in-town lot. Comps show updated in-town homes in Malden selling for about $63\u2013105/sf ($85k\u2013115k) and dated ones for about $41/sf, so I conservatively valued it at about $60/sf in updated condition (~$90k), with rent estimated at about $750/mo."
+  },
+  "first_seen": "2026-10-19",
+  "status": "deal"
+ },
  "987bce392240a2f3": {
   "arv": {
    "arv": 1500.0,
@@ -1182,6 +1499,25 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "9aaa1fe414e50cd7": {
+  "arv": {
+   "arv": 195000.0,
+   "arv_high": 210000.0,
+   "arv_low": 180000.0,
+   "comps": [
+    "904 E Smith St (subject), 3bd/2ba, ~1,276-1,313 sqft: sold Feb 8, 2024 after listing at $195,000 (MLS 60258931)",
+    "2816 N Pierce Ave, 65803, 3bd/2ba, 1,329 sqft: sold Oct 2, 2025, last list price $210,000",
+    "725 W Jean St, 65803, 3bd/2.5ba, 1,390 sqft: sold Sep 22, 2025, last list price $189,900",
+    "2111 N Grant Ave, 65803, 3bd/2ba, 1,245 sqft: sold Dec 22, 2025 for $155,000",
+    "2448 N Rogers Ave, 65803, 3bd/1ba, 1,318 sqft: sold Oct 17, 2025, last list price $159,900"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1400.0,
+   "reasoning": "The subject itself sold in Feb 2024 after listing at $195k, and recent north-Springfield (65803) 3bd/2ba homes around 1,250-1,400 sqft sold for about $155k-$210k, with updated 2-bath homes at the top of that range. I put the conservative ARV at about $195k; the current $181k list price and the earlier $130k auction bid suggest little room for a flip, and the $1,400/month rent is my own estimate since I didn't look up rental comps."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
+ },
  "9b248c0d47a4b03e": {
   "arv": {
    "arv": 85000.0,
@@ -1217,6 +1553,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "watch"
+ },
+ "9edcd18d62203cca": {
+  "arv": {
+   "arv": 155000.0,
+   "arv_high": 170000.0,
+   "arv_low": 140000.0,
+   "comps": [
+    "206 S Collison Ave, Bald Knob (subject): sold $110,000, Apr 2021, 1,952 sqft, 3bd/2ba; Redfin estimate about $152,000",
+    "205 S Collison Ave, Bald Knob: sold $125,000, Oct 2022, sqft unknown",
+    "202 S Collison Ave, Bald Knob: Redfin estimate about $159,000 (estimate, not a sale), 2,148 sqft",
+    "Bald Knob citywide: median sale price over the last 12 months about $149,000 (Homes.com)",
+    "309 W Cleveland St, Bald Knob: listed at $167,500 (asking price, not a sale), 3bd/2ba, 1,428 sqft"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1250.0,
+   "reasoning": "My search tool hit its limit, so I found no nearby sales from the last 12 months; the most recent comps are a 2022 sale across the street and the subject's own 2021 sale at $110K. I set a conservative ARV of about $155K for the updated 1,952 sqft 3/2, based on Redfin estimates of $152K\u2013159K for the subject and its neighbor and the roughly $149K Bald Knob median, so confidence is low."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
  },
  "9f9c9b1966f726fb": {
   "arv": {
@@ -1272,6 +1627,44 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "a1896ea25bf4e8a3": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 180000.0,
+   "arv_low": 135000.0,
+   "comps": [
+    "113 N B St, Bonne Terre \u2013 $165,900, recent closed sale (date not confirmed), 3bd/1ba, 1,268 sqft",
+    "520 Grove St, Bonne Terre \u2013 $172,000, recent closed sale (date not confirmed), 3bd/1ba, 1,413 sqft",
+    "207 Hill St, Bonne Terre \u2013 $129,900, recent closed sale (date not confirmed), 3bd/1ba, 1,049 sqft",
+    "128 Church St, Bonne Terre \u2013 $179,000, recent sale (date not confirmed), 3bd/1ba, 1,824 sqft",
+    "422 W Desoto Rd (next door) \u2013 sold Jun 2022 after listing at $149,900; Redfin now estimates ~$161K, 3bd/2ba, 1,187 sqft"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1250.0,
+   "reasoning": "Updated 3-bed, 1-bath older homes in Bonne Terre have recently closed between about $130K and $180K, and the house next door is valued around $161K, so a conservative ARV is about $160K. This is medium confidence because I couldn't confirm the comp sale dates, and public records differ from your inputs: they list the house at 1,756 sq ft (not 1,198), two stories, built in 1925 on a stone foundation, in poor condition, with a 1.06-acre lot and a 780 sq ft detached garage."
+  },
+  "first_seen": "2026-10-19",
+  "status": "watch"
+ },
+ "a326cc89389dcef3": {
+  "arv": {
+   "arv": 175000.0,
+   "arv_high": 190000.0,
+   "arv_low": 155000.0,
+   "comps": [
+    "612 N Division St, Bonne Terre \u2013 3bd/2ba, 1,160 sqft \u2013 $189,900 (recent sale; date not confirmed)",
+    "205 Lorraine St, Bonne Terre \u2013 3bd/2ba, 1,184 sqft \u2013 $182,500 (recent sale; date not confirmed)",
+    "204 Wesley Dr, Bonne Terre \u2013 3bd/2ba, 1,248 sqft \u2013 $120,000 (sold Aug 19, 2026; likely not updated)",
+    "411 N Allen St, Bonne Terre \u2013 3bd/1ba, 960 sqft \u2013 $159,900 (recent sale; date not confirmed)",
+    "128 Church St, Bonne Terre \u2013 3bd/1ba, 1,824 sqft \u2013 $179,000 (recent sale; date not confirmed)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1300.0,
+   "reasoning": "Updated 3-bed, 2-bath homes of about 1,100\u20131,250 sqft in town, close to the subject's roughly 1,072\u20131,188 sqft, sold for about $180\u2013190K, and Zillow's estimate for the subject is about $180K. I set the ARV a bit lower at $175K because a dated sale at $120K drags down the low end, and I could not confirm most sale dates or the subject's exact size."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
+ },
  "a32722bef29d28de": {
   "arv": {
    "arv": 3000.0,
@@ -1297,6 +1690,44 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "a5128794ecc04bc2": {
+  "arv": {
+   "arv": 330000.0,
+   "arv_high": 360000.0,
+   "arv_low": 300000.0,
+   "comps": [
+    "230 Wagonwheel Dr, Camdenton (same street, Granelle Acres): active listing at $389,900, 3bd/3ba, 2,480 sqft. This is an asking price, not a sale",
+    "1041 Ha Ha Tonka Rd, Camdenton: sold Aug 6, 2026, 4bd/3ba, 2,087 sqft, sale price not found",
+    "92 John Vernon Dr, Camdenton: sold Jul 7, 2026, 4bd/3ba, 3,142 sqft, sale price not found",
+    "176 Buckingham Dr, Camdenton: sold May 28, 2026, last list price $339,900, 4bd/3ba, sqft not found",
+    "Camdenton 12-month median sale price about $340,000 (Homes.com)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2000.0,
+   "reasoning": "Listings show the subject is actually a 2,720 sqft home with 6 bedrooms and 3 baths on 0.42 acres in Granelle Acres, not the 3bd/2ba in the input, and one room lacks a window; it was listed earlier at $325K and is now at auction for $286K. I couldn't confirm any sale prices before hitting the search limit, so this ARV is a conservative estimate based on the town median, the $389,900 asking price on the same street, and the earlier $325K list price."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
+ },
+ "a59dab5c6674d15a": {
+  "arv": {
+   "arv": 100000.0,
+   "arv_high": 120000.0,
+   "arv_low": 85000.0,
+   "comps": [
+    "15107 Success Ln, Dexter MO \u2013 $196,000 (last list price), sold Feb 14, 2025, 2bd/1ba, 1,140 sqft, built 2016 (newer home outside town; upper bound only)",
+    "907 N Mulberry St, Dexter MO \u2013 sold Jan 31, 2023, 2bd/1ba, 1,020 sqft (price not shown; same north-side neighborhood)",
+    "805 W Bain St, Dexter MO \u2013 sold Jan 31, 2023, 2bd/1ba, 880 sqft (price not shown)",
+    "Subject 815 N Walnut St \u2013 recently listed at $80,000, 2bd/1ba, 1,032 sqft, built 1945; last recorded sale about $32.3K",
+    "203 N Nelson Ave, Dexter MO \u2013 listed at $29,900, pending, 2bd/1ba, 852 sqft (distressed low end)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 850.0,
+   "reasoning": "The subject was recently listed with Century 21 at $80K, probably as-is. In-town 1940s 2/1 homes in Dexter of about 1,000 sqft that have been updated usually sell for about $85K\u2013$120K, well below the $196K newer rural sale, so I set a conservative $100K ARV; confidence is low because a search limit stopped me from confirming recent sold prices."
+  },
+  "first_seen": "2026-10-19",
+  "status": "deal"
  },
  "a76f9fb23ea1468f": {
   "arv": {
@@ -1508,6 +1939,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "deal"
+ },
+ "b7dce7e80f08657d": {
+  "arv": {
+   "arv": 280000.0,
+   "arv_high": 320000.0,
+   "arv_low": 245000.0,
+   "comps": [
+    "Subject: 410 County Rd 393, Thayer, listed 9/13/2026 as an REO at $257,983 ($76/sf); MLS shows 4bd/3.5ba (not the 3bd/2.1ba given), 3,380 sf, built 1970, 1 acre. Trulia estimates $247K; its last-sale data implies a prior sale around $206K",
+    "234 Sherman, Thayer: 3bd/2ba, 3,214 sf, built 1977. Recently sold at $149/sf per Homes.com (implies about $479K, unconfirmed); sale date not found",
+    "16770 MO-142, Thayer: 3bd/2ba, 2,560 sf, sold 8/17/2026; price not found",
+    "420 Saint John St, Thayer: 4bd/2ba, 1,983 sf, sold 8/19/2026; price not found",
+    "850 OO Hwy, Thayer: 4bd/2.5ba, 2,388 sf, remodeled, 3 acres; active listing, price not found"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1500.0,
+   "reasoning": "I couldn't find confirmed sale prices for large homes near Thayer. So I based the ARV on about $80\u201395/sf for a renovated 3,380 sf 1970 multi-level house on 1 acre, and I kept it low because big homes are hard to sell in this thin rural market. That's also why confidence is low, and the rent figure is my estimate for a 4-bed home in Oregon County, not based on rental listings."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
  },
  "b9f7c6e3adfe3b5e": {
   "arv": {
@@ -1733,6 +2183,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "deal"
+ },
+ "d7fff04809489e9c": {
+  "arv": {
+   "arv": 320000.0,
+   "arv_high": 350000.0,
+   "arv_low": 285000.0,
+   "comps": [
+    "Subject 1009 Ridge Top Dr, Dexter: currently listed at $351,000 (MLS 26054161, bank-owned; another site shows $334,882), 3bd/2.5ba, 2,618 sqft. This is an asking price, not a sale.",
+    "11148 Colonial Ridge Dr, Dexter: sold for $355,000 on 4/27/2026, about 1,667 sqft (~$213/sqft)",
+    "16341 Terrace Dr, Dexter: sold 4/24/2026, 3bd/2ba, 2,480 sqft. Sale price not found.",
+    "32 Circle Dr, Dexter: sold 4/17/2026, 3bd/2.5ba, 3,382 sqft. Sale price not found.",
+    "1007 Ridge Top Dr, Dexter (next door): 4bd/2.5ba, built 1969, 0.33 acres, off market. No recent sale price found."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1700.0,
+   "reasoning": "The bank's list price of $335k-$351k and one confirmed nearby sale at $355k for a smaller, newer-style home set a ceiling, and typical Dexter values of about $115-$135/sqft for large older homes put a conservative ARV near $320k. I could confirm only one comp's sale price, so confidence is low and the comps should be checked in the MLS or county records before bidding."
+  },
+  "first_seen": "2026-10-19",
+  "status": "too_expensive"
  },
  "dbcb4a30c410264c": {
   "arv": {
@@ -2258,6 +2727,11 @@
   "status": "notice",
   "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=288230"
  },
+ "notice:www.arkansaspublicnotices.com:385cc8dc25331b0e": {
+  "first_seen": "2026-10-19",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=291361"
+ },
  "notice:www.arkansaspublicnotices.com:3d43fb4653d0a1a9": {
   "first_seen": "2026-10-16",
   "status": "notice",
@@ -2302,6 +2776,11 @@
   "first_seen": "2026-10-16",
   "status": "notice",
   "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=288229"
+ },
+ "notice:www.arkansaspublicnotices.com:eab358b031f08b0c": {
+  "first_seen": "2026-10-19",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=290095"
  },
  "notice:www.mopublicnotices.com:1280374": {
   "first_seen": "2026-10-12",
