@@ -308,6 +308,61 @@
   "first_seen": "2026-10-21",
   "status": "land_deal"
  },
+ "158bf1f1a4797f66": {
+  "arv": {
+   "arv": 295000.0,
+   "arv_high": 315000.0,
+   "arv_low": 275000.0,
+   "comps": [
+    "6272 Alan Dr (subject), Jonesboro AR \u2013 sold $298,000, 12/23/2021, 4bd/2ba, 1,768 sf (prior sale of subject)",
+    "6263 Alan Dr, Jonesboro AR \u2013 sold $259,900, 9/18/2020, 5bd/2ba brick, about 1 yr old",
+    "6208 Alan Cv, Jonesboro AR \u2013 Redfin comp to subject; subject sold at +$22/sf vs. this home, 2021",
+    "4508 Shale Cv, Jonesboro AR 72404 \u2013 active FSBO list $272,500, 4bd/2ba, 1,841 sf (list price only)",
+    "2008 Village Dr, Jonesboro AR 72404 \u2013 sold $245,000, 9/28/2023, 3bd/2ba, 1,631 sf"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1850.0,
+   "reasoning": "This home is fairly new (built around 2016\u20132022) in the Valley View subdivision. It sold for $298K (about $169/sf) in December 2021, and nearby Valley View 4-bed homes of about 1,800\u20131,850 sf are currently listed around $270\u2013290K, so I'm estimating about $295K in updated condition. Confidence is only medium because a search limit stopped me from confirming 2025 sold comps on Alan Dr, so you should check recent MLS sales before bidding."
+  },
+  "first_seen": "2026-10-23",
+  "status": "watch"
+ },
+ "17fc31cdc970bf2b": {
+  "arv": {
+   "arv": 330000.0,
+   "arv_high": 365000.0,
+   "arv_low": 295000.0,
+   "comps": [
+    "230 Wagonwheel Dr, Camdenton MO 65020 \u2013 next-door home, active listing at $389,900 (not a sale), 3bd/3ba, 2,480 sqft",
+    "113 Gull Point, Camdenton MO 65020 \u2013 sold Oct 31, 2025, last list price $315,000, 4bd/2.5ba, sqft not found",
+    "58 Apple Cider, Camdenton MO 65020 \u2013 sold Dec 17, 2025, last list price $450,000, 4bd/2.5ba, sqft not found",
+    "1041 Ha Ha Tonka Rd, Camdenton MO 65020 \u2013 sold Aug 6, 2026, sale price not found, 4bd/3ba, 2,087 sqft"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2000.0,
+   "reasoning": "Listings show this REO with 6 beds, 3 baths, 2,720 sqft and 0.42 acres, not the 3/2 given; it is not lakefront but has community boat-launch access, and it was listed at $325,000 before dropping to $286,000. A search-tool limit left only one listing next door and two sales with list prices only, so this is a conservative $310-120 per sqft estimate with low confidence."
+  },
+  "first_seen": "2026-10-23",
+  "status": "too_expensive"
+ },
+ "193b84e7821de2a3": {
+  "arv": {
+   "arv": 185000.0,
+   "arv_high": 200000.0,
+   "arv_low": 165000.0,
+   "comps": [
+    "143 Proctor Ln, Romance AR (subject, updated 1,568 sf manufactured home on 6 ac): sold $190,000, Nov 2021",
+    "168 Janel Ct, Romance AR: sold $132,600, 2025, 1,280 sf single-wide on 5.4 ac (renovated)",
+    "127 Proctor Ln, Romance AR: listed at $149,900 (active, not a sale), 1,216 sf mobile home, 3bd/2ba",
+    "355 Midge Langley Rd, Romance AR: listed at $215,000 (active, not a sale), 1,550 sf, 3bd/2ba"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1250.0,
+   "reasoning": "The subject is a newer manufactured home on a permanent foundation with about 6 acres. It sold for $190k in updated condition in 2021, and nearby renovated mobile homes on acreage sold or are listed at about $133k\u2013$150k, so I set a conservative ARV near $185k. Confidence is low because I found only one recent closed sale and the sources disagree on the square footage (1,472 vs 1,568) and possibly the acreage."
+  },
+  "first_seen": "2026-10-23",
+  "status": "too_expensive"
+ },
  "19ac762969536039": {
   "arv": {
    "arv": 170000.0,
@@ -550,6 +605,24 @@
    "reasoning": "I couldn't confirm this parcel's acreage, access or subdivision, and I found no closed sales, only listings. The low opening bid and its location near Fairfield Bay/Shirley suggest a small subdivision-style lot, and lots like that around Fairfield Bay are listed at roughly $950 to $8,000, so I used a conservative $2,000."
   },
   "first_seen": "2026-10-14",
+  "status": "land_deal"
+ },
+ "3b05b209dbd972d7": {
+  "arv": {
+   "arv": 1000.0,
+   "arv_high": 2500.0,
+   "arv_low": 300.0,
+   "comps": [
+    "703 S Pine Ridge Dr, Horseshoe Bend AR \u2013 0.77 ac residential lot, active listing $8,495 (asking price, not a sale; larger lot)",
+    "1200 Redbird Ln, Horseshoe Bend AR \u2013 residential lot near Pioneer Lake, active listing (asking price, not a sale)",
+    "Subject 800-10052-000 (Lot 298, Settlers Park) \u2013 bought from the state on a limited warranty deed 3/1/2022, recorded consideration $0",
+    "Izard County land overall \u2013 median about $4,331/acre across roughly 281 sold records (Acres.com); a weak benchmark for small subdivision lots"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This is Lot 298 in Settlers Park, Horseshoe Bend (1010 Chick-A-Dee St), a single small vacant residential lot taxed at only about $5 a year, and it has already gone through state tax sale and come back delinquent. I found no recent sold comps for single lots in this subdivision, and the nearby comps are only listings, so I priced it as a low-demand lot worth about $1,000 (range $300\u2013$2,500), conservatively below Horseshoe Bend asking prices."
+  },
+  "first_seen": "2026-10-23",
   "status": "land_deal"
  },
  "3c847ec3489143b8": {
@@ -949,6 +1022,24 @@
   "first_seen": "2026-10-16",
   "status": "land_deal"
  },
+ "5dcd77427e2bd379": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 5000.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "0.36 ac lot, Horseshoe Bend AR (Izard Co) - sold $1,099 (FarmandRanch, date n/a)",
+    "0.4 ac lot, Horseshoe Bend AR 72512 - sold/listed $7,995 (LandWatch, date n/a)",
+    "0.32 ac lot near Turkey Mountain Golf Course, Horseshoe Bend (parcel 800-11538-000) - sold, price n/a",
+    "Izard County land median ~$4,331/acre (Acres.com, 281 sold records)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Parcel records show this is Lot 94 in the Forrest Heights subdivision (1904 E Monarch Ln, S10 T18N R07W) in Horseshoe Bend, which has a large supply of small lots that typically sell for about $1,000\u2013$8,000, so I valued it as one vacant subdivision lot. I couldn't confirm the acreage, road access or utilities, the comps have no sale dates or have prices missing, and a $91.64 opening bid suggests a low assessed value, so this is a conservative low-confidence estimate."
+  },
+  "first_seen": "2026-10-23",
+  "status": "land_deal"
+ },
  "5e33ef00f342eac8": {
   "arv": {
    "arv": 2000.0,
@@ -1145,6 +1236,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "74bc79ef38b46068": {
+  "arv": {
+   "arv": 1000.0,
+   "arv_high": 2500.0,
+   "arv_low": 300.0,
+   "comps": [
+    "Assessor record for this parcel: Lot 378, Treasure Hills Addition, 106 S Jewel Rd, Horseshoe Bend; estimated market value $500 (land only, no building)",
+    "800-12820-000 (nearby Horseshoe Bend lot): sold at state land auction for $250, 2026 sale results",
+    "800-12838-000 (nearby Horseshoe Bend lot): sold at state land auction for $150, 2026 sale results",
+    "800-12845-000 (nearby Horseshoe Bend lot): sold at state land auction for $119.60, 2026 sale results",
+    "0.27-acre Horseshoe Bend lot: listed for $1,949 with seller financing (asking price, not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This parcel is a vacant lot with no building in the Treasure Hills subdivision of Horseshoe Bend; the county assessor values it at $500, and similar nearby lots recently sold at the state land auction for $120 to $250. Retail asking prices for comparable small lots run about $2,000 to $8,000, but those are listings, not sales, so I set a conservative value of $1,000 with low confidence and no rent estimate."
+  },
+  "first_seen": "2026-10-23",
+  "status": "land_deal"
  },
  "7618ef7bec25644d": {
   "arv": {
@@ -1502,6 +1612,24 @@
    "reasoning": "I couldn't find any record of this parcel online, so its acreage, road access and exact location are unconfirmed, and I found no sold comps. Sec 27 T12N R12W should be in the Fairfield Bay/Greers Ferry Lake area, and the $161.68 opening bid fits a small subdivision lot, which I'd expect to resell for roughly $1,000\u2013$6,000 (not verified with sales data), so this is a rough, conservative land-only estimate."
   },
   "first_seen": "2026-10-12",
+  "status": "land_deal"
+ },
+ "930fbf33d44be957": {
+  "arv": {
+   "arv": 3000.0,
+   "arv_high": 7000.0,
+   "arv_low": 1500.0,
+   "comps": [
+    "0.27 ac lot, Horseshoe Bend, Izard Co. AR: listed at $1,949 (active listing, not a sale)",
+    "0.47 ac lot, Horseshoe Bend, AR: listed at $7,774 (active listing)",
+    "0.4 ac Diamond Lake-area lot, Horseshoe Bend, AR: listed at $7,995 (active listing)",
+    "0.25 ac Crown Lake lot, 1801 Iris Cir, Horseshoe Bend: sold (price and date not found; lakefront, so likely above this range)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The $91.68 opening bid and the 800- parcel prefix suggest this is a small platted subdivision lot, probably in or near Horseshoe Bend (S06 T18N R07W). Comparable non-lakefront Horseshoe Bend lots are listed at about $1,900\u2013$8,000, but the acreage, road access and utilities could not be confirmed, and none of the comps is a verified recent sale, so the conservative value is about $3,000 with low confidence."
+  },
+  "first_seen": "2026-10-23",
   "status": "land_deal"
  },
  "938ae71e092a9a2b": {
@@ -1890,6 +2018,24 @@
   "first_seen": "2026-10-19",
   "status": "deal"
  },
+ "a5fdf2fc7f9dc783": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 4000.0,
+   "arv_low": 1500.0,
+   "comps": [
+    "0.31 ac wooded lot, Horseshoe Bend AR 72512 (Izard Co.), sold $1,949, date n/a, land",
+    "0.36 ac lot, Horseshoe Bend AR (parcel 800-04192-000), sold, price/date n/a, land (owner-financed listing)",
+    "0.25 ac lot on Crown Lake, Horseshoe Bend AR, sold, price/date n/a, land",
+    "0.5 ac lot on Crown Lake, Horseshoe Bend AR, sold, price/date n/a, land"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The state land office lists S23 T18N R07W in Izard County as a numbered subdivision lot of about 0 acres in the White House Addition, probably in the Horseshoe Bend area, but I could not confirm this parcel's own record before my search limit ran out. Similar small Horseshoe Bend lots usually sell for about $1,500\u2013$5,000, and I found only one dated-price comp ($1,949 for 0.31 acre), so I valued it conservatively at about $2,500 as vacant land with no rent."
+  },
+  "first_seen": "2026-10-23",
+  "status": "land_deal"
+ },
  "a76f9fb23ea1468f": {
   "arv": {
    "arv": 158000.0,
@@ -2137,6 +2283,25 @@
   "first_seen": "2026-10-19",
   "status": "too_expensive"
  },
+ "b94f496872da88e0": {
+  "arv": {
+   "arv": 225000.0,
+   "arv_high": 245000.0,
+   "arv_low": 205000.0,
+   "comps": [
+    "5500 Camden Ln, Jonesboro AR 72404 - sold $234,900, May 2025, 1,522 sqft, 3bd/2ba",
+    "4704 Victoria Watts Pl, Jonesboro AR 72404 - sold $154,900, May 2025, 1,314 sqft, 3bd/2ba (dated condition, low end)",
+    "261 County Rd 620, Jonesboro AR 72404 - listed (not sold) $275,000, 2025, 1,736 sqft, 3bd/2ba on about 1 acre, updated, Valley View schools",
+    "5600 Summer Place, Jonesboro AR 72404 - listed (not sold) $212,500, 1,521 sqft, 3bd/2ba",
+    "Subject online estimates: Trulia about $205,600; RealtyTrac bank-owned listing about $249,665"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1550.0,
+   "reasoning": "Comparable 3-bed, 2-bath homes of about 1,500 sqft in the Valley View area of 72404 sell for roughly $140-160/sqft once updated, and the subject's 0.83-acre lot is a plus. One sale ($234,900) and nearby listings, including an updated home on the same road at $275k, support a conservative ARV of about $225k, but only two sold comps were found and the rest are asking prices, so this should be checked against MLS sold data."
+  },
+  "first_seen": "2026-10-23",
+  "status": "too_expensive"
+ },
  "b9f7c6e3adfe3b5e": {
   "arv": {
    "arv": 125000.0,
@@ -2181,6 +2346,24 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "c581c2dd0783b597": {
+  "arv": {
+   "arv": 125000.0,
+   "arv_high": 145000.0,
+   "arv_low": 105000.0,
+   "comps": [
+    "308 Olive St, Potosi, MO 63664 - sold $124,500, 04/18/2025, 3 bed (sq ft not confirmed)",
+    "10076 Oakside Rd, Mineral Point, MO 63660 - asking $99,900 (active listing, not sold), about 1,120 sq ft",
+    "14333 State Highway U, Mineral Point, MO 63660 - asking $150,000 after a $15K price cut (active listing), 3 bed/2 bath, 1,440 sq ft",
+    "Potosi, MO - Redfin average sale price about $123K for the recent month, down 11.6% year over year"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1000.0,
+   "reasoning": "There is only one confirmed recent sold comp (a 3-bed in Potosi at $124.5K), so this estimate also leans on current Mineral Point asking prices ($99.9K for about 1,120 sq ft and $150K for a 3/2 with 1,440 sq ft) and Potosi's roughly $123K average sale price. I couldn't confirm the subject's condition, lot size or acreage, so for a rural, updated 1,142 sq ft 3-bed/1-bath I put ARV at about $125K (range $105K-$145K) and market rent at about $1,000 a month, which is my own estimate with no rent comps behind it."
+  },
+  "first_seen": "2026-10-23",
+  "status": "deal"
  },
  "c6e1bbeb8ccbb9b7": {
   "arv": {
@@ -2255,6 +2438,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "caf52db8c9d4d7f5": {
+  "arv": {
+   "arv": 92000.0,
+   "arv_high": 105000.0,
+   "arv_low": 80000.0,
+   "comps": [
+    "724 N Locust St, Dexter MO: remodeled 2bd/1ba, 1,600 sqft, active listing at $113,500 (not sold)",
+    "109 E Castor St, Dexter MO: 2bd/1ba, 936 sqft, active listing at $59,900 (not sold)",
+    "203 N Nelson Ave, Dexter MO: 2bd/1ba, 852 sqft, pending at $29,900 (distressed-level price)",
+    "708 N Hickory St, Dexter MO: 2bd/1ba, 1,014 sqft, sold Jun 2026, price not found",
+    "Subject, 815 N Walnut St: 2bd/1ba, about 1,032 sqft, earlier listing at $80,000"
+   ],
+   "confidence": "low",
+   "monthly_rent": 850.0,
+   "reasoning": "No confirmed sold prices were found, so this is based on asking prices: remodeled 2-bed/1-bath homes in Dexter list for about $90k to $115k, the subject was earlier listed at $80,000, and dated homes list for $30k to $60k, so a conservative ARV is about $92k. Rent of about $850 is based on local 2-bedroom house rentals listed at $725 to $900 a month."
+  },
+  "first_seen": "2026-10-23",
+  "status": "deal"
  },
  "cd78235b284c635c": {
   "arv": {
@@ -2361,6 +2563,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "deal"
+ },
+ "d6cdbad16677f58f": {
+  "arv": {
+   "arv": 155000.0,
+   "arv_high": 175000.0,
+   "arv_low": 135000.0,
+   "comps": [
+    "1018 W Maud St, Poplar Bluff: 4bd/3ba, 2,310 sqft. Redfin estimate about $159,700. This is an estimate, not a recorded sale.",
+    "1112 W Maud St, Poplar Bluff: 3bd/2.5ba, 1,798 sqft. Redfin estimate about $148,100. This is an estimate, not a recorded sale.",
+    "1107 W Maud St, Poplar Bluff: 3bd/2ba, 1,776 sqft. Redfin estimate about $130,000. This is an estimate, not a recorded sale.",
+    "1103 W Maud St, Poplar Bluff: 1,318 sqft. Redfin estimate about $143,900. This is an estimate, not a recorded sale.",
+    "1017 W Maud St, Poplar Bluff: 3bd/2ba, 1,649 sqft. Listed at $105,000. Sale date and price were not confirmed."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1250.0,
+   "reasoning": "Public records list the subject at about 2,136 sqft on the same block of W Maud, where online estimates for similar 1,800\u20132,300 sqft homes run roughly $130k\u2013$160k (about $70\u2013$80 per sqft). My search limit ran out before I could confirm any recorded sales from the last 12 months, so this is a conservative figure with low confidence."
+  },
+  "first_seen": "2026-10-23",
+  "status": "too_expensive"
  },
  "d7fff04809489e9c": {
   "arv": {
@@ -2720,6 +2941,24 @@
   "first_seen": "2026-10-16",
   "status": "too_expensive"
  },
+ "f0699727a54333ce": {
+  "arv": {
+   "arv": 145000.0,
+   "arv_high": 165000.0,
+   "arv_low": 125000.0,
+   "comps": [
+    "Subject: 81 Claybough St, Reeds Spring, MO. Currently listed as bank-owned (REO) at $95,000 (MLS 60336648, Murney Associates). 2 bed / 1 bath, 852 sqft. Not a comp.",
+    "201 Deep Water Cir, Reeds Spring, MO. 1 bed / 1 bath, 558 sqft, built 1962. Sold at about $357/sqft (roughly $199,000); sale date not found. This home is near the lake, so its price per sqft is higher than the subject's.",
+    "164 Belgian Rd, Reeds Spring, MO. Sold at about $167/sqft (roughly $320,000); sale date not found. 1,917 sqft, built 1980.",
+    "330 Manchester St, Reeds Spring, MO. Corner lot in historic old-town Reeds Spring. Sold after 58 days on market; price, date and sqft not found."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1000.0,
+   "reasoning": "I could not get detailed sold data because my web searches hit their limit. This estimate assumes an updated 852 sqft old-town Reeds Spring home sells for about $150-$195 per sqft, and that the bank's $95,000 REO list price reflects its current as-is condition. I discounted toward the low end to be conservative, so please check this against MLS sold comps from the last 12 months before relying on it."
+  },
+  "first_seen": "2026-10-23",
+  "status": "deal"
+ },
  "f145f2280d792149": {
   "arv": {
    "arv": 170000.0,
@@ -2738,6 +2977,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "f3cac7fe530cc25c": {
+  "arv": {
+   "arv": 195000.0,
+   "arv_high": 220000.0,
+   "arv_low": 170000.0,
+   "comps": [
+    "2807 Canterbury, Paragould AR 72450 \u2013 sold $259,000, Jul 23 2025, 1,651 sqft, 3bd/2ba, in town",
+    "601 Rosewood Dr, Paragould AR 72450 \u2013 sold $245,000, Jan 12 2026, 2,123 sqft, 3bd/2.5ba",
+    "5550 Highway 135 S, Paragould AR 72450 \u2013 sold $220,000, Mar 31 2022, 2,064 sqft, 3bd/3ba on 0.51 ac (older sale, same road)",
+    "1106 Roberts Dr, Paragould AR 72450 \u2013 sold $165,000, recent, 1,200 sqft, 3bd/2ba",
+    "13267 Arkansas 135, Paragould AR 72450 \u2013 listed at $193,000 after a price cut (not sold), 1,870 sqft, 3bd/2ba, updated, on 2.2 ac"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "Updated rural 3bd/2ba homes of about 1,900 sqft near Paragould sell or are listed for roughly $190K\u2013$240K, while in-town updated sales run higher per sqft; Redfin's automated estimate for this house is about $177K and RealtyTrac's is about $208K. I set the value at the conservative middle of that range because the house sits on a busy highway, I don't know its age or construction type, and I found few recent sold comps on rural acreage."
+  },
+  "first_seen": "2026-10-23",
+  "status": "watch"
  },
  "f58b58b1db316006": {
   "arv": {
@@ -2878,6 +3136,44 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "faba259d3c20dff0": {
+  "arv": {
+   "arv": 210000.0,
+   "arv_high": 230000.0,
+   "arv_low": 190000.0,
+   "comps": [
+    "615 N Ridgeview Dr (the subject itself), Mountain View AR: sold $199,000 on 4/25/2025, 1,717 sqft, 3 bed/2.5 bath, listed at $224,900 (MLS 25003324)",
+    "476 Jimmy Mitchell Rd, Mountain View AR: sold $220,000 on 12/3/2025, 1,464 sqft ($150/sqft)",
+    "305 Rock Ave, Mountain View AR: sold $187,000 on 2/26/2025, 1,404 sqft, 3 bed ($133/sqft)",
+    "676 N Ridgeview Dr, Mountain View AR: sold $227,000 in 3/2022, 1,722 sqft, built 1987 (older sale, same street)",
+    "1408 Cynthia St, Mountain View AR: sold $299,900 on 10/14/2024, 1,800 sqft, 3 bed ($167/sqft, high end)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1300.0,
+   "reasoning": "This house sold for $199,000 in April 2025 in apparently livable condition, and recent Mountain View sales run about $130\u2013150/sqft, so 1,717 sqft at about $122/sqft gives a conservative fixed-up value near $210,000. I could only find a few comps because my search tool hit its usage limit, and the $1,300 rent figure is my own estimate since I found no rental listings."
+  },
+  "first_seen": "2026-10-23",
+  "status": "too_expensive"
+ },
+ "fb2b8a0259aeff49": {
+  "arv": {
+   "arv": 70000.0,
+   "arv_high": 85000.0,
+   "arv_low": 55000.0,
+   "comps": [
+    "631 W Victor St, Poplar Bluff MO \u2013 sold Aug 15, 2025 \u2013 last list price $115,000 \u2013 square footage not confirmed",
+    "500 W Victor St, Poplar Bluff MO \u2013 active/pending listing at $99,000\u2013$105,000 (not a sale) \u2013 3 bed/1 bath, 1,170 sqft",
+    "720 W Victor St, Poplar Bluff MO \u2013 sold $29,900 on 3/15/2024 (likely as-is, over 12 months old) \u2013 2 bed/1 bath, 816 sqft",
+    "915 Cynthia St, Poplar Bluff MO \u2013 listed at $124,900 (not a sale) \u2013 2 bed/1 bath, 1,182 sqft",
+    "911 W Victor St, Poplar Bluff MO \u2013 online estimate about $48,500 (not a sale) \u2013 952 sqft"
+   ],
+   "confidence": "low",
+   "monthly_rent": 725.0,
+   "reasoning": "Only one sale on the same block is confirmed within the last 12 months: 631 W Victor St sold for a last list price of $115,000, but its size is unknown; the other data points are listings, an older as-is sale, or an online estimate. Because this house is smaller, I conservatively estimate its updated value at about $85\u201390 per sqft, or roughly $70,000, and rent at about $725 a month (an assumption \u2014 I found no rental comps)."
+  },
+  "first_seen": "2026-10-23",
+  "status": "deal"
  },
  "fc84dbb7068956c5": {
   "arv": {
@@ -3057,6 +3353,11 @@
   "first_seen": "2026-10-14",
   "status": "notice",
   "url": "https://www.mopublicnotices.com/Details.aspx?ID=1288963"
+ },
+ "notice:www.mopublicnotices.com:301754a2a54d3cd2": {
+  "first_seen": "2026-10-23",
+  "status": "notice",
+  "url": "https://www.mopublicnotices.com/Details.aspx?ID=1292263"
  },
  "notice:www.mopublicnotices.com:36e918bca81dfe7b": {
   "first_seen": "2026-10-16",
