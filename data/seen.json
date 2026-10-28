@@ -37,6 +37,42 @@
   "first_seen": "2026-10-14",
   "status": "too_expensive"
  },
+ "014ad8366b617c2a": {
+  "arv": {
+   "arv": 145000.0,
+   "arv_high": 165000.0,
+   "arv_low": 125000.0,
+   "comps": [
+    "806 Lathrop Ave, Ava MO (subject): previously listed at $149,900, went pending (MLS #60298202), 1,252 sqft, built 1972, granite counters and hardwood floors; sold price and date not found",
+    "904 Lathrop Ave, Ava MO: same street, 1,560 sqft; sale price and date not found",
+    "907 Lathrop Ave, Ava MO: sold, 3bd/2ba, 1,216 sqft, 0.4 ac; price and date not found"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1000.0,
+   "reasoning": "The main basis is this home's own earlier MLS listing at $149,900 (about $120/sqft), which went under contract while it had granite counters and hardwood floors, and that fits typical prices for small 3-bed homes in Ava. My search tool hit its limit before I could confirm any sold prices or dates for nearby homes, so I trimmed the value a little to be conservative and set confidence to low."
+  },
+  "first_seen": "2026-10-28",
+  "status": "watch"
+ },
+ "018ba82612f08151": {
+  "arv": {
+   "arv": 85000.0,
+   "arv_high": 105000.0,
+   "arv_low": 65000.0,
+   "comps": [
+    "39344 E Sue Dr, Malden MO \u2013 2bd/1ba, last list $115,000, sold May 6, 2026, sqft n/a",
+    "39352 W Sue Dr, Malden MO \u2013 2bd/1ba, 1,108 sqft, listed at $110,000 (active listing, not a sale)",
+    "39335 W Sue Dr, Malden MO \u2013 3bd/1ba, 1,108 sqft, sold $45,500 (~$41/sf, as-is), Oct 3, 2025",
+    "407 Palo Verde Dr, Malden MO \u2013 3bd, 1,786 sqft, last list $185,000 ($104/sf), sold Jul 7, 2025",
+    "505 S Kimball St, Malden MO \u2013 2bd/1ba, last list $15,000 (distressed), sold Aug 15, 2025"
+   ],
+   "confidence": "low",
+   "monthly_rent": 750.0,
+   "reasoning": "Homes.com puts Malden's median 2-bedroom sale price at about $95,000, and updated 2/1 homes in the Sue Dr subdivision are listed or sold around $110-115k, while older homes in the town core and distressed sales go for $15-45k. I estimated a conservative ARV of $85k for an updated older in-town 2/1, but confidence is low because I couldn't confirm the square footage, the sale prices are thin, and Zillow shows conflicting list prices for this address."
+  },
+  "first_seen": "2026-10-28",
+  "status": "deal"
+ },
  "027df1ce681e3b03": {
   "arv": {
    "arv": 305000.0,
@@ -309,6 +345,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "10c0d6c6a56f9eb8": {
+  "arv": {
+   "arv": 145000.0,
+   "arv_high": 165000.0,
+   "arv_low": 125000.0,
+   "comps": [
+    "39916 Myers St, Malden MO (same street): ~$180,000 (about $98/sf), sold 12/22/2025, 1,836 sf",
+    "39344 E Sue Dr, Malden MO: ~$115,000 (about $105/sf), sold within the last 12 months, 1,093 sf, built 1973",
+    "803 N Layne Dr, Malden MO: ~$129,000 (about $72/sf), sold 02/09/2026, 1,788 sf",
+    "204 E Peck St, Malden MO: ~$94,000 (about $93/sf), sold 02/09/2026, 1,008 sf, 3bd/2ba",
+    "407 Palo Verde Dr, Malden MO: ~$185,000 (list price; $104/sf), sold 07/07/2025, 1,786 sf, 3bd"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1000.0,
+   "reasoning": "Listings put the subject (built 1973, 0.42 ac) at roughly 1,144-1,521 sf, and updated Malden homes have recently sold for about $93-105/sf, which gives roughly $145k at about 1,500 sf; this is conservative because the house has only one bath. Most sale prices here were estimated from homes.com price-per-sf figures rather than confirmed sale prices, and earlier asking prices for the subject ($129.9k-$179.9k) and a ~$111k automated estimate back up a range of $125k-$165k."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
+ },
  "1111b2e3d85852dd": {
   "arv": {
    "arv": 150000.0,
@@ -344,6 +399,25 @@
    "reasoning": "The best comp is 1209 Holly St, an updated 3-bed, 2-bath home of 1,801 sqft on the same street that sold for $161,500 (about $90/sqft) in 2025, after an earlier $189,900 listing. At that rate this 1,838 sqft home comes to about $165k after repair, but I only found one true sold comp and the street median is much lower, so treat this estimate with caution."
   },
   "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "1492042a2c2d9234": {
+  "arv": {
+   "arv": 280000.0,
+   "arv_high": 310000.0,
+   "arv_low": 255000.0,
+   "comps": [
+    "Subject: 577 Blackwood Dr, Harrison, AR. Bank-owned listing at $214,000, 3 bed/2 bath, 2,403 sqft, 0.66 acres (MLS 26041926).",
+    "Active listing, not a sale: 823 W Alma, Harrison. Asking $289,900, 3 bed/2 bath, 2,161 sqft, new roof and HVAC in 2024; sale date not available.",
+    "Active listing, not a sale: 206 Roberta Dr, Harrison. Asking $235,000, 3 bed/2 bath, 1,914 sqft; sale date not available.",
+    "Listing, not a sale: 303 N 2nd St, Harrison. Asking $185,000 with a $240,000 Redfin estimate, 3 bed/2 bath, 1,680 sqft; sale date not available.",
+    "Active listing, not a sale: 1605 Brentwood Dr, Harrison. Asking $269,000, 3 bed/2 bath; sale date and sqft not available."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1600.0,
+   "reasoning": "I couldn't find any confirmed sales; all comparisons are current Harrison 3/2 asking prices, mostly $235k\u2013$290k for 1,900\u20132,200 sqft. At conservative updated values of about $105\u2013$130 per sqft for 2,403 sqft, I estimate an ARV of about $280k (range $255k\u2013$310k) and rent of about $1,600; a foreclosure site's $1,520 rent figure supports this."
+  },
+  "first_seen": "2026-10-28",
   "status": "too_expensive"
  },
  "15385692ed1b1458": {
@@ -400,6 +474,25 @@
    "reasoning": "Listings show this REO with 6 beds, 3 baths, 2,720 sqft and 0.42 acres, not the 3/2 given; it is not lakefront but has community boat-launch access, and it was listed at $325,000 before dropping to $286,000. A search-tool limit left only one listing next door and two sales with list prices only, so this is a conservative $310-120 per sqft estimate with low confidence."
   },
   "first_seen": "2026-10-23",
+  "status": "too_expensive"
+ },
+ "17fc9a120d546ff7": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 178000.0,
+   "arv_low": 140000.0,
+   "comps": [
+    "209 N Washington St, Desloge MO \u2013 2bd/1ba, $144,900 last list price, sold Jun 16, 2025, sqft not found",
+    "110 N White Oak St, Desloge MO \u2013 $129,000 last list price, sold Oct 24, 2025, sqft not found",
+    "400 S Grant St, Desloge MO \u2013 $165,900 last list price, sold Dec 3, 2025, sqft not found",
+    "508 S Vandervoot St, Desloge MO \u2013 2bd/1ba, $29,000 last list price, sold Nov 18, 2025 (distressed sale, treated as the low end only)",
+    "Market data: Desloge median 2-bedroom sale price about $175,000; average about $132/sqft (Homes.com)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1050.0,
+   "reasoning": "This 1,281 sqft, 2-bed/1-bath house on 0.27 acres would come to about $169k at Desloge's average $132/sqft, and the median 2-bedroom sale is about $175k; nearby small-house sales in the last 12\u201316 months mostly fell between $129k and $166k (list prices, not confirmed closing prices), so I used a conservative $160k. Confidence is low because my search limit ran out before I could confirm closing prices, square footage, or the home's condition, and the rent is my own estimate for a renovated 2-bed in the area."
+  },
+  "first_seen": "2026-10-28",
   "status": "too_expensive"
  },
  "193b84e7821de2a3": {
@@ -476,6 +569,25 @@
   "first_seen": "2026-10-14",
   "status": "watch"
  },
+ "202f3dd027171507": {
+  "arv": {
+   "arv": 205000.0,
+   "arv_high": 230000.0,
+   "arv_low": 185000.0,
+   "comps": [
+    "11075 Greenfield Dr, Rolla MO \u2013 $184,900 (list price, sold) \u2013 10/31/2022 \u2013 1,600 sqft, 4bd/1.5ba (same street, sale is old)",
+    "11161 Woodale Dr, Rolla MO \u2013 $189,000 \u2013 8/28/2024 \u2013 about 2,420 sqft, 5bd/3ba, built 1972",
+    "Subject: Trulia automated estimate $190,300 for current/as-is condition (not a sale)",
+    "Active listing, not sold: 206 Brookridge Dr, Rolla \u2013 asking $232,500 \u2013 1,595 sqft, 3bd/2ba",
+    "Active listing, not sold: 10160 County Road 8150, Rolla \u2013 asking $210,000 \u2013 1,350 sqft above grade, 3bd/2ba"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "The subject is on a roughly 0.5-acre rural lot in Whispering Pines Sub. Online estimates put it near $190k as-is, and updated 3bd/2ba homes of 1,300-1,700 sqft around Rolla are listed for about $205k-$235k, so I set a conservative ARV of about $205k. Confidence is low because I couldn't verify any sold comps from the last 12 months or the home's condition or year built, and the same-street sale is from 2022."
+  },
+  "first_seen": "2026-10-28",
+  "status": "watch"
+ },
  "21e6b428f6201711": {
   "arv": {
    "arv": 180000.0,
@@ -525,6 +637,25 @@
    "reasoning": "Online listings show the subject as 1,840 sqft with 3-4 bedrooms and 2 baths on 1 acre, not the 2 beds you gave. It sold updated for $182,500 in 2023, and recent Calico Rock 3/2 sales at about $85-113/sqft support a conservative ARV of about $170k, below the $187k Redfin estimate and above the $149k Zestimate."
   },
   "first_seen": "2026-10-26",
+  "status": "too_expensive"
+ },
+ "2572be5404e7e10a": {
+  "arv": {
+   "arv": 165000.0,
+   "arv_high": 185000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "Address not disclosed, Bald Knob AR 72010: sold $130,000 on May 8, 2026, 3bd/1ba, 1,108 sqft (Trulia)",
+    "205 S Collison Ave, Bald Knob AR (across the street): sold $125,000 on Oct 28, 2022, sqft not found (Redfin)",
+    "206 S Collison Ave (the subject): sold $110,000 on Apr 13, 2021, 3bd/2ba, 1,952 sqft; Redfin estimate about $152K",
+    "309 W Cleveland St, Bald Knob AR: $167,500, 3bd/2ba, sale status and date not confirmed (Coldwell Banker)",
+    "1148 Hwy 258, Bald Knob AR: sold $206,000 on Sep 28, 2026, details not found (Redfin)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1200.0,
+   "reasoning": "I could confirm only a few nearby sales: the subject (1,952 sqft, built 1956) sold for $110K in 2021, the house across the street sold for $125K in 2022, a small 3/1 sold for $130K in 2026, and Redfin says the town's average sale price is about $160K. At a conservative $80\u201395 per sqft for an updated 1950s ranch, I estimate an ARV of about $165K, but confidence is low because the search limit cut off my research before I found closer, recent, similar-size sales."
+  },
+  "first_seen": "2026-10-28",
   "status": "too_expensive"
  },
  "272fd2f3c187d32a": {
@@ -702,6 +833,25 @@
   "first_seen": "2026-10-26",
   "status": "too_expensive"
  },
+ "3af32f3504f93c03": {
+  "arv": {
+   "arv": 115000.0,
+   "arv_high": 130000.0,
+   "arv_low": 100000.0,
+   "comps": [
+    "905 Morgan St, Newark AR \u2013 active listing $113,000, 3bd/1ba, 1,040 sqft",
+    "710 Village St, Newark AR \u2013 listed $120,000, 3bd/1ba, 1,088 sqft (MLS 25044168)",
+    "657 N Locust St, Newark AR \u2013 listed $129,900, 3bd/1ba, 1,153 sqft (MLS 26000330)",
+    "112 E 7th St, Newark AR \u2013 listed $170,000, 3bd/1.5ba, 1,538 sqft",
+    "512 W 6th St, Newark AR \u2013 listed $125,000"
+   ],
+   "confidence": "low",
+   "monthly_rent": 900.0,
+   "reasoning": "I couldn't verify any closed sales from the last 12 months because I hit the search limit, so this estimate rests on current asking prices, not sales. Updated 3-bed/1-bath homes of about 1,040\u20131,150 sqft in Newark are listed at $113k\u2013$130k, so I discounted to about $104/sqft, or $115k after repair, with rent around $900/month."
+  },
+  "first_seen": "2026-10-28",
+  "status": "watch"
+ },
  "3b05b209dbd972d7": {
   "arv": {
    "arv": 1000.0,
@@ -755,6 +905,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "3db1e441859baceb": {
+  "arv": {
+   "arv": 335000.0,
+   "arv_high": 370000.0,
+   "arv_low": 300000.0,
+   "comps": [
+    "Subject listing: 200 Wagonwheel Dr is actually 6 beds/3 baths, about 2,720 sq ft on 0.42 acres (MLS 3589512); first listed at $325,000, now $286,000 as an REO/auction listing",
+    "Camden County median sale price about $436K and about $155/sq ft over the last 3 months (Redfin, 2026); this includes higher-priced lake homes",
+    "Camdenton median single-family sale price $407,500, average about $229/sq ft (Homes.com, last 12 months); this also includes waterfront",
+    "891 Panoramic Dr, Camdenton: 4 beds/2 baths, 2,562 sq ft, recent off-water listing (Estately; sale price not confirmed)",
+    "1922 Wagon Trail Dr, Camdenton (same rural area): 3 beds/2 baths, 1,600 sq ft; last sold 2010 for $19,900, current estimate about $108K (Redfin); dated, used only as a low end for the area"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2000.0,
+   "reasoning": "Listings show the home is 6 beds/3 baths, about 2,720 sq ft, off the water with a community boat launch, and described as well maintained. I couldn't confirm any sold comparable homes, so this is a conservative estimate based on market averages: about $115\u2013$135/sq ft for off-water homes, below the county's $155/sq ft median, gives about $335K, which is in line with the first list price of $325K."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
  },
  "3dc46e30f677a277": {
   "arv": {
@@ -1091,6 +1260,25 @@
   "first_seen": "2026-10-19",
   "status": "deal"
  },
+ "5923460cfa2afa43": {
+  "arv": {
+   "arv": 265000.0,
+   "arv_high": 290000.0,
+   "arv_low": 240000.0,
+   "comps": [
+    "2118 S Kings Ave, Springfield MO 65807 (Seminole-Holland): 4bd/2ba, 1,816 sqft, listed at $239,900. Sale price and date not found.",
+    "626 E Wayland St, Springfield MO 65807 (same block): 2bd/2ba, 1,174 sqft. Not a sale: Homes.com estimates it at about $180,900, or $154/sqft.",
+    "3445 W Wayland St, Springfield MO 65807: 3bd/2ba, 1,645 sqft, built 1987, listed at $230,000. Sale price and date not found.",
+    "220 E Berkeley St, Springfield MO 65807 (Seminole): 3bd/2ba, 1,530 sqft, listed at $165,900 needing repairs. This is an as-is price, not a finished one.",
+    "1460 E Berkeley St, Springfield MO 65804: 3bd/1ba, 1,314 sqft, sold Oct 2022 (price not shown). Listed for rent at $1,500/mo in Dec 2025."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1750.0,
+   "reasoning": "The subject is about 1,900 sqft, 4bd/2ba, in the Seminole-Holland area, where updated mid-century homes seem to go for about $135-155/sqft, so I used a conservative $140/sqft to get roughly $265k. I could not confirm any recent sale prices, so this is based only on list prices, online estimates and one rental listing, which is why confidence is low."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
+ },
  "5a1ac2b164455915": {
   "arv": {
    "arv": 155000.0,
@@ -1165,6 +1353,24 @@
   },
   "first_seen": "2026-10-16",
   "status": "land_deal"
+ },
+ "5b95c108c9a64189": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 175000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "Subject: 3 bed / 1 bath, 1,091 sqft on 0.3 acres in Woodland Heights (65803). It is listed as a bank-owned foreclosure at $101,200; earlier listings showed $110,000.",
+    "No sold comps were found because the search tool hit its usage limit before any sales data came back.",
+    "Context (an active listing, not a sale): a nearby house in 65803 needing repair, sold as-is with a flooded basement and broken HVAC, was listed around $150,000.",
+    "Context: Redfin shows the median asking price in 65803 at about $197k, against about $220k citywide in Springfield."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1150.0,
+   "reasoning": "I couldn't check any sold comps, so this estimate rests on north Springfield market levels I already know: updated 3-bed/1-bath homes of about 1,000\u20131,100 sqft in Woodland Heights usually sell for $145k\u2013$175k, well below the 65803 median asking price of about $197k. I kept the ARV at a conservative $160k, so it should be confirmed against MLS sold data before relying on it."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
  },
  "5d0d6672849f452d": {
   "arv": {
@@ -1307,6 +1513,25 @@
   "first_seen": "2026-10-26",
   "status": "deal"
  },
+ "63a281da173a6233": {
+  "arv": {
+   "arv": 130000.0,
+   "arv_high": 150000.0,
+   "arv_low": 110000.0,
+   "comps": [
+    "411 N Center St, Willow Springs MO \u2013 sold 4/2/2026, 3bd/1ba, 1,492 sqft (price not found)",
+    "512 N Grand St, Willow Springs MO \u2013 sold 4/17/2026, 3bd/2ba, 1,496 sqft (price not found)",
+    "1113 N Walnut St, Willow Springs MO \u2013 sold 9/29/2026, 3bd/1.5ba, 1,362 sqft (price not found)",
+    "401 W Fourth St, Willow Springs MO \u2013 sold 4/9/2026, 3bd/2ba, 1,773 sqft (price not found)",
+    "415 N Grand St, Willow Springs MO \u2013 active listing, $89,900 (asking price, not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 950.0,
+   "reasoning": "The subject is a 1,313 sqft, 3-bed/1-bath house from about 1900 on a 0.52-acre corner lot, listed as a foreclosure at $100k. I found several similar in-town sales from 2026 but no sale prices, so this ARV is a cautious estimate based on typical Willow Springs prices for updated older homes of about $95-115/sqft, and it should be checked against MLS sold data."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
+ },
  "63fe7a015162e335": {
   "arv": {
    "arv": 2000.0,
@@ -1416,6 +1641,44 @@
   "first_seen": "2026-10-14",
   "status": "land_deal"
  },
+ "73b839f8cec78284": {
+  "arv": {
+   "arv": 380000.0,
+   "arv_high": 430000.0,
+   "arv_low": 340000.0,
+   "comps": [
+    "1637 E 541st Rd, Brighton MO 65617 \u2013 4bd/3ba, 3,240 sqft, 3.18 ac \u2013 sold Jun 25, 2026 (last list price $350,000; sale price not confirmed)",
+    "10325 N Farm Rd 137, Brighton MO 65617 \u2013 4bd/3ba, 2,614 sqft, 4 ac \u2013 sold Jun 23, 2026 (last list price $394,900; sale price not confirmed)",
+    "1519 E 515th Rd, Brighton MO 65617 \u2013 4bd/3ba, 2,397 sqft, 3.25 ac \u2013 active listing at $475,000\u2013$490,000, not sold",
+    "11996 N Farm Rd 119, Brighton MO 65617 \u2013 4bd/3.5ba, 3,636 sqft \u2013 active listing at $500,000, not sold",
+    "3905 W Farm Rd 2 (subject) \u2013 4bd, 3,400 sqft, built 1974 \u2013 earlier MLS #60248304 listed at $349,900, then $348,000"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2000.0,
+   "reasoning": "The subject is a 3,400 sqft 4-bed home built in 1974 that was listed earlier at about $348,000\u2013$350,000, and similar Brighton acreage homes of 2,600\u20133,240 sqft sold in June 2026 with last list prices of $350,000\u2013$395,000, so an updated value near $380,000 is a conservative estimate. Confidence is low because the comps' actual sale prices and the subject's acreage weren't confirmed, and a used-car business is registered at this address, which could mean it's a mixed or commercial-use property."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
+ },
+ "73d99dcd7fa53c03": {
+  "arv": {
+   "arv": 135000.0,
+   "arv_high": 155000.0,
+   "arv_low": 115000.0,
+   "comps": [
+    "209 S Park Manor Blvd (subject): earlier MLS list price $150,000, about $146/sqft, 1,028 sqft, built 1930. Listing only, not a sale",
+    "387 Harrison Ave, Lebanon: sold Jun 2026, 3 bed/2 bath, 1,066 sqft. Price not found",
+    "201 S Park Manor Blvd, Lebanon: sold 10/09/2024, 648 sqft. Price not found",
+    "460 Curry St, Lebanon: active listing at $159,900, 3 bed/2 bath, 1,100 sqft. Not a sale",
+    "833 W Park Manor Blvd, Lebanon: sold 2021, 2 bed/1 bath, 736 sqft. Value has risen about 68% since"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1050.0,
+   "reasoning": "The subject is a 1930 house of about 1,040 sqft on a small 5,000 sqft lot; it was previously listed at $150,000 retail, and an online estimate puts it at about $128,000. Similar updated older homes nearby in Lebanon list at roughly $140\u2013160k, so I set a conservative ARV of $135k, but confidence is low because I could not confirm any recent sale prices."
+  },
+  "first_seen": "2026-10-28",
+  "status": "watch"
+ },
  "73f997ae9ce86a78": {
   "arv": {
    "arv": 225000.0,
@@ -1453,6 +1716,24 @@
   },
   "first_seen": "2026-10-23",
   "status": "land_deal"
+ },
+ "75ab8f6e00df2d6c": {
+  "arv": {
+   "arv": 265000.0,
+   "arv_high": 290000.0,
+   "arv_low": 235000.0,
+   "comps": [
+    "709 County Rd 393, Thayer, MO 65791 \u2013 sold about $205,000 (listed at $209,900) \u2013 Apr 12, 2024 \u2013 1,821 sqft, 3bd/2ba, built 1970 (same road)",
+    "354 County Rd 393, Thayer, MO 65791 \u2013 listed at $210,000 (active listing, not a sale) \u2013 1,636 sqft, 3bd/2ba ranch on 1 acre",
+    "528 County Rd 393, Thayer, MO 65791 \u2013 Zestimate about $159,000 (estimate only, no sale) \u2013 1,567 sqft, 2ba, built 1977",
+    "410 County Rd 393 (subject) \u2013 previously listed at $275,000, then $257,983 as a foreclosure (Sep 2026) \u2013 listed as 2,786 to 3,380 sqft, 4bd/3.5ba multi-level brick, built 1970"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1500.0,
+   "reasoning": "The subject is a larger 1970 brick multi-level home (listed as roughly 2,800 to 3,400 sqft); I valued it at about $80 to $95 per sqft, discounted from the $113 per sqft that 709 County Rd 393 got on the same road (Apr 2024), because bigger homes sell for less per sqft. Confidence is low because I found only one closed sale, and it is more than 12 months old; the other references are a listing and an estimate, and the bed/bath and sqft figures conflict across the subject's own listings."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
  },
  "7618ef7bec25644d": {
   "arv": {
@@ -1583,6 +1864,25 @@
    "reasoning": "RealtyTrac lists the subject as a 2,403 sqft bank-owned home, and updated 3/2 homes in Harrison generally sell for about $105\u2013140/sqft (Redfin says nearby homes average $140/sqft), so I used a conservative ~$104/sqft because the house is large for this market and its square footage may include basement space. I found only one confirmed recent sale, and the address is also listed as the office of Razorback Realty, so the condition and possible commercial use need to be checked; rent comes from a foreclosure-site estimate of about $1,520 and Brentwood Dr rentals at around $1,700."
   },
   "first_seen": "2026-10-16",
+  "status": "too_expensive"
+ },
+ "7d4afd12061d994e": {
+  "arv": {
+   "arv": 165000.0,
+   "arv_high": 180000.0,
+   "arv_low": 150000.0,
+   "comps": [
+    "204 Wesley Dr, Bonne Terre MO 63628 - sold Aug 19, 2026 - 3bd/2ba, 1,248 sqft - list price $174,900; sale price not found",
+    "420 Murrill Ct, Bonne Terre MO 63628 - sold Aug 28, 2026 - 3bd/2ba, 1,372 sqft - list price $145,000; sale price not found",
+    "2563 Kastner Rd, Bonne Terre MO 63628 - active listing at $185,000 (not sold) - 3bd/2ba, 1,568 sqft",
+    "105 Twin St, Bonne Terre MO 63628 - active listing at $185,000 (not sold) - 3bd/2ba, sqft unknown",
+    "Subject: 103 N B St - 3bd/2ba, 1,072-1,188 sqft - earlier listed at $175,000, now an REO listed at $142,000"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1250.0,
+   "reasoning": "Similar in-town 3-bed, 2-bath homes of about 1,100-1,400 sqft in Bonne Terre are listing for roughly $145k-$185k, and the subject was earlier listed at $175k, so about $165k is a conservative updated value for this smaller older home. I only found list prices, not confirmed sale prices, and the search limit cut research short, so confidence is low."
+  },
+  "first_seen": "2026-10-28",
   "status": "too_expensive"
  },
  "7d76f90a81f56c0e": {
@@ -1760,6 +2060,25 @@
   },
   "first_seen": "2026-10-19",
   "status": "land_deal"
+ },
+ "8abd162aa345c6a5": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 178000.0,
+   "arv_low": 140000.0,
+   "comps": [
+    "505 W Main St, Park Hills (subject): Redfin estimate $161,239, 1,168 sqft, 2 bed/1 bath. This is an automated estimate, not a sale.",
+    "403 W Main St, Park Hills: Redfin estimate $150,056, 1,793 sqft, 3 bed/1 bath. Not a sale.",
+    "416 W Main St, Park Hills: Redfin estimate $141,722, 1,685 sqft, 3 bed/1 bath. Not a sale.",
+    "4 Norwine St, Park Hills: Redfin estimate $185,269, 1,074 sqft, 3 bed/1.5 bath. Not a sale.",
+    "501 W Main St, Park Hills: sold for about $57,000 on Jul 26, 2012. This sale is too old to use as a comp."
+   ],
+   "confidence": "low",
+   "monthly_rent": 1050.0,
+   "reasoning": "I couldn't find any verified sales from the last 12 months because my searches hit the tool limit, so these figures come only from Redfin's automated estimates for the subject (about $161k for a 1,168 sqft 2/1) and nearby W Main St and Norwine St homes ($142k\u2013$185k). I set a conservative ARV of $160k, about the same as the $155k list price, so there is little room for a flip margin, and the rent estimate is my own unverified guess for a 2/1 in Park Hills."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
  },
  "8d1084de81b9f2cb": {
   "arv": {
@@ -2291,6 +2610,25 @@
   "first_seen": "2026-10-23",
   "status": "land_deal"
  },
+ "a75020c327df0a97": {
+  "arv": {
+   "arv": 120000.0,
+   "arv_high": 135000.0,
+   "arv_low": 105000.0,
+   "comps": [
+    "912 N Brown Ave (subject, 808 sqft per listing): Trulia estimates about $135,300; it sold in 2024 and is now listed as a $52,000 bank-owned foreclosure",
+    "826 N Fremont Ave, 65802: sold for $105,000 as a FSBO; 2bd/1ba, 1,016 sqft; sale date unknown",
+    "920 W Brower St, 65802: listed at $138,000, not a confirmed sale; 2bd/1ba, 624 sqft",
+    "1425 W Poplar St, 65802: listed at $145,000, not a confirmed sale; 2bd/1ba, 956 sqft",
+    "604 N Brown Ave, 65802: Zillow estimates about $57,300 for this unrenovated house; 2bd/1ba, 576 sqft; last sold 4/2019"
+   ],
+   "confidence": "low",
+   "monthly_rent": 950.0,
+   "reasoning": "I set a conservative ARV of about $120,000 for small updated 2bd/1ba Westside homes in 65802. The only confirmed sale I found has no date (826 N Fremont, $105,000), the other numbers are list prices or online estimates (Trulia about $135,000 for the subject), and I couldn't search further, so confidence is low."
+  },
+  "first_seen": "2026-10-28",
+  "status": "deal"
+ },
  "a76f9fb23ea1468f": {
   "arv": {
    "arv": 158000.0,
@@ -2556,6 +2894,23 @@
   "first_seen": "2026-10-19",
   "status": "too_expensive"
  },
+ "b8c3c854854edd0e": {
+  "arv": {
+   "arv": 270000.0,
+   "arv_high": 300000.0,
+   "arv_low": 245000.0,
+   "comps": [
+    "94 Lakeshore Dr (subject, prior sale), Kimberling City: $239,900, sold 9/9/2022, 1,630 sqft, 3bd/2ba ranch built 1970; Redfin estimate about $276K",
+    "87 Lakeshore Dr, Kimberling City: $265,000 list price, not a sale; 2,082 sqft, 3bd/2ba, 0.42 ac",
+    "Kimberling City median sale price over the last 12 months: about $214,000 (Homes.com)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1500.0,
+   "reasoning": "Public records list the subject as a 3bd/2ba, 1,630 sqft 1970 ranch in Kimberling Hills, not the 1bd/1ba in the input; it sold for $239,900 in 2022, and the nearby 87 Lakeshore was listed (not sold) at $265K, so updated condition supports roughly $165/sqft, or about $270K. Confidence is low because I could not pull recent sold comps within the last 12 months, and the bed/bath data conflicts, so verify against an MLS sold search before relying on this."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
+ },
  "b94f496872da88e0": {
   "arv": {
    "arv": 225000.0,
@@ -2710,6 +3065,25 @@
   "first_seen": "2026-10-14",
   "status": "too_expensive"
  },
+ "c955c52b4baefa7c": {
+  "arv": {
+   "arv": 170000.0,
+   "arv_high": 190000.0,
+   "arv_low": 150000.0,
+   "comps": [
+    "40 Lorene St (subject, earlier sale), Calico Rock: $182,500, Aug 2023, 1,840 sqft (described as nicely updated at the time)",
+    "613 E 1st St, Calico Rock: $124,000, Jul 2026, 1,300 sqft, 3bd/2ba",
+    "4380 Gorby Rd, Calico Rock: $240,000, Mar 2026, 2,223 sqft, 3bd/2ba",
+    "651 E First St, Calico Rock: $100,000, Jul 2026, 1,248 sqft, 3bd/1ba",
+    "8464 Hwy 177 S, Calico Rock: $125,000, Apr 2025, 1,368 sqft"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1100.0,
+   "reasoning": "This 1,840 sqft in-town home on about 1 acre (listings say 3-4 beds, not 2) sold for $182.5k in updated condition in 2023, and recent Calico Rock sales run about $77-108/sqft, which supports roughly $150k-$190k after repairs. Zillow's estimate is $149k and Redfin's is $187k, so I chose a conservative $170k; rent is estimated from typical rents in small Ozark towns."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
+ },
  "c974e07ceae3f741": {
   "arv": {
    "arv": 185000.0,
@@ -2822,6 +3196,25 @@
   },
   "first_seen": "2026-10-26",
   "status": "too_expensive"
+ },
+ "cc5e4990c782af4b": {
+  "arv": {
+   "arv": 205000.0,
+   "arv_high": 222000.0,
+   "arv_low": 185000.0,
+   "comps": [
+    "234 Resin Ln, Bee Branch AR (same subdivision, 4bd/2ba, 2 ac): $190,000, sold Jan 30, 2025, 1,615 sqft",
+    "233 Redress Ln, Bee Branch AR (same subdivision, 3bd): $150,000, sold Mar 6, 2025, 1,616 sqft",
+    "465 Arkansas 92, Bee Branch AR: $116,000, sold Jan 31, 2025, sqft not found",
+    "Subject, 120 Resin Ln: $156,000, sold Jun 14, 2021, 1,800 sqft (prior sale; online estimate about $220,800)",
+    "282 Resin Ln, Bee Branch AR (3bd/2ba, 2 ac): recent listing, price not found, 1,366 sqft"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1350.0,
+   "reasoning": "Two early-2025 sales on the subject's own streets in Bee Branch Estates sold for about $93\u2013$118/sqft, and an updated home should land near the top of that range. That works out to roughly $114/sqft \u00d7 1,800 sqft \u2248 $205K, set a bit below the ~$221K online estimate to stay conservative because only a few comps were found and I couldn't confirm their condition or the rent figure."
+  },
+  "first_seen": "2026-10-28",
+  "status": "watch"
  },
  "cd78235b284c635c": {
   "arv": {
@@ -2966,6 +3359,25 @@
   },
   "first_seen": "2026-10-19",
   "status": "too_expensive"
+ },
+ "d8cea50f46b9b9db": {
+  "arv": {
+   "arv": 215000.0,
+   "arv_high": 250000.0,
+   "arv_low": 185000.0,
+   "comps": [
+    "2200 Missy, Newport AR 72112 \u2013 3bd/3ba, 2,480 sqft \u2013 listed at $220,000 (active, not sold)",
+    "2208 Shafer, Newport AR 72112 \u2013 3bd/3ba, 2,358 sqft \u2013 $265,000 (pending)",
+    "1201 Nancy Ave, Newport AR 72112 \u2013 3bd/3ba, 2,752 sqft \u2013 listed at $259,000 (active)",
+    "315 Pine, Newport AR 72112 \u2013 3bd/2ba, 2,770 sqft \u2013 listed at $248,900 (active)",
+    "14 Lakeside Ln, Newport AR 72112 \u2013 3bd/3ba, 2,426 sqft \u2013 listed at $289,900 (active)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1450.0,
+   "reasoning": "I couldn't confirm any closed sales, so these comps are active or pending listings. Similar 3-bed, 2,400\u20132,800 sqft homes in Newport are listed at $220k\u2013$290k, so I knocked about 10\u201315% off asking prices for this 1976-built foreclosure, which gives roughly $215k (about $87/sqft), with low confidence."
+  },
+  "first_seen": "2026-10-28",
+  "status": "deal"
  },
  "dbcb4a30c410264c": {
   "arv": {
@@ -3324,6 +3736,25 @@
   "first_seen": "2026-10-16",
   "status": "too_expensive"
  },
+ "ee5b2a5513dc6d89": {
+  "arv": {
+   "arv": 220000.0,
+   "arv_high": 240000.0,
+   "arv_low": 195000.0,
+   "comps": [
+    "1118 Highland Dr, Rolla MO - $235,000 list, sold Jan 2025, 2,000 sqft, 3bd/2ba",
+    "48 Rolla Gardens Dr, Rolla MO - $189,000 list, sold Jan 2025, 1,820 sqft, 3bd",
+    "1221 Casey Ln, Rolla MO - $299,900 list, sold 2026, 1,760 sqft, 3bd/2ba (upper bound)",
+    "1013 Winchester Dr, Rolla MO - $194,900, sold Jul 2020, 1,915 sqft, 3bd/2ba (same street, dated)",
+    "7 Southview Dr, Rolla MO - $189,900 list (active/pending), 1,835 sqft, 3bd/2ba"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1550.0,
+   "reasoning": "In Rolla, 3-bed homes of about 1,800\u20132,000 sqft in updated condition have recently sold for roughly $105\u2013$125 per sqft, which puts this 1,861 sqft house at about $220K; Redfin also estimates it near $210K. Confidence is only medium because I couldn't confirm the actual sale prices for most of these comps (I only saw list prices, and one same-street sale is from 2020), so I kept the estimate toward the lower end of the range."
+  },
+  "first_seen": "2026-10-28",
+  "status": "deal"
+ },
  "ee6815cb1dabe01f": {
   "arv": {
    "arv": 158000.0,
@@ -3342,6 +3773,22 @@
   },
   "first_seen": "2026-10-16",
   "status": "too_expensive"
+ },
+ "ef0067b21789741b": {
+  "arv": {
+   "arv": 230000.0,
+   "arv_high": 258000.0,
+   "arv_low": 195000.0,
+   "comps": [
+    "1210 Haven St, Jonesboro AR 72401 \u2013 remodeled cottage, sold $220,000, 4/29/2022, about 1,913 sqft (~$115/sqft)",
+    "1323 Haven St (subject) \u2013 sold $157,733, 9/5/2023, 1,964 sqft (condition unknown); current Trulia estimate about $258,500"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1500.0,
+   "reasoning": "The only nearby comparable sale I found is a remodeled home on the same block, 1210 Haven St, which sold for about $115/sqft in 2022. Applying roughly $117/sqft to the subject's 1,964 sqft gives about $230k, which is conservative next to Trulia's $259k estimate; the low confidence is because I hit the search limit and found no 2024-25 sales or rent comps, so the $1,500 rent is a rough guess."
+  },
+  "first_seen": "2026-10-28",
+  "status": "deal"
  },
  "f069741ed6a8c309": {
   "arv": {
@@ -3613,6 +4060,25 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "fc949e0b30b9715d": {
+  "arv": {
+   "arv": 175000.0,
+   "arv_high": 205000.0,
+   "arv_low": 150000.0,
+   "comps": [
+    "105 Jonas Ct, Fairfield Bay AR \u2013 $240,000 \u2013 sold Apr 11, 2025 \u2013 1,302 sqft, 3bd/2ba, built 1973, remodeled, mostly furnished ($184/sqft)",
+    "242 Snead Dr, Fairfield Bay AR \u2013 $305,000 \u2013 sold Nov 3, 2025 \u2013 2,120 sqft, 3bd/2.5ba ($144/sqft)",
+    "118 Deer Run Trl, Fairfield Bay AR \u2013 $186,633 \u2013 sold Nov 6, 2025 \u2013 2,171 sqft, 2ba ($86/sqft)",
+    "636 W Cliff Dr, Fairfield Bay AR \u2013 $189,900 asking (active listing, not a sale) \u2013 3bd/2ba",
+    "119 Meadowcliff Cir, Fairfield Bay AR \u2013 $259,900 asking (active listing, not a sale) \u2013 1,346 sqft, 3bd/2ba"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1100.0,
+   "reasoning": "Records show the subject is a 1970s bungalow of about 1,448 sqft with 2 bedrooms, 2 baths and a bonus room, not the 3 bedrooms listed. It was on the market at $120k in Sept 2026. Recent Fairfield Bay sales ran about $86\u2013184/sqft, with remodeled homes near the top, so I used a conservative ~$120/sqft (about $175k). Confidence is low because my search was cut short and I only found a few sold comps."
+  },
+  "first_seen": "2026-10-28",
+  "status": "too_expensive"
+ },
  "fd683bb7ec590eb2": {
   "arv": {
    "arv": 170000.0,
@@ -3792,6 +4258,11 @@
   "first_seen": "2026-10-16",
   "status": "notice",
   "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=288229"
+ },
+ "notice:www.arkansaspublicnotices.com:d728f7220625deb7": {
+  "first_seen": "2026-10-28",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=294696"
  },
  "notice:www.arkansaspublicnotices.com:eab358b031f08b0c": {
   "first_seen": "2026-10-19",
