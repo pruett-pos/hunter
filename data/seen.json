@@ -530,6 +530,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "1067d7bdf840947c": {
+  "arv": {
+   "arv": 135000.0,
+   "arv_high": 150000.0,
+   "arv_low": 115000.0,
+   "comps": [
+    "Subject automated estimate (Trulia): about $140,300-$144,200, 3bd/1ba, 1,140 sqft, 0.56-0.7 ac. This is an online estimate, not a sale.",
+    "3612 State Highway 181, Gainesville MO: listed at $89,500 (asking price, not a sale), 2bd/1ba, about $74/sqft, marketed as an investment/fixer",
+    "3365 County Road 153, Gainesville MO: listed at $160,000 (active listing), 3bd/2ba, 1,092 sqft",
+    "16148 US 160, Gainesville MO: listed at $154,900 (active listing), 3bd/2ba, 1,204 sqft",
+    "65655 listing on Zillow (address not shown): listed at $140,000 (active), 3bd/2ba, 1,088 sqft"
+   ],
+   "confidence": "low",
+   "monthly_rent": 950.0,
+   "reasoning": "I couldn't confirm any recent closed sales, so this rests on asking prices of $140k-$160k for similar 3-bed houses in Gainesville that have 2 baths, plus an automated estimate of about $140k for the subject. I took about $10k off for the single bath, the highway location and auction risk, giving a conservative ARV of about $135k; the $950/month rent is my judgment, not taken from rental listings."
+  },
+  "first_seen": "2026-11-06",
+  "status": "deal"
+ },
  "10c0d6c6a56f9eb8": {
   "arv": {
    "arv": 145000.0,
@@ -792,6 +811,25 @@
   "first_seen": "2026-10-21",
   "status": "land_deal"
  },
+ "1dead0dd790724a8": {
+  "arv": {
+   "arv": 295000.0,
+   "arv_high": 320000.0,
+   "arv_low": 270000.0,
+   "comps": [
+    "Subject: 200 Wagonwheel Dr, Camdenton. The MLS lists it as 6 bed/3 bath with 2,720 sq ft total (about 1,390-1,436 sq ft above grade plus a basement) on 0.42 acres. It was listed at $325,000 and cut to $286,000. Trulia estimates it at about $284,200.",
+    "416 Clint Ave, Camdenton 65020: 3 bed/2 bath, sold for about $295,500 (FSBO site; sale date and sq ft not confirmed)",
+    "73 Birdie Dr, Camdenton 65020: 3 bed/2 bath, 1,560 sq ft, sold for about $199,900 (FSBO site; sale date not confirmed)",
+    "65 Caviness Dr, Camdenton 65020: 3 bed/2 bath, 1,384 sq ft, renovated in 2018, sold recently (price not found)",
+    "577 Mulberry Ln, Camdenton 65020: 3 bed/2 bath, 1,364 sq ft, sold recently (price not found)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1800.0,
+   "reasoning": "The listing describes the home as well maintained with a finished basement (6 bed/3 bath, 2,720 sq ft total). I could only confirm two Camdenton 3 bed/2 bath sales prices, about $200k and $295k, so my conservative estimate of about $295k is based on the market's response to the $325k list price, the $284k Trulia estimate, and those two sales. Confidence is low because I couldn't verify sale dates or square footage for any comparable."
+  },
+  "first_seen": "2026-11-06",
+  "status": "too_expensive"
+ },
  "1e9442df69130086": {
   "arv": {
    "arv": 200000.0,
@@ -968,6 +1006,19 @@
   "first_seen": "2026-10-12",
   "status": "land_deal"
  },
+ "2fb5dfe72284caec": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 3500.0,
+   "arv_low": 500.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The county report shows this parcel is Lot 29 of the Investment Sales Addition in Horseshoe Bend, AR (S10 T18N R07W). It is an empty subdivision lot that owes Horseshoe Bend MRID improvement-district assessments, was last deeded by the state in 2022 and went to a quitclaim deed in 2023. I could not find any sold comps, so this conservative value is an estimate based on what similar small Horseshoe Bend lots typically sell for, about $500\u2013$3,500."
+  },
+  "first_seen": "2026-11-06",
+  "status": "land_deal"
+ },
  "3116e6f54826f611": {
   "arv": {
    "arv": 130000.0,
@@ -1036,6 +1087,25 @@
    "reasoning": "I couldn't pull any verified sold comps because the web search limit ran out, so this is a conservative estimate. It assumes updated 2-bed, 1-bath rural homes of about 1,100 sq ft in northeast Greene County, near Cardwell, MO, sell for roughly $95\u2013135k, and notes that this property's earlier listing at about $70k and the $60k opening bid suggest its current condition is poor."
   },
   "first_seen": "2026-10-12",
+  "status": "too_expensive"
+ },
+ "338e3e72f38b50e1": {
+  "arv": {
+   "arv": 385000.0,
+   "arv_high": 420000.0,
+   "arv_low": 350000.0,
+   "comps": [
+    "1519 E 515th Rd, Brighton MO \u2013 asking $450,000\u2013$490,000 (active listing, not a sale), 4bd/3ba, 2,397 sf, 3.25 ac",
+    "10325 N Farm Rd 137, Brighton MO \u2013 asking $394,900 (active listing, not a sale), 4bd/3ba, 2,614 sf",
+    "3711 W Farm Rd 14, Brighton MO \u2013 asking $450,000 (active listing, not a sale), 3bd/2.5ba, 2,087 sf",
+    "1637 E 541st Rd, Brighton MO \u2013 asking $399,999 (active listing, not a sale), 4bd/3ba, 3,240 sf",
+    "Subject 3905 W Farm Rd 2 \u2013 earlier MLS #60248304 listed at $348,000\u2013$349,900 (~2023), 1974 build, ~2,165\u20132,330 sf (3,400 sf total), 4.39 ac"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2200.0,
+   "reasoning": "I could not find any verified sold comps, so this estimate rests on current Brighton asking prices for similar 4-bed homes of 2,100\u20132,600 sf on acreage (about $395K\u2013$490K) and on the subject's earlier list price of $348K\u2013$350K. A 1974 home on 4.39 acres north of Springfield should resell for about $385K once updated, and because asking prices usually run above sale prices, I discounted for that and set confidence to low."
+  },
+  "first_seen": "2026-11-06",
   "status": "too_expensive"
  },
  "35d4fcdbb7380980": {
@@ -1528,6 +1598,24 @@
   },
   "first_seen": "2026-11-04",
   "status": "too_expensive"
+ },
+ "47299619f3f17bd9": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 5000.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "Sister tax-sale parcel 800-06136-000 (Izard Co.), sold at a COSL auction to Neo Assets LLC; min bid about $93; size not found",
+    "Sister tax-sale parcel 800-06170-000 (Izard Co.), sold at a COSL auction to Ervino LLC; min bid about $93; size not found",
+    "Typical Horseshoe Bend residential lot of about 0.25\u20130.35 acres; listings appear to run about $1,500\u2013$6,000; no specific sold comp checked",
+    "Izard County land median of about $3,711 per acre across 323 sold records (Acres.com); a broad benchmark, not a lot-level comp"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't confirm the lot's size or sold comps; the legal description (S03 T18N R07W) appears to put it in or near Horseshoe Bend, and the very low minimum bid ($91.77) suggests a small residential lot. Small lots there likely sell for about $1,000\u2013$5,000, so I conservatively valued this one at about $2,500 as land with no rent; check acreage, road access, POA dues and whether the lot can be built on before bidding."
+  },
+  "first_seen": "2026-11-06",
+  "status": "land_deal"
  },
  "4875213b30b45f8b": {
   "arv": {
@@ -2689,6 +2777,24 @@
   "first_seen": "2026-10-12",
   "status": "too_expensive"
  },
+ "7fd0532aadc1d01a": {
+  "arv": {
+   "arv": 1000.0,
+   "arv_high": 2500.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Izard County assessor (via DataScoutPro): this parcel, Lot 17 Investment Sales Addition, Horseshoe Bend; land market value $500, no buildings",
+    "Same owner, same subdivision: Lot 27 Investment Sales Addition (800-06162-000), offered after the tax auction at $86.11",
+    "Nearby state-land auction parcels 800-06136-000 and 800-06185-000 sold for about $93\u2013$101 (lot sizes not found)",
+    "Asking prices, not sales: 0.23\u20130.36 acre residential lots in Izard County listed at about $2,700\u2013$3,700 on LandSearch"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This is a small vacant lot in Horseshoe Bend; the county values it at $500, and this lot and its neighbors keep selling for under $100 at tax sales, so I'm valuing it at about $1,000. I found no recent sold comps, and similar small lots in the county are listed at only about $2,700\u2013$3,700, so confidence is low and the realistic range is about $500\u2013$2,500."
+  },
+  "first_seen": "2026-11-06",
+  "status": "land_deal"
+ },
  "7fe37aadd24f9ba5": {
   "arv": {
    "arv": 2000.0,
@@ -3276,6 +3382,25 @@
   "first_seen": "2026-10-19",
   "status": "too_expensive"
  },
+ "9ab53f5eeed1737d": {
+  "arv": {
+   "arv": 170000.0,
+   "arv_high": 190000.0,
+   "arv_low": 150000.0,
+   "comps": [
+    "215 North St, Salem AR (the subject) \u2013 sold $160,000 on 10/15/2025, 1,964 sqft, 3bd/2ba, built 1987, $81/sqft, 13% below its $184,900 list price",
+    "4764 Byron Rd, Salem AR \u2013 sold $185,000 on 7/18/2025, 1,680 sqft, 3bd/2ba, $110/sqft",
+    "6159 Arkansas 9, Salem AR \u2013 sold $85,000 on 6/6/2025, 988 sqft, 2bd/2ba, built 1975, $86/sqft",
+    "418 S Main St, Salem AR \u2013 listed (not sold) at $160,000, about 1,640 sqft, 3bd/2ba, fully remodeled, on 2.33 acres",
+    "214 N Main St, Salem AR \u2013 sold $65,000 on 8/18/2023, 1,754 sqft, older in-town home (low-end reference)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1100.0,
+   "reasoning": "The subject itself sold for $160,000 ($81/sqft) in October 2025 after being listed at $184,900, and an updated nearby 3/2 sold for $110/sqft in July 2025. Large in-town Salem homes tend to sell for less per sqft, so I'm conservatively using about $87/sqft, or roughly $170K; rent is estimated from local 3-bed rentals, which run about $625\u2013$1,200."
+  },
+  "first_seen": "2026-11-06",
+  "status": "watch"
+ },
  "9b248c0d47a4b03e": {
   "arv": {
    "arv": 85000.0,
@@ -3311,6 +3436,24 @@
   },
   "first_seen": "2026-10-12",
   "status": "watch"
+ },
+ "9c08751705a8466c": {
+  "arv": {
+   "arv": 235000.0,
+   "arv_high": 250000.0,
+   "arv_low": 215000.0,
+   "comps": [
+    "709 Dogleg Dr (subject, updated condition), sold $247,500, Aug 16, 2024, 1,954 sqft total (3bd/2.5ba listing)",
+    "705 Dogleg Dr, sold $172,500, Mar 24, 2023, 1,372 sqft, 2bd/2ba, golf-course neighbor",
+    "709 Tee Dr, sold $218,000, Dec 2, 2022, same golf-course subdivision",
+    "Redfin: nearby similar homes sold $190K\u2013$350K, averaging about $145/sqft (2024\u201325)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1450.0,
+   "reasoning": "The best comp is the subject itself: after its update, it sold for $247,500 in August 2024, and the listing showed 1,954 total sqft, likely including a basement. I took a few percent off that price for a flat market, possible damage while it sat as an REO, and stigma from the foreclosure, which lines up with older Dogleg/Tee Dr sales at $172K\u2013$218K and with the ~$145/sqft area average applied to the 1,404 sqft above grade."
+  },
+  "first_seen": "2026-11-06",
+  "status": "too_expensive"
  },
  "9ce4cd6fdfa08ef1": {
   "arv": {
@@ -3445,6 +3588,24 @@
   "first_seen": "2026-10-14",
   "status": "too_expensive"
  },
+ "a032c7c11296c050": {
+  "arv": {
+   "arv": 115000.0,
+   "arv_high": 135000.0,
+   "arv_low": 95000.0,
+   "comps": [
+    "204 E Blue Bird Ln, Leasburg MO 65535: active listing at $134,000 (starter home), beds and sqft not found",
+    "86 S 4th St, Leasburg MO (the subject): online as-is estimates of $69,300 to $76,100 on Trulia/Zillow, 2 bed/1 bath, 1,010 sqft, 0.3 ac",
+    "211 3rd St, Leasburg MO 65535: sold 12/1/2023, price not found",
+    "1477 Kohl Rd, Leasburg MO 65535: sold 12/15/2023, 1,020 sqft on 3 acres, price not found"
+   ],
+   "confidence": "low",
+   "monthly_rent": 900.0,
+   "reasoning": "Online as-is estimates for the subject are about $69k\u2013$76k, and a starter home in Leasburg is listed at $134k, so a fully updated 2 bed/1 bath of 1,010 sqft in this small Crawford County town should sell for about $110k\u2013$120k; I used the low end of that range. Confidence is low because I could not find any verified sold prices for similar homes in the last 12 months, and the search limit was reached before checking sales in Cuba or Bourbon."
+  },
+  "first_seen": "2026-11-06",
+  "status": "deal"
+ },
  "a0826f6ffb2f819e": {
   "arv": {
    "arv": 1500.0,
@@ -3562,6 +3723,25 @@
   },
   "first_seen": "2026-11-02",
   "status": "too_expensive"
+ },
+ "a4d39dbfe34ad511": {
+  "arv": {
+   "arv": 180000.0,
+   "arv_high": 205000.0,
+   "arv_low": 160000.0,
+   "comps": [
+    "4636 Turley Mill Rd, Farmington MO \u2013 $270,000 last list price, sold 10/24/2025, 3 bed/2 bath, about 1,520 sqft, built 2025 (new build, upper bound)",
+    "213 Patterson St, Farmington MO \u2013 $289,000 last list price, recently sold, 3 bed/2 bath, 1,442 sqft, built 2025 (new build, upper bound)",
+    "25 Elk Dr, Farmington MO \u2013 $299,900 last list price, sold 1/12/2026, 3 bed/2 bath, sqft not found",
+    "415 S Main St, Farmington MO \u2013 sold recently, 3 bed/2 bath, 1,768 sqft, older in-town home, price not found",
+    "1534 Stonegate St, Farmington MO \u2013 sold, updated 3 bed/2 bath with basement, price and sqft not found"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1350.0,
+   "reasoning": "The only prices I found in Farmington were last list prices of $270K\u2013$300K for new 3 bed/2 bath homes, and I found no sale prices for older in-town homes like the ones near Walnut St. I set a conservative ARV of about $180K, or $117 per sqft, which is my estimate rather than comp-based; it should be checked against MLS sold prices for older homes near downtown before bidding."
+  },
+  "first_seen": "2026-11-06",
+  "status": "deal"
  },
  "a5128794ecc04bc2": {
   "arv": {
@@ -4170,6 +4350,25 @@
   "first_seen": "2026-11-04",
   "status": "watch"
  },
+ "c257a7accdfd5683": {
+  "arv": {
+   "arv": 290000.0,
+   "arv_high": 310000.0,
+   "arv_low": 270000.0,
+   "comps": [
+    "6188 Merrell Cv, Jonesboro AR 72404 (same subdivision) - $332,500 - sold Mar 2025 - 2,079 sqft, 3/2",
+    "2616 Gallaway Cv, Jonesboro AR 72404 - $280,000 - sold Jun 2025 - 1,930 sqft, 3/2",
+    "5400 Cordova Ln, Jonesboro AR 72404 - $275,000 - sold Sep 2025 - 1,823 sqft, 3/2",
+    "6062 Beaver Dam Ln, Jonesboro AR 72404 - $265,000 - sold May 2025 - 1,819 sqft, 3/2",
+    "6263 Alan Dr, Jonesboro AR 72404 (same street) - $343,450 - recent sale, date unclear - 2,263 sqft, 4/2"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1900.0,
+   "reasoning": "This 2017 brick ranch in Merrell Estates (Valley View schools) with a heated in-ground pool sold for $298,000 in Dec 2021, and Redfin estimates it at about $299K; recent nearby sales of 1,800\u20132,100 sqft homes were $265K\u2013$332K, or about $145\u2013160/sqft. Multiplying 1,768 sqft by about $160/sqft, plus a small pool premium, gives a conservative ARV of about $290K, but I could not verify the home's interior condition or the exact date of the 6263 Alan Dr sale."
+  },
+  "first_seen": "2026-11-06",
+  "status": "watch"
+ },
  "c2ca45f0fda31167": {
   "arv": {
    "arv": 265000.0,
@@ -4336,6 +4535,23 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "c9f72fde351061ab": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 5000.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "Nearby state tax-sale parcel 800-06136-000 (Izard Co.), sold at auction for $93.45 (minimum bid; not a market sale)",
+    "Nearby state tax-sale parcel 800-06185-000 (Izard Co.), sold at auction for $100.79 (minimum bid; not a market sale)",
+    "Parcel 800-04192-000, Horseshoe Bend, 0.36 ac lot, sold on seller financing ($173 down, $69/mo; total price and date not found)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "The 800- prefix and the S03 T18N R07W location point to a small residential lot in the Horseshoe Bend subdivision area, but I could not confirm the acreage, road access, or utilities; a market sale of a similar Horseshoe Bend lot (0.36 ac, total price not found) and the nearby tax-sale results (about $90\u2013$100, minimum bids rather than market prices) suggest a value of about $1,000\u2013$5,000. This is a conservative low-confidence estimate, so check the parcel's size, access, and title with the Izard County Assessor before bidding."
+  },
+  "first_seen": "2026-11-06",
+  "status": "land_deal"
  },
  "ca3d4bcf816dd3ee": {
   "arv": {
@@ -4782,6 +4998,25 @@
    "reasoning": "The subject sold in Feb 2024 after listing at $195,000, Redfin estimates it at about $178,000, and the nearby estimates on E Smith St support an updated value of about $185,000\u2013$205,000 for this 1,276 sqft 3bd/2ba in Doling Park. I couldn't pull recent sold comps within 12 months, so this is a cautious estimate with low confidence, and the $181,240 list price leaves little room for a flip."
   },
   "first_seen": "2026-10-14",
+  "status": "too_expensive"
+ },
+ "df69f0476385c82c": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 180000.0,
+   "arv_low": 140000.0,
+   "comps": [
+    "308 E Summit St, Doniphan (subject) \u2013 earlier list price $149,000 (Coldwell Banker MLS 23067850); sale price not confirmed",
+    "308 E Summit St, Doniphan (subject) \u2013 earlier as-is list price $155,760, 3bd/3ba, 2,460 sqft, built 1988; sale price not confirmed",
+    "201 Pine St, Doniphan \u2013 sold Jun 22, 2026, 3bd/1ba, 1,280 sqft, price not shown",
+    "2680 Ripley 142E-20, Doniphan \u2013 sold May 22, 2026, 4bd/1ba, 1,488 sqft, price not shown",
+    "236 Ripley 21-N, Doniphan \u2013 active listing $250,000, 3bd/2ba, 1,732 sqft (listing, not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1200.0,
+   "reasoning": "I couldn't confirm any sold prices for nearby comps, so this estimate rests on Zillow's Doniphan typical home value of about $159K, the subject's own earlier list prices of $149K\u2013$156K, and active 3-bed/2-bath listings at $200K\u2013$250K. A conservative after-repair value for this roughly 2,000 sqft 1988 in-town home on a corner lot is about $160K, and it should be checked against sold comps from the MLS or Ripley County records before you rely on it."
+  },
+  "first_seen": "2026-11-06",
   "status": "too_expensive"
  },
  "df9094347891daa5": {
@@ -5337,6 +5572,25 @@
   "first_seen": "2026-10-21",
   "status": "deal"
  },
+ "f96fe8f7b393ed9f": {
+  "arv": {
+   "arv": 165000.0,
+   "arv_high": 182000.0,
+   "arv_low": 145000.0,
+   "comps": [
+    "201 N Grant St, Desloge \u2014 3bd/2ba, 1,162 sqft; listed at ~$179,900, sold Jul 2, 2026",
+    "209 N Washington St, Desloge \u2014 last list price $144,900, sold Jun 16, 2025; sqft not confirmed",
+    "401 N Grant St, Desloge \u2014 4bd/1.5ba, 1,624 sqft; ~$120,000, recently sold (not-updated condition)",
+    "607 N Desloge Dr, Desloge \u2014 3bd/1ba; listed at $139,000 (active, not sold)",
+    "105 S Waller St, Desloge \u2014 3bd/2ba; listed at $209,900 (active, not sold)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1150.0,
+   "reasoning": "Online estimates for this home are about $178K\u2013$185K (Zillow/Trulia), and nearby updated 3-bed homes in Desloge have sold for roughly $145K\u2013$180K. Most of those had 2 baths, this one has 1, and the sqft records conflict (996 vs 1,293), so I set ARV conservatively at about $165K; rent is about $1,100\u2013$1,200 per month for a 3-bed house locally."
+  },
+  "first_seen": "2026-11-06",
+  "status": "watch"
+ },
  "f97c8678fe3defeb": {
   "arv": {
    "arv": 160000.0,
@@ -5427,6 +5681,19 @@
   },
   "first_seen": "2026-10-23",
   "status": "too_expensive"
+ },
+ "fac4aab5930bd4ad": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 5000.0,
+   "arv_low": 500.0,
+   "comps": [],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "Public tax-sale records show this parcel is a vacant residential lot (Lot 293, Settlers Park Addition, Horseshoe Bend), owned by Richard Willis with acreage listed as 0, and it previously went unsold at the state auction, so it is valued as land. I could not find any recent lot sales to use as comps, so this conservative figure is a rough estimate based on my general knowledge that interior subdivision lots in Horseshoe Bend usually sell for low four figures, and it depends on the lot's access and utilities."
+  },
+  "first_seen": "2026-11-06",
+  "status": "land_deal"
  },
  "fb2b8a0259aeff49": {
   "arv": {
