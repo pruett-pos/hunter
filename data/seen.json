@@ -605,6 +605,25 @@
   "first_seen": "2026-10-12",
   "status": "too_expensive"
  },
+ "125bdff778eaec34": {
+  "arv": {
+   "arv": 145000.0,
+   "arv_high": 170000.0,
+   "arv_low": 120000.0,
+   "comps": [
+    "604 S 6th St, Paragould AR - sold $142,500, 2025 (Zillow), 2bd/1ba, 1,379 sqft",
+    "518 N 4th St, Paragould AR - sold $95,000, Jul 30 2025 (Homes.com), sqft not confirmed",
+    "502 W Poplar St, Paragould AR - active listing $169,900, not a sale, 3bd/1.5ba, ~1,806 sqft",
+    "911 Ada St, Paragould AR - active listing $149,900, not a sale, 3bd/1ba, sqft not confirmed",
+    "1307 S 6th St, Paragould AR - active listing $110,000, not a sale, 3bd/1ba, 975 sqft"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1150.0,
+   "reasoning": "I found only two confirmed recent sales nearby, the $142,500 sale at 604 S 6th St and the $95,000 sale at 518 N 4th St; the other three comps are current listing prices, not sales, so they likely overstate value. Based on these, a renovated 1,638 sqft 3-bed, 1-bath home in this older part of Paragould would likely sell for about $85\u2013$90 per sqft, or roughly $145K, and rent for about $1,150 a month, but this is low-confidence because the web search limit was reached before I could pull more closed sales."
+  },
+  "first_seen": "2026-11-09",
+  "status": "deal"
+ },
  "12c801661fc47c80": {
   "arv": {
    "arv": 160000.0,
@@ -973,6 +992,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "too_expensive"
+ },
+ "2b54fe7e6a0d5f22": {
+  "arv": {
+   "arv": 140000.0,
+   "arv_high": 165000.0,
+   "arv_low": 115000.0,
+   "comps": [
+    "813 E Jack St, Salem MO \u2013 2bd/1ba, 775 sqft, sold Jun 10, 2026 (price not found)",
+    "500 E 10th St, Salem MO \u2013 2bd/1ba, 1,120 sqft, sold May 8, 2026 (price not found)",
+    "801 E Jack St, Salem MO \u2013 2bd/1ba, 1,008 sqft, listed for $129,900\u2013$135,000 (active listing, not a sale)",
+    "11 ac S County Road 6670, Salem MO \u2013 2bd/1ba, 1,456 sqft, built 2007; Zestimate $178,400 (estimate, not a sale)",
+    "917 Highway FF, Salem MO \u2013 3bd/2ba, 1,662 sqft, listed for $229,000\u2013$320,000 (active listing, not a sale)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 950.0,
+   "reasoning": "I couldn't find any confirmed sale prices for similar homes, so this ARV of about $140K is a conservative estimate. It is based on asking prices for 2-bed, 1-bath homes in Salem ($90K\u2013$165K), the ZIP's roughly $195K median sale price, and a $178K automated Zillow estimate for a larger rural 2-bed, 1-bath home, adjusted down for the plain rural Highway FF location."
+  },
+  "first_seen": "2026-11-09",
+  "status": "watch"
  },
  "2dee41a9fbe91a0d": {
   "arv": {
@@ -1854,6 +1892,24 @@
   "first_seen": "2026-11-02",
   "status": "deal"
  },
+ "518fc746c65e6064": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "0.27-acre lot, Horseshoe Bend AR 72512 (Izard Co.) \u2013 sold, listed at $1,949, recent (LandWatch)",
+    "0.31-acre wooded lot, Horseshoe Bend AR 72512 \u2013 sold, listed at $1,949, recent (LandWatch)",
+    "0.25-acre Crown Lake lot, Horseshoe Bend AR \u2013 sold; price not shown (Mossy Oak); lakefront, so it should sell for more than this parcel",
+    "Nearby tax-sale parcels 800-04126-000 and 800-04128-000 (Horseshoe Bend MRID) \u2013 sold at the state auction for $100.88 and $77.64"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "State Land Office records place this parcel in the Horseshoe Bend MRID subdivision, but I could not confirm its legal description or acreage; I'm assuming a typical small residential lot. Comparable small, non-lakefront lots in Horseshoe Bend have sold for about $1,900\u2013$2,000 each, so I estimate about $2,000, but check for unpaid MRID assessments, access, and buildability before bidding."
+  },
+  "first_seen": "2026-11-09",
+  "status": "land_deal"
+ },
  "51a2e46d99ca4f1f": {
   "arv": {
    "arv": 210000.0,
@@ -2146,6 +2202,25 @@
   "first_seen": "2026-10-16",
   "status": "too_expensive"
  },
+ "5f6aeab42f068bf1": {
+  "arv": {
+   "arv": 150000.0,
+   "arv_high": 165000.0,
+   "arv_low": 130000.0,
+   "comps": [
+    "301 S Chestnut St, Richland MO (subject): listed at $117,500, sold 9/13/2024, 1,469 sqft, 4bd/2ba, built 1906; Redfin estimate about $165.6k",
+    "301 S Chestnut St (subject): sold for $74,900 on 2/14/2023 in dated condition, 1,469 sqft",
+    "605 Hillvale Ave, Richland MO: listed at $165,000, sold 4/16/2025, sqft not found",
+    "715 Sue Ave, Richland MO: listed at $249,000, sold 4/30/2025, 3bd/2ba, likely a newer and nicer home, sqft not found",
+    "32190 Route 66, Richland MO: listed at $120,000, sold 5/7/2025, sqft not found"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1100.0,
+   "reasoning": "The subject is a 1906 bungalow on a corner lot in Richland, a town where older in-town homes are fairly cheap. It sold for $74.9k dated in 2023 and was listed at $117.5k when it sold again in 2024, Redfin estimates about $165k, and the few local sales I found with prices range from $120k to $165k, so a conservative updated value is about $150k. Confidence is low because my searches ran out before I could confirm actual sale prices or square footage for the other comps."
+  },
+  "first_seen": "2026-11-09",
+  "status": "watch"
+ },
  "600a9ce629c476a7": {
   "arv": {
    "arv": 270000.0,
@@ -2420,6 +2495,24 @@
   },
   "first_seen": "2026-10-30",
   "status": "too_expensive"
+ },
+ "724494d02104e4c1": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 4500.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "800-04284-000 (this lot), quitclaim sale on 8/12/2011 for $1,000 (unvalidated)",
+    "800-04281-000, Forrest Heights area, sold at a 2026 COSL tax auction for $77.64",
+    "800-04282-000, Forrest Heights area, sold at a 2026 COSL tax auction for $77.64",
+    "800-04224-000, sold at a 2026 COSL tax auction for $150"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This is Lot 199 in the Forrest Heights Addition of Horseshoe Bend (1910 Independence Dr, about one standard lot). The lot last sold for $1,000 in 2011, nearby lots went for $78\u2013$150 at tax auction, and I found no recent market sales of Horseshoe Bend lots, so this is a conservative estimate of $1,000\u2013$4,500 and should be checked against current lot listings."
+  },
+  "first_seen": "2026-11-09",
+  "status": "land_deal"
  },
  "73b839f8cec78284": {
   "arv": {
@@ -2972,6 +3065,22 @@
   "first_seen": "2026-11-02",
   "status": "watch"
  },
+ "883bea1b3a5d436b": {
+  "arv": {
+   "arv": 2500.0,
+   "arv_high": 6000.0,
+   "arv_low": 1000.0,
+   "comps": [
+    "Izard Co. AR undeveloped land listings: median about $4,000\u2013$6,400/acre (Land.com, current listings, not sales)",
+    "Adjacent parcel 800-00277-000 sold at the COSL tax sale for $77.64 (vacant land; shows little bidder interest)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "I couldn't confirm the acreage or road access for parcel 800-00278-000, and I found no recent sold comps, so this is a rough guess. The $83 opening bid points to roughly $20/yr in taxes, about $2\u20133K of value: a small rural lot or sliver at the county's roughly $4\u20136K/acre asking prices."
+  },
+  "first_seen": "2026-11-09",
+  "status": "land_deal"
+ },
  "88e5103d5fc037d1": {
   "arv": {
    "arv": 95000.0,
@@ -3473,6 +3582,25 @@
   },
   "first_seen": "2026-10-30",
   "status": "too_expensive"
+ },
+ "9d1e8d5d442cf6ae": {
+  "arv": {
+   "arv": 280000.0,
+   "arv_high": 298000.0,
+   "arv_low": 260000.0,
+   "comps": [
+    "6048 Wisteria Ln, Jonesboro AR 72404 - $265,000 - Jun 23, 2025 - 1,768 sqft (3bd/2ba)",
+    "6019 Prairie Meadow Dr, Jonesboro AR 72404 - $258,000 - Jun 23, 2025 - 1,846 sqft (3bd/2ba)",
+    "6188 Merrell Cv, Jonesboro AR 72404 (Merrell Estates) - $332,500 - Mar 21, 2025 - 2,079 sqft (3bd/2ba)",
+    "6272 Alan Dr (subject, prior sale) - $298,000 - Dec 23, 2021 - 1,768 sqft (4bd/2ba)",
+    "6244 Alan Dr, Jonesboro AR 72404 - $262,000 - Nov 10, 2021 - 2,092 sqft (4bd/2ba)"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1850.0,
+   "reasoning": "The subject is a newer brick home in Merrell Estates (Valley View schools) that sold for $298K at the 2021 peak. Nearby 2025 sales of similar size went for $258K\u2013$265K, while the Merrell Cove sale shows about $160/sqft. I set a conservative ARV of about $158/sqft, or roughly $280K, at medium confidence because I couldn't confirm any sales on Alan Dr itself in the last 12 months."
+  },
+  "first_seen": "2026-11-09",
+  "status": "watch"
  },
  "9e32015a04d7832c": {
   "arv": {
@@ -3996,6 +4124,25 @@
   "first_seen": "2026-10-12",
   "status": "deal"
  },
+ "b02e12ec61cdc220": {
+  "arv": {
+   "arv": 170000.0,
+   "arv_high": 190000.0,
+   "arv_low": 150000.0,
+   "comps": [
+    "1795 Addie St, Batesville AR 72501 \u2013 sold $102,500, Sep 18, 2026, 3bd/2ba, 1,128 sqft (older in-town home, a low-end comp)",
+    "375 College Heights Dr, Batesville AR 72501 \u2013 sold $235,000, Dec 12, 2025, 3bd/2.5ba (sqft not listed)",
+    "1540 Janetta St, Batesville AR 72501 \u2013 sold $220,000, Sep 18, 2026, 3bd/2ba, 2,132 sqft",
+    "188 Stone Flag, Batesville AR 72501 \u2013 active listing, $218,500, 3bd/2ba ranch built 2018, same Riverwoods Estates subdivision (sqft not listed; asking price, not a sale)",
+    "184 Stone Flag Rd, Batesville AR 72501 \u2013 automated estimate $207,000\u2013$217,492, 0.49-acre lot, across the street (estimate, not a sale; sqft not listed)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1150.0,
+   "reasoning": "The subject is a small 1,140 sqft 3-bed/1.5-bath home on about 0.75 acre in Riverwoods Estates, where nearby larger or newer homes are listed or estimated at $207k\u2013$218k and an online automated estimate for the subject is about $166k, while similar-size older homes in town have sold for around $100k. Applying roughly $150/sqft for an updated home gives a conservative ARV of about $170k, but confidence is low because I found no confirmed same-size sales on this street."
+  },
+  "first_seen": "2026-11-09",
+  "status": "deal"
+ },
  "b0cdb1aecf1509ae": {
   "arv": {
    "arv": 135000.0,
@@ -4462,6 +4609,25 @@
   "first_seen": "2026-10-23",
   "status": "deal"
  },
+ "c5e4fce5d36421c7": {
+  "arv": {
+   "arv": 125000.0,
+   "arv_high": 140000.0,
+   "arv_low": 110000.0,
+   "comps": [
+    "RealtyTrac AVM for the subject, 2595 Greene 839 Rd: about $123,729, 2bd/1ba, 1,176 sqft, about 0.52-acre lot, bank-owned (an estimate, not a sale)",
+    "273 Greene 728 Rd, Paragould: Redfin estimate $132,111, 840 sqft on 2 acres (an estimate; last actual sale was $75,000 in 1998)",
+    "109 Highview Dr, Paragould: sold Mar 20, 2026, 2bd/1ba, 1,200 sqft (sale price not found)",
+    "5506 Wendy St, Paragould: listed at $155,000 in Sep 2026, 3bd/2ba (a listing, not a sale; sets the upper bound)",
+    "1004 Rector Rd, Paragould: listed at $79,000, 2bd/1ba (a listing, not a sale; likely needs work)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 950.0,
+   "reasoning": "I couldn't confirm any recent sale prices for similar homes, so this estimate rests mainly on online value estimates (about $124K for the subject and about $132K for a similar rural home on Greene 728 Rd) plus nearby asking prices for 2-bed/1-bath homes, which mostly run $80K to $155K. A fully updated rural 2/1 of about 1,100-1,200 sqft in Paragould should conservatively sell for about $125K and rent for about $900-1,000 a month, but please check this against real sold comps before bidding, since the $60K opening bid leaves limited margin once repairs and fees are added."
+  },
+  "first_seen": "2026-11-09",
+  "status": "deal"
+ },
  "c6e1bbeb8ccbb9b7": {
   "arv": {
    "arv": 2000.0,
@@ -4723,6 +4889,25 @@
   "first_seen": "2026-10-30",
   "status": "too_expensive"
  },
+ "d09742ea41052f8f": {
+  "arv": {
+   "arv": 1500.0,
+   "arv_high": 3000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "Assessor market value for this parcel (1112 Blackberry Ln, Horseshoe Bend, Tract C Blk 1 Lot 18): land $500",
+    "Horseshoe Bend AR lot, 0.35 ac: about $2,450 (LandWatch sold/under-contract listing, date and address not known)",
+    "Horseshoe Bend AR lot, 0.38 ac: $3,100 asking price (LandSearch)",
+    "2414 E President Dr, Horseshoe Bend: 1.9 ac, $24,750 asking price (larger lot, so not a close match)",
+    "200 Isabella Ln, Horseshoe Bend: 0.76 ac with views, $49,900 asking price (premium lot, upper bound only)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This parcel is a small inside lot (Lot 18, Block 1, Tract C at 1112 Blackberry Ln) in Horseshoe Bend, a subdivision with hundreds of lots for sale. The county values it at only $500, and similar small Horseshoe Bend lots sell for about $1,000\u2013$3,000, so I'm using a conservative $1,500 with no rental value."
+  },
+  "first_seen": "2026-11-09",
+  "status": "land_deal"
+ },
  "d2009a10a5c46749": {
   "arv": {
    "arv": 6000.0,
@@ -4808,6 +4993,25 @@
    "reasoning": "I couldn't find closed sales of similar 2\u20133 bed, 1 bath homes from the last 12 months, so this is mostly based on the subject's own listing history: it sold fully updated for about $92k in 2018, was recently listed around $115k, and Zillow estimates it at $152k. Local active listings for comparable 2bd/1ba homes run $90\u2013150k, so I set a conservative updated value of about $140k (roughly $123/sf), with rent around $1,050\u20131,100 a month."
   },
   "first_seen": "2026-10-12",
+  "status": "deal"
+ },
+ "d6a34621a7b9e4af": {
+  "arv": {
+   "arv": 130000.0,
+   "arv_high": 140000.0,
+   "arv_low": 115000.0,
+   "comps": [
+    "174 Highway 9 Spur, Melbourne AR 72556 (the subject property): sold $129,900, Aug 30 2022, 1,084 sqft, built 2002",
+    "174 Ar 9 Spur Hwy (the subject property): listed 2025 after remodel at $129,900 (MLS 25018091), later at $127,900 (MLS 25045624), and at one point $139,900; sale not confirmed",
+    "424 School St, Melbourne AR: active listing at $129,900, 3bd/2ba, sqft unknown",
+    "64 Arnold Springs Rd, Melbourne AR: active listing at $130,000, 3bd/2ba, sqft unknown",
+    "343 S Lacey St, Melbourne AR: sold $195,000, Oct 13 2026, 1,524 sqft, 3bd/2ba (larger home, upper bound)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1050.0,
+   "reasoning": "This house sold for $129,900 in 2022, and after a remodel it was listed in 2025 between $127,900 and $139,900 without a confirmed sale; similar 3bd/2ba houses in Melbourne are currently listed around $130k. I couldn't find enough recent sold comps of similar size, and the larger 1,524 sqft sale at about $128/sqft is the upper bound, so I'm holding the ARV at about $130k with low confidence."
+  },
+  "first_seen": "2026-11-09",
   "status": "deal"
  },
  "d6cdbad16677f58f": {
@@ -5102,6 +5306,25 @@
   "first_seen": "2026-10-12",
   "status": "watch"
  },
+ "e2029effb6e03cee": {
+  "arv": {
+   "arv": 185000.0,
+   "arv_high": 205000.0,
+   "arv_low": 160000.0,
+   "comps": [
+    "215 North St, Salem AR (subject) \u2013 sold $160,000, Oct 15, 2025, 3bd/2ba, ~1,964 sf (it had been listed at $184,900)",
+    "4764 Byron Rd, Salem AR \u2013 sold $185,000, Jul 2025, 3bd/1ba, 1,732 sf (updated, new heat pump)",
+    "418 S Main St, Salem AR \u2013 listed at $160,000 (not a sale), 3bd/2ba, fully remodeled, 2.33 acres",
+    "131 N Pine St, Salem AR \u2013 listed at $117,500 (not a sale), 3bd/2ba",
+    "123 Greenbrook Trl, Salem AR \u2013 listed at $135,000 (not a sale), 3bd/2ba, 1,344 sf"
+   ],
+   "confidence": "medium",
+   "monthly_rent": 1200.0,
+   "reasoning": "The subject sold for $160,000 in Oct 2025 after being listed at $184,900, and the one other sale found, an updated 1,732 sf 3/1 on Byron Rd, sold for $185,000; listing data puts Salem at about $106 per sq ft, so an updated 1,964 sf house would be worth roughly $185k (conservative). Only one outside sale was confirmed (the rest are listings) and Salem's small market moves around a lot, so confidence is medium; rent is estimated from local 3-bed rentals at about $1,100\u20131,300."
+  },
+  "first_seen": "2026-11-09",
+  "status": "watch"
+ },
  "e2b787b975bd7de9": {
   "arv": {
    "arv": 160000.0,
@@ -5281,6 +5504,44 @@
   },
   "first_seen": "2026-11-04",
   "status": "deal"
+ },
+ "ed2b74a58140adf0": {
+  "arv": {
+   "arv": 100000.0,
+   "arv_high": 120000.0,
+   "arv_low": 80000.0,
+   "comps": [
+    "505 Skyview Dr, Ellington, MO 63638 - sold $153,000 - 6/12/2026 - 1,942 sqft, 3bd/3ba (Redfin; about $79/sqft)",
+    "485 Skyview Dr, Ellington, MO 63638 - listed $169,000 after a $9K price cut - 1,144 sqft, 3bd/3ba (listing only, not a sale)",
+    "1275 South Rd, Ellington, MO 63638 - sold 12/8/2025 - price and sqft not shown in search results",
+    "360 3rd St, Ellington, MO 63638 - sold 5/30/2025 - price and sqft not shown in search results",
+    "Mossy Oak listing #16900 - newly remodeled 3bd/1ba in Ellington city limits on 0.27 ac - sold, price not shown"
+   ],
+   "confidence": "low",
+   "monthly_rent": 750.0,
+   "reasoning": "The only priced sale found was a larger 3bd/3ba in Ellington at $153k (about $79/sqft), and few nearby sales are available. Applying about $85-110/sqft to 1,077 sqft for an updated 3bd/1ba in town gives a conservative estimate of about $100k, but online directories list 185 Logan St as River of Life Church, so verify the parcel is actually a house before bidding."
+  },
+  "first_seen": "2026-11-09",
+  "status": "watch"
+ },
+ "ee41990ddbf671b4": {
+  "arv": {
+   "arv": 2000.0,
+   "arv_high": 4000.0,
+   "arv_low": 500.0,
+   "comps": [
+    "No individual sold comps verified; this is Lot 168, Hillcrest Addition, Horseshoe Bend (2411 Sky Line Ln), Sec 11 T18N R07W, about 1 lot",
+    "COSL Izard 2025-26 auction: parcel 800-05659-000 sold for $150 (nearby Horseshoe Bend tax lot, buyer Ervino LLC)",
+    "COSL Izard auction: parcel 800-05688-000 sold for $150 (nearby Horseshoe Bend tax lot)",
+    "COSL Izard auction: parcel 800-05635-000 sold for $84.98; 800-05658-000 sold for $100 (nearby lots)",
+    "Acres.com Izard County sold land median about $3,711/acre (larger rural tracts)"
+   ],
+   "confidence": "low",
+   "monthly_rent": null,
+   "reasoning": "This is a single subdivision lot in Horseshoe Bend's Hillcrest Addition (Lot 168). It went to the state in 2022 and changed hands again in 2024 through a quit-claim deed with no recorded price. It also failed to sell at the latest auction, and nearby lots in the same series sold for only $85 to $150, so I found no verified retail sales. Similar small Horseshoe Bend lots usually sell for low thousands of dollars at most, and this lot also carries Horseshoe Bend improvement district (MRID) assessments, so I estimate a conservative $2,000 with low confidence."
+  },
+  "first_seen": "2026-11-09",
+  "status": "land_deal"
  },
  "ee4b7bb8e987ac5b": {
   "arv": {
@@ -5521,6 +5782,25 @@
   },
   "first_seen": "2026-10-12",
   "status": "land_deal"
+ },
+ "f61dd8db8c6f1f2f": {
+  "arv": {
+   "arv": 375000.0,
+   "arv_high": 405000.0,
+   "arv_low": 345000.0,
+   "comps": [
+    "10325 N Farm Road 137, Brighton MO 65617 \u2013 4bd/3ba, 2,614 sqft; sold Jun 23, 2026; last seen listed at $394,900, sold price not confirmed",
+    "1637 E 541st Road, Brighton MO 65617 \u2013 4bd/3ba, 3,240 sqft; sold Jun 25, 2026; sold price not confirmed",
+    "5416 S 165th Road, Brighton MO 65617 \u2013 5bd/2.5ba, 3,360 sqft; sold Aug 3, 2026; sold price not confirmed",
+    "1489 E 568th Road, Brighton MO 65617 \u2013 3bd/2ba, 2,709 sqft; sold Jun 30, 2026; sold price not confirmed",
+    "1519 E 515th Road, Brighton MO 65617 \u2013 4bd/3ba, 2,397 sqft on 3.25 ac; active listing at $450,000\u2013$490,000, not a sale"
+   ],
+   "confidence": "low",
+   "monthly_rent": 2000.0,
+   "reasoning": "The subject is a 1974 4-bed home of about 2,165\u20132,330 sqft on 4.39 acres; it was listed earlier at about $348,000\u2013$349,900 and now at $395,000, and nearby 4-bed rural homes of 2,400\u20132,600 sqft have been listed between $395,000 and $490,000. I could not confirm sold prices for the 2026 Brighton sales, so I set a conservative ARV of about $375,000, below the list price, with low confidence.</parameter>"
+  },
+  "first_seen": "2026-11-09",
+  "status": "too_expensive"
  },
  "f69ff917e43be384": {
   "arv": {
@@ -5788,6 +6068,25 @@
   "first_seen": "2026-10-26",
   "status": "too_expensive"
  },
+ "ff1d26d04f21f20f": {
+  "arv": {
+   "arv": 160000.0,
+   "arv_high": 190000.0,
+   "arv_low": 130000.0,
+   "comps": [
+    "107 Hickory St, Viola AR 72583 - $220,000 - sold May 29, 2025 - sqft unknown (same street, in town)",
+    "9630 US-62, Viola AR 72583 - $90,000 - sold Jun 13, 2025 - 1,224 sqft, 3bd/1ba ($74/sf)",
+    "588 Deerchase Rd, Viola AR 72583 - $250,000 - sold Mar 19, 2025 - sqft unknown",
+    "1674 Echowood Cir, Viola AR 72583 - $125,000 - sold Jan 3, 2025 - sqft unknown",
+    "514 Hickory St, Viola AR (subject) - $126,000 - sold Feb 15, 2024 - 1,264 sqft per Redfin (other listings show 4bd/3ba, 2,113-3,751 sqft at $79,900-$205,000 list)"
+   ],
+   "confidence": "low",
+   "monthly_rent": 1100.0,
+   "reasoning": "There were very few sales in Viola, and the sales I found mostly lack square footage, so I relied on an estimated $75-95 per square foot for an updated home in town at 2,018 sqft. I cut the result conservatively because the subject's public records conflict: they show anywhere from 1,264 to 3,751 sqft and 3 to 4 beds, with a $126K sale in 2024 and later list prices from $79.9K to $205K."
+  },
+  "first_seen": "2026-11-09",
+  "status": "deal"
+ },
  "ffc9d5fc6890df9f": {
   "arv": {
    "arv": 2000.0,
@@ -5870,6 +6169,11 @@
   "status": "notice",
   "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=288230"
  },
+ "notice:www.arkansaspublicnotices.com:36a63daf1efd7b31": {
+  "first_seen": "2026-11-09",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=299373"
+ },
  "notice:www.arkansaspublicnotices.com:385cc8dc25331b0e": {
   "first_seen": "2026-10-19",
   "status": "notice",
@@ -5894,6 +6198,11 @@
   "first_seen": "2026-10-26",
   "status": "notice",
   "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=293843"
+ },
+ "notice:www.arkansaspublicnotices.com:76dd61e39fe92d75": {
+  "first_seen": "2026-11-09",
+  "status": "notice",
+  "url": "https://www.arkansaspublicnotices.com/Details.aspx?ID=298473"
  },
  "notice:www.arkansaspublicnotices.com:955dab6078a913a4": {
   "first_seen": "2026-10-14",
